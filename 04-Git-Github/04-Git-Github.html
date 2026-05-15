@@ -1,0 +1,2387 @@
+<!Doctype html>
+<html lang="bn">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="04-Git-Github.css" />
+</head>
+
+<body>
+
+  <!--? TOP NAV -->
+  <!-- Start Navbar -->
+  <nav class="top-nav">
+    <div class="brand"><span>Code</span>Bangla</div>
+    <a href="#">HTML</a>
+    <a href="#">CSS</a>
+    <a href="#" class="#">JavaScript</a>
+    <a href="#" class="active">Git & Github</a>
+    <a href="#">Python</a>
+    <a href="#">বাংলা</a>
+      <button class="exercise-btn">Exercise</button>
+  </nav>
+<!-- End of Top Navbar -->
+
+
+<!-- Start Layout -->
+  <div class="layout">
+
+
+<!--? SIDEBAR -->
+<!-- Start Sidbar -->
+  <div class="sidebar">
+    <div class="sidebar-header">📚 Git & Github</div>
+
+    <div class="sidebar-section">শুরু করুন</div>
+      <a onclick="showPage('class-writing')" class="active" id="nav-class-writing">Class-Writing</a>
+
+      <a onclick="showPage('introduction')" id="nav-introduction">Git Home</a>
+      <a onclick="showPage('syntax')" id="nav-syntax">Git Intro</a>
+      <a onclick="showPage('statements')" id="nav-statements">Git install</a>
+      <a onclick="showPage('comments')" id="nav-comments">Git Config</a>
+      <a onclick="showPage('variables')" id="nav-variables">Git Get Started</a>
+      <a onclick="showPage('types')" id="nav-types">Git New Files</a>
+
+    <div class="sidebar-section">JS Operetors</div>
+      <a onclick="showPage('operators')" id="nav-operators">Git Staging</a>
+      <a onclick="showPage('arithmetic')" id="nav-arithmetic">Git Commit</a>
+      <a onclick="showPage('assignment')" id="nav-assignment">Git Tagging</a>
+      <a onclick="showPage('compasirons')" id="nav-compasirons">Git Stash</a>
+      <a onclick="showPage('conditional')" id="nav-conditional">Git History</a>
+
+    <div class="sidebar-section">JS If Else</div>
+      <a onclick="showPage('if')" id="nav-if">If</a>
+      <a onclick="showPage('if-else')" id="nav-if-else">Git Help</a>
+      <a onclick="showPage('ternary')" id="nav-ternary">Git Branch</a>
+      <a onclick="showPage('switch')" id="nav-switch">Git Merge</a>
+      <a onclick="showPage('booleans')" id="nav-booleans">Git Workflow</a>
+      <a onclick="showPage('logical')" id="nav-logical">Git Best Practices</a>
+
+    <div class="sidebar-section">JS Loops</div>
+      <a onclick="showPage('loops')" id="nav-loops">Git Glossary</a>
+      <a onclick="showPage('loops-for')" id="nav-loops-for">Loops for</a>
+      <a onclick="showPage('loops-while')" id="nav-loops-while">Loops while</a>
+      <a onclick="showPage('break')" id="nav-break">Break</a>
+      <a onclick="showPage('continue')" id="nav-continue">Continue</a>
+      <a onclick="showPage('control-flow')" id="nav-control-flow">Control Flow</a>
+
+    <div class="sidebar-section">JS Strings</div>
+      <a onclick="showPage('strings')" id="nav-strings">Strings</a>
+      <a onclick="showPage('string-templates')" id="nav-string-templates">StringTemplates</a>
+      <a onclick="showPage('string-methods')" id="nav-string-methods">String Methods</a>
+      <a onclick="showPage('string-search')" id="nav-string-search">String Search</a>
+      <a onclick="showPage('string-reference')" id="nav-string-reference">String Reference</a>
+
+    <div class="sidebar-section">JS Numbers</div>
+      <a onclick="showPage('numbers')" id="nav-numbers">Numbers</a>
+      <a onclick="showPage('numbers-methods')" id="nav-numbers-methods">Numbers Methods</a>
+      <a onclick="showPage('numbers-properties')" id="nav-numbers-properties">Numbers Properties</a>
+      <a onclick="showPage('numbers-reference')" id="nav-numbers-reference">Numbers Reference</a>
+      <a onclick="showPage('numbers-bitwise')" id="nav-numbers-bitwise">Numbers Bitwise</a>
+      <a onclick="showPage('number-biglnt')" id="nav-number-biglnt">Numbers Biglnt</a>
+
+    <div class="sidebar-section">JS Functions</div>
+      <a onclick="showPage('function-path')" id="nav-function-path">Function Path</a>
+      <a onclick="showPage('function-intro')" id="nav-function-intro">Function Intro</a>
+      <a onclick="showPage('function-invocation')" id="nav-function-invocation">Function Invocation</a>
+      <a onclick="showPage('function-parameters')" id="nav-function-parameters">Function Parameters</a>
+      <a onclick="showPage('function-returns')" id="nav-function-returns">Function Returns</a>
+      <a onclick="showPage('function-arguments')" id="nav-function-arguments">Function Arguments</a>
+      <a onclick="showPage('function-expressions')" id="nav-function-expressions">Function Expressions</a>
+      <a onclick="showPage('function-arrow')" id="nav-function-arrow">Function Arrow</a>
+      <a onclick="showPage('function-quize')" id="nav-function-quize">Function Quiz</a>
+
+    <div class="sidebar-section">JS Objects</div>
+      <a onclick="showPage('object-path')" id="nav-object-path">Object- Path</a>
+      <a onclick="showPage('object-intro')" id="nav-object-intro">Object Intro</a>
+      <a onclick="showPage('object-properties')" id="nav-object-properties">Object Properties</a>
+      <a onclick="showPage('object-methods')" id="nav-object-methods">Object Methods</a>
+      <a onclick="showPage('object-this')" id="nav-object-this">Object This</a>
+      <a onclick="showPage('object-display')" id="nav-object-display">Object Display</a>
+      <a onclick="showPage('object-constructors')" id="nav-object-constructors">Object Constructors</a>
+
+    <div class="sidebar-section">JS Scope</div>
+      <a onclick="showPage('scope')" id="nav-scope">Scope</a>
+      <a onclick="showPage('code-blocks')" id="nav-code-blocks">Code Blocks</a>
+      <a onclick="showPage('code-hoisting')" id="nav-code-hoisting">Code Hoisting</a>
+      <a onclick="showPage('code-strict-mode')" id="nav-code-strict-mode">Code Strict Mode</a>
+
+    <div class="sidebar-section">JS Dates</div>
+      <a onclick="showPage('dates')" id="nav-dates">Dates</a>
+      <a onclick="showPage('date-formats')" id="nav-date-formats">Date Formats</a>
+      <a onclick="showPage('date-get')" id="nav-date-get">Date Get</a>
+      <a onclick="showPage('date-set')" id="nav-date-set">Date Set</a>
+      <a onclick="showPage('date-methods')" id="nav-date-methods">Date Methods</a>
+      <a onclick="showPage('date-blocks')" id="nav-date-blocks">Code Blocks</a>
+
+    <div class="sidebar-section">JS Arrays</div>
+      <a onclick="showPage('arrays')" id="nav-arrays">Arrays</a>
+      <a onclick="showPage('array-methods')" id="nav-array-methods">Array Methods</a>
+      <a onclick="showPage('array-search')" id="nav-array-search">Array Search</a>
+      <a onclick="showPage('array-sort')" id="nav-array-sort">Array Sort</a>
+      <a onclick="showPage('array-iterations')" id="nav-array-iterations">Array Iterations</a>
+      <a onclick="showPage('array-reference')" id="nav-array-reference">Array Reference</a>
+      <a onclick="showPage('array-const')" id="nav-array-const">Array Const</a>
+  </div>
+<!-- End Sidbar -->
+
+
+<!--? MAIN CONTENT -->
+<!-- Start Main Content -->
+  <div class="main">
+
+
+
+
+
+
+
+
+
+
+<!--? Class-00 Class-writing পেজ এর জন্য -->
+<!--! Class-00 Class-writing পেজ এর জন্য -->
+    <div class="page" id="page-class-writing">
+            <div class="breadcrumb">
+        <a href="#">Home</a> >
+        <a href="#">Git & Github</a> > Git Tagging
+    </div>
+        <div>Lecture 12</div> 
+
+
+        <main>
+        <section class="command-section">
+            <h2 class="git-all-tag">১. গিট সেটআপ (Setup & Config)</h2>
+            <table>
+                <tr>
+                    <th>Command</th>
+                    <th>Description (বিবরণ)</th>
+                </tr>
+                <tr>
+                    <td><code>git config --global user.name "[name]"</code></td>
+                    <td>আপনার ইউজার নাম সেট করার জন্য।</td>
+                </tr>
+                <tr>
+                    <td><code>git config --global user.email "[email]"</code></td>
+                    <td>আপনার ইমেইল অ্যাড্রেস সেট করার জন্য।</td>
+                </tr>
+                <tr>
+                    <td><code>git init</code></td>
+                    <td>Creating a local git repository</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="command-section">
+            <h2  class="git-all-tag">২. পরিবর্তন ট্র্যাকিং (Tracking Changes)</h2>
+            <table>
+                <tr>
+                    <th>Command</th>
+                    <th>Description (বিবরণ)</th>
+                </tr>
+                <tr>
+                    <td><code>git status</code></td>
+                    <td>ফাইলের বর্তমান অবস্থা (নতুন বা মডিফাইড ফাইল) দেখার জন্য।</td>
+                </tr>
+                <tr>
+                    <td><code>git add [file]</code></td>
+                    <td>নির্দিষ্ট ফাইলকে স্টেজিং এরিয়াতে যোগ করার জন্য।</td>
+                </tr>
+                <tr>
+                    <td><code>git add .</code></td>
+                    <td>সবগুলো পরিবর্তন করা ফাইল একসাথে স্টেজিং এ যোগ করার জন্য।</td>
+                </tr>
+                <tr>
+                    <td><code>git commit -m "[message]"</code></td>
+                    <td>স্টেজিং ফাইলগুলোকে একটি মেসেজসহ পার্মানেন্টলি সেভ করার জন্য।</td>
+                </tr>
+                <tr>
+                    <td><code>git diff</code></td>
+                    <td>ফাইলে কী কী পরিবর্তন করা হয়েছে তা দেখার জন্য।</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="command-section">
+            <h2  class="git-all-tag">৩. ব্রাঞ্চ ও মার্জিং (Branch & Merge)</h2>
+            <table>
+                <tr>
+                    <th>Command</th>
+                    <th>Description (বিবরণ)</th>
+                </tr>
+                <tr>
+                    <td><code>git branch</code></td>
+                    <td>বর্তমান রিপোজিটরির সব ব্রাঞ্চের লিস্ট দেখার জন্য।</td>
+                </tr>
+                <tr>
+                    <td><code>git branch [branch-name]</code></td>
+                    <td>নতুন একটি ব্রাঞ্চ তৈরি করার জন্য।</td>
+                </tr>
+                <tr>
+                    <td><code>git checkout [branch-name]</code></td>
+                    <td>নির্দিষ্ট ব্রাঞ্চে মুভ বা সুইচ করার জন্য।</td>
+                </tr>
+                <tr>
+                    <td><code>git merge [branch]</code></td>
+                    <td>অন্য কোনো ব্রাঞ্চকে বর্তমান ব্রাঞ্চের সাথে যুক্ত করার জন্য।</td>
+                </tr>
+                <tr>
+                    <td><code>git branch -d [branch]</code></td>
+                    <td>একটি নির্দিষ্ট ব্রাঞ্চ ডিলিট করার জন্য।</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="command-section">
+            <h2 class="git-all-tag">৪. রিমোট রিপোজিটরি (GitHub Support)</h2>
+            <table>
+                <tr>
+                    <th>Command</th>
+                    <th>Description (বিবরণ)</th>
+                </tr>
+                <tr>
+                    <td><code>git remote add origin [url]</code></td>
+                    <td>লোকাল রিপোজিটরিকে রিমোট সার্ভারের (GitHub) সাথে কানেক্ট করা।</td>
+                </tr>
+                <tr>
+                    <td><code>git push -u origin [branch]</code></td>
+                    <td>লোকাল কমিটগুলো রিমোট রিপোজিটরিতে পাঠানোর জন্য।</td>
+                </tr>
+                <tr>
+                    <td><code>git pull</code></td>
+                    <td>রিমোট রিপোজিটরি থেকে আপডেট লোকাল মেশিনে আনার জন্য।</td>
+                </tr>
+                <tr>
+                    <td><code>git clone [url]</code></td>
+                    <td>GitHub থেকে কোনো প্রোজেক্ট নিজের পিসিতে কপি করার জন্য।</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="command-section">
+            <h2 class="git-all-tag">৫. হিস্টোরি ও রিভার্ট (History & Undo)</h2>
+            <table>
+                <tr>
+                    <th>Command</th>
+                    <th>Description (বিবরণ)</th>
+                </tr>
+                <tr>
+                    <td><code>git log</code></td>
+                    <td>সবগুলো কমিটের হিস্টোরি দেখার জন্য।</td>
+                </tr>
+                <tr>
+                    <td><code>git reset [file]</code></td>
+                    <td>স্টেজিং এরিয়া থেকে ফাইল বের করে দেওয়া (Unstage)।</td>
+                </tr>
+                <tr>
+                    <td><code>git revert [commit-id]</code></td>
+                    <td>পূর্বের কোনো একটি কমিটে ফিরে যাওয়ার জন্য (নতুন কমিট তৈরি করে)।</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="command-section">
+            <h2 class="git-all-tag">6. init</h2>
+            <table>
+                <tr>
+                    <th>Command</th>
+                    <th>Description (বিবরণ)</th>
+                </tr>
+                <tr>
+                    <td><code>git init </code></td>
+                    <td>Creating a local repository</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="command-section">
+            <h2 class="git-all-tag">7. Clone</h2>
+            <table>
+                <tr>
+                    <th>Command</th>
+                    <th>Description (বিবরণ)</th>
+                </tr>
+                <tr>
+                    <td><code>git clone [repository_path] </code></td>
+                    <td>Copy the project from the remote repository</td>
+                </tr>
+                <tr>
+                    <td><code>git clone [repository_path] [new repository_path]</code></td>
+                    <td>Copy the project by specifying the name of the directory you want to create</td>
+                </tr>
+                <tr>
+                    <td><code>git clone --depth 1 [repository_path]</code></td>
+                    <td>Copy the project to get only the latest revision</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="command-section">
+            <h2 class="git-all-tag">3. Branch</h2>
+            <table>
+                <tr>
+                    <th>Command</th>
+                    <th>Description (বিবরণ)</th>
+                </tr>
+                <tr>
+                    <td><code>git branch [branch] </code></td>
+                    <td>Create branches </td>
+                </tr>
+                <tr>
+                    <td><code>git branch </code></td>
+                    <td>Display a list of branch </td>
+                </tr>
+                <tr>
+                    <td><code>git branch -a</code></td>
+                    <td>Display all branches </td>
+                </tr>
+                <tr>
+                    <td><code>git branch -r</code></td>
+                    <td>Display the remote branch </td>
+                </tr>
+                <tr>
+                    <td><code>git branch -d [branch]</code></td>
+                    <td>Delete the branch</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="command-section">
+            <h2 class="git-all-tag">4. Checkout</h2>
+            <table>
+                <tr>
+                    <th>Command</th>
+                    <th>Description (বিবরণ)</th>
+                </tr>
+                <tr>
+                    <td><code>git checkout [branch]</code></td>
+                    <td>Switch the branch</td>
+                </tr>
+                <tr>
+                    <td><code>git checkout -b [branch]</code></td>
+                    <td>witching to create a branch</td>
+                </tr>                
+            </table>
+        </section>
+
+        <section class="command-section">
+            <h2 class="git-all-tag">5. Diff, Status</h2>
+            <table>
+                <tr>
+                    <th>Command</th>
+                    <th>Description (বিবরণ)</th>
+                </tr>
+                <tr>
+                    <td><code>git diff</code></td>
+                    <td>Display the differences of changed files</td>
+                </tr>
+                <tr>
+                    <td><code>git status</code></td>
+                    <td>Display a list of changed files</td>
+                </tr>                
+            </table>
+        </section>
+
+        <section class="command-section">
+            <h2 class="git-all-tag">6. Add</h2>
+            <table>
+                <tr>
+                    <th>Command</th>
+                    <th>Description (বিবরণ)</th>
+                </tr>
+                <tr>
+                    <td><code>git add [filename] </code></td>
+                    <td>Registration files and directories to index</td>
+                </tr>
+                <tr>
+                    <td><code>git add –u</code></td>
+                    <td>Register the changed files from the file that it has committed to the index</td>
+                </tr>                
+                <tr>
+                    <td><code>git add –A</code></td>
+                    <td>Registered for all the modified file index (file newly added is not included)</td>
+                </tr>                
+                <tr>
+                    <td><code>git add .</code></td>
+                    <td>Register all of the files and directories to index</td>
+                </tr>                
+            </table>
+        </section>
+
+        <section class="command-section">
+            <h2 class="git-all-tag">7. Commit</h2>
+            <table>
+                <tr>
+                    <th>Command</th>
+                    <th>Description (বিবরণ)</th>
+                </tr>
+                <tr>
+                    <td><code>git commit</code></td>
+                    <td>Commit files that have been added to the index</td>
+                </tr>
+                <tr>
+                    <td><code>git commit -m "[comment]"</code></td>
+                    <td>Commit a file with the commit message</td>
+                </tr>                
+                <tr>
+                    <td><code>git commit –a</code></td>
+                    <td>Commit to add to all the changed files index (file newly added is not included)</td>
+                </tr>                
+                <tr>
+                    <td><code>git commit –amend</code></td>
+                    <td>Modify the last commit</td>
+                </tr>                
+            </table>
+        </section>
+
+        <section class="command-section">
+            <h2 class="git-all-tag">8. Log, Show</h2>
+            <table>
+                <tr>
+                    <th>Command</th>
+                    <th>Description (বিবরণ)</th>
+                </tr>
+                <tr>
+                    <td><code>git log</code></td>
+                    <td>Display the commit log</td>
+                </tr>
+                <tr>
+                    <td><code>git show</code></td>
+                    <td>Display the latest commit content</td>
+                </tr>                
+                                
+            </table>
+        </section>
+
+        <section class="command-section">
+            <h2 class="git-all-tag">9. Reset</h2>
+            <table>
+                <tr>
+                    <th>Command</th>
+                    <th>Description (বিবরণ)</th>
+                </tr>
+                <tr>
+                    <td><code>git reset --soft HEAD^	</code></td>
+                    <td>Cancel the last commit (the contents intact)</td>
+                </tr>
+                <tr>
+                    <td><code>git reset --hard HEAD^</code></td>
+                    <td>Cancel the contents and commit of the last commit</td>
+                </tr>                
+                                
+            </table>
+        </section>
+
+        <section class="command-section">
+            <h2 class="git-all-tag">10. Push</h2>
+            <table>
+                <tr>
+                    <th>Command</th>
+                    <th>Description (বিবরণ)</th>
+                </tr>
+                <tr>
+                    <td><code>git push [remote] [branch]</code></td>
+                    <td>Submit to commit the local repository to the remote repository</td>
+                </tr>
+                <tr>
+                    <td><code>git push origin master</code></td>
+                    <td>Submit to commit the master of the local repository to the master of the remote repository</td>
+                </tr>                
+                                
+            </table>
+        </section>
+
+        <section class="command-section">
+            <h2 class="git-all-tag">11. Pull-Request</h2>
+            <table>
+                <tr>
+                    <th>Command</th>
+                    <th>Description (বিবরণ)</th>
+                </tr>
+                <tr>
+                    <td><code>git pull-request</code></td>
+                    <td>Send a pull request</td>
+                </tr>
+                <tr>
+                    <td><code>git pull-request -m "[comment]" -b defunkt:master -h mislav:feature</code></td>
+                    <td>Commit the file with the message of the pull request</td>
+                </tr>                
+                                
+            </table>
+        </section>
+
+        <section class="command-section">
+            <h2 class="git-all-tag">12. Merge</h2>
+            <table>
+                <tr>
+                    <th>Command</th>
+                    <th>Description (বিবরণ)</th>
+                </tr>
+                <tr>
+                    <td><code>git merge [branch]</code></td>
+                    <td>Merge the branch</td>
+                </tr>  
+
+            </table>
+        </section>
+
+        <section class="command-section">
+            <h2 class="git-all-tag">13. Fetch, Pull</h2>
+            <table>
+                <tr>
+                    <th>Command</th>
+                    <th>Description (বিবরণ)</th>
+                </tr>
+                <tr>
+                    <td><code>git fetch [remote]</code></td>
+                    <td>Confirm the change of the remote repository</td>
+                </tr>
+                <tr>
+                    <td><code>git pull [remote]</code></td>
+                    <td>Incorporate a change in the remote repository</td>
+                </tr>                
+                                
+            </table>
+        </section>
+
+        <section class="command-section">
+            <h2 class="git-all-tag">14. Fetch, Pull</h2>
+            <table>
+                <tr>
+                    <th>Command</th>
+                    <th>Description (বিবরণ)</th>
+                </tr>
+                <tr>
+                    <td><code>git cherry-pick [commit id]</code></td>
+                    <td>Copy the commit of another branch to the current branch</td>
+                </tr>               
+                
+            </table>
+        </section>
+
+        <section class="command-section">
+            <h2 class="git-all-tag">15. Fetch, Pull</h2>
+            <table>
+                <tr>
+                    <th>Command</th>
+                    <th>Description (বিবরণ)</th>
+                    <th>Examples</th>
+                </tr>
+                <tr>
+                    <td><code>git browse</code></td>
+                    <td>Open a page of the project of GitHub</td>
+                    <td>open https://github.com/USER_NAME/REPOSITORY_NAME</td>
+                </tr>
+                <tr>
+                    <td><code>git browse – issues</code></td>
+                    <td>Open a page of the issues of the project of GitHub</td>
+                    <td>open https://github.com/USER_NAME/REPOSITORY_NAME/issues</td>
+                </tr>                
+                <tr>
+                    <td><code>git browse – wiki</code></td>
+                    <td>Opening the wiki pages of the project of GitHub</td>
+                    <td>open https://github.com/USER_NAME/REPOSITORY_NAME/wiki</td>
+                </tr>                
+                                
+            </table>
+        </section>
+
+
+    
+    </main>
+
+
+    </div>
+
+<!-- Class-Writing End -->
+
+
+
+
+
+
+
+
+
+
+<!--? Class-01 Introduction পেজ এর জন্য -->
+<!--! Class-01 Introduction পেজ এর জন্য -->
+    <div class="page" id="page-introduction">
+        <h1>JS introduction</h1>
+        <p>introduction সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+    </div>
+
+    <!-- End On Page: CSS পরিচিতি -->
+
+
+<!--? Class-02 Syntax পেজ এর জন্য -->
+<!--! Class-02 syntax পেজ এর জন্য -->
+    <div class="page" id="page-syntax">
+            <div class="breadcrumb">
+                <a href="#">Home</a> >
+                <a href="#">Git & Github</a> > Git Intro
+            </div>
+            <div>Lecture 2</div>
+
+            
+        <!--? Chepter 01 -->
+        <h1>Git and GitHub Introduction</h1>
+        <div class="bg">
+            <h2>১. What is Git? (গিট কী?)</h2>
+            <p>Git হলো একটি Version Control System (VCS)। সহজ কথায়, এটি একটি সফটওয়্যার যা আপনার প্রজেক্টের প্রতিটি ছোট-বড় পরিবর্তনের ইতিহাস (History) রেকর্ড করে রাখে।</p>
+            
+            <ul>
+                <li>এটি লিনাক্সের জনক লিনাস টরভাল্ডস তৈরি করেছেন।</li>
+                <li>এটি আপনার নিজের কম্পিউটারে (Offline-এ) কাজ করে।</li>
+            </ul>
+        </div>
+
+        <!--? Chepter 02 -->
+        <div class="bg">
+            <h2>২. Key Git Concepts (গিটের মূল ধারণা)</h2>
+            <p>গিট বুঝতে হলে নিচের ৩টি বিষয় সবথেকে গুরুত্বপূর্ণ:</p>
+            
+            <ul>
+                <li><strong>Repository (রিপোজিটরি): </strong> আপনার প্রজেক্টের মূল ফোল্ডার, যেখানে গিট তার সব ডাটাবেস জমা রাখে।</li>
+                <li><strong>Commit (কমিট):</strong> প্রজেক্টের একটি নির্দিষ্ট সময়ের "স্ন্যাপশট" বা সেভ পয়েন্ট।</li>
+                <li><strong>Branch (ব্রাঞ্চ):</strong> মূল কাজ ঠিক রেখে আলাদাভাবে কোনো নতুন ফিচার ট্রাই করার জন্য একটি আলাদা শাখা।</li>
+            </ul>
+        </div>
+
+        <!--? Chepter 03 -->
+        <div class="bg">
+            <h2>৩. Working with Git (গিট কীভাবে কাজ করে?)</h2>
+            <p>গিট মূলত ৩টি ধাপে বা "States"-এ কাজ করে:</p>
+            
+            <ul>
+                <li><strong>Working Directory: </strong> যেখানে আপনি সরাসরি ফাইল এডিট বা ডিলিট করছেন।</li>
+                <li><strong>Staging Area: </strong><span class="sel">git add</span> করার পর ফাইলগুলো এখানে আসে। এটি হলো সেভ (Commit) করার জন্য প্রস্তুতির জায়গা।</li>
+                <li><strong>Local Repository: </strong> <span class="sel">git commit</span> করার পর ফাইলগুলো চিরস্থায়ীভাবে ইতিহাসের অংশ হয়ে যায়।</li>
+            </ul>
+        </div>
+        
+
+        <!--? Chepter 04 -->
+        <div class="bg">
+            <h2>৪. Why Git? (কেন গিট ব্যবহার করবেন?)</h2>
+
+            <ul>
+                <li><strong>টাইম ট্রাভেল:</strong> আপনি চাইলে এক বছর আগে আপনার কোড কেমন ছিল, সেখানে ফিরে যেতে পারেন।</li>
+                <li><strong>নিরাপত্তা:</strong> ভুল করে কোড ডিলিট হয়ে গেলেও গিট থেকে তা উদ্ধার করা সম্ভব।</li>
+                <li><strong>কোলাবরেশন:</strong> একই প্রজেক্টে পৃথিবীর বিভিন্ন প্রান্ত থেকে হাজার হাজার মানুষ একসাথে কাজ করতে পারে।</li>
+                <li><strong>উন্নত ট্র্যাকিং:</strong> কে, কখন, ফাইলের কোন লাইনে কী পরিবর্তন করেছে, তা একদম পরিষ্কারভাবে দেখা যায়।</li>
+            </ul>
+        </div>
+
+        <!--? Chepter 05 -->
+        <div class="bg">
+            <h2>৫. What is GitHub? (গিটহাব কী?)</h2>
+            <p>অনেকে গিট এবং গিটহাবকে এক মনে করেন, কিন্তু তারা আলাদা।</p>
+
+            <ul>
+                <li><strong>গিটহাব</strong> হলো একটি অনলাইন ক্লাউড প্ল্যাটফর্ম বা ওয়েবসাইট।</li>
+                <li>এটি আপনার কম্পিউটারের গিট রিপোজিটরিগুলোকে অনলাইনে জমা রাখার জায়গা (Hosting)।</li>
+                <li><strong>সহজ উদাহরণ:</strong> সহজ উদাহরণ: গিট যদি হয় আপনার ফোনের "ক্যামেরা" (যা ছবি তোলে বা রেকর্ড করে), তবে গিটহাব হলো "গুগল ড্রাইভ" বা "আইক্লাউড" (যেখানে আপনি ছবিগুলো অনলাইনে ব্যাকআপ রাখেন)।</li>
+            </ul>
+        </div>
+
+
+        <!--? Chepter 06 -->
+        <div class="bg">
+            <h2>৬. Git and GitHub Introduction (সমন্বয়)</h2>
+            <p>আপনি যখন আপনার পিসিতে Git ব্যবহার করে কাজ শেষ করেন, তখন সেই কাজগুলো সবার সাথে শেয়ার করার জন্য বা ব্যাকআপ রাখার জন্য GitHub-এ push করে পাঠিয়ে দেন। এর মাধ্যমে অন্যান্য ডেভেলপাররা আপনার কোড দেখতে পারে এবং প্রয়োজনে সাহায্য করতে পারে।</p>
+
+            <ul><strong>সংক্ষেপে:</strong>
+                <li><strong>Git:</strong> টুল বা সফটওয়্যার (লোকাল পিসিতে থাকে)।</li>
+                <li><strong>GitHub:</strong> ওয়েবসাইট বা ক্লাউড সার্ভিস (অনলাইনে থাকে)।</li>
+            </ul>
+        </div>
+    </div>
+
+
+<!--? Class-03 Statements পেজ এর জন্য -->
+<!--! Class-03 Statements পেজ এর জন্য -->
+    <div class="page" id="page-statements">
+        <div class="breadcrumb">
+                <a href="#">Home</a> >
+                <a href="#">Git & Github</a> > Git Install
+            </div>
+                <div>Lecture 3</div>
+
+        <!--? Chepter 01 -->
+        <h1>Git Install</h1>
+        <div class="bg">
+            <h2>১. Git Install এবং How to Install Git</h2>
+            <p>উইন্ডোজে গিট ইন্সটল করার সবথেকে নিরাপদ উপায় হলো অফিসিয়াল ওয়েবসাইট git-scm.com থেকে ফাইল ডাউনলোড করা।</p>
+
+            <ul>
+                <li>ডাউনলোড করা .exe ফাইলটি ওপেন করে সাধারণত সব অপশনে Next দিলেই এটি সুন্দরভাবে ইন্সটল হয়ে যায়। তবে মাঝখানের কিছু টেকনিক্যাল সেটিংস বুঝে নেওয়া ভালো।</li>
+            </ul>
+        </div>
+
+        <!--? Chepter 02 -->
+        <div class="bg">
+        <h2>২. Git Bash কী?</h2>
+        <p>ইন্সটল করার পর আপনি Git Bash নামে একটি অ্যাপ পাবেন। উইন্ডোজের সাধারণ কমান্ড প্রম্পটের (CMD) চেয়ে এটি অনেক বেশি শক্তিশালী। কারণ এটি আপনাকে উইন্ডোজের ভেতরেই লিনাক্স বা ইউনিক্স টার্মিনালের স্বাদ দেয়। গিটের সব কমান্ড এখানে কোনো ঝামেলা ছাড়াই চলে।</p>
+        </div>
+
+        <!--? Chepter 03 -->
+        <div class="bg">
+            <h2>৩. Verifying Your Installation (ইন্সটল হয়েছে কি না দেখা)</h2>
+            <p>ইন্সটল করার পর গিট ঠিকমতো কাজ করছে কি না তা চেক করতে আপনার টার্মিনালে (CMD বা Git Bash) এই কমান্ডটি দিন:</p>
+
+    <pre>
+    <span class="com">Bash</span>
+    <span class="sel">git --version</span>
+    </pre>
+
+        <p>যদি আপনি <span class="com">git version 2.x.x </span> এর মতো কোনো আউটপুট পান, তবে বুঝবেন গিট সফলভাবে ইন্সটল হয়েছে।</p>
+        </div>
+
+        <!--? Chepter 04 -->
+        <div class="bg">
+            <h2>৪. Default Editor</h2>
+            <p>ইন্সটলেশনের সময় গিট আপনাকে জিজ্ঞেস করবে আপনি কোন এডিটর (যেমন: Vim, Notepad++, VS Code) ব্যবহার করতে চান।</p>
+
+            <ul>
+                <li>যদি ভুলে Vim সিলেক্ট হয়ে থাকে, তবে কোনো বড় কমান্ডের সময় গিট একটি কালো স্ক্রিন ওপেন করতে পারে যা থেকে বের হওয়া কঠিন।</li>
+                <li>পরে এটি পরিবর্তন করতে চাইলে লিখুন:</li>
+                <li><span class="sel">git config --global core.editor "notepad" </span> (অথবা আপনার পছন্দের এডিটর)।</li>
+            </ul>
+        </div>
+
+        <!--? Chepter 05 -->
+        <div class="bg">
+            <h2>৫. PATH Environment (পাথ এনভায়রনমেন্ট)</h2>
+            <p>এটি অত্যন্ত গুরুত্বপূর্ণ। আপনি যদি চান যে আপনার কম্পিউটারের যেকোনো ফোল্ডার থেকে বা যেকোনো টার্মিনাল (যেমন আপনার বর্তমান CMD) থেকে গিট কাজ করুক, তবে গিটকে PATH-এ যুক্ত থাকতে হবে।</p>
+            <h3>How to Add Git to PATH after Installation?</h3>
+            <p>যদি ইন্সটলেশনের সময় এটি না করে থাকেন, তবে ম্যানুয়ালি করতে হবে:</p>
+
+            <ul>
+                <li>উইন্ডোজ সার্চে লিখুন <strong>"Edit the system environment variables"</strong> ।</li>
+                <li><strong>Environment Variables</strong> বাটনে ক্লিক করুন।</li>
+                <li><strong>System Variables</strong> এর নিচে <span class="prop">Path</span> খুঁজে বের করে Edit ক্লিক করুন।</li>
+                <li>New ক্লিক করে গিটের বিন ফোল্ডারের লোকেশন (যেমন: C:\Program Files\Git\bin) লিখে দিন।</li>
+                <li>সব ওকে (OK) করে দিয়ে আপনার টার্মিনালটি রিস্টার্ট করুন।</li>
+            </ul>
+        </div>
+        <!--? Chepter 06 -->
+        <div class="bg">
+            <h2>৬. Line Endings (লাইন এন্ডিং)</h2>
+            <p>উইন্ডোজ এবং লিনাক্স ফাইল সেভ করার সময় আলাদা ফরম্যাট ব্যবহার করে।</p>
+
+            <ul>
+                <li>ইন্সটলেশনের সময় সব সময় <span class="sel">"Checkout Windows-style, commit Unix-style line endings"</span>  সিলেক্ট করবেন। এতে আপনার কোড যখন অনলাইনে (GitHub) যাবে, তখন ফরম্যাটিং নষ্ট হবে না।</li>
+            </ul>
+        </div>
+
+        <!--? Chepter 07 -->
+        <div class="bg">
+            <h2>৮. Troubleshooting & Common Installation Issues</h2>
+            <strong>সাধারণ কিছু সমস্যা:</strong>
+            
+            <ul>
+                <li><strong>'git' is not recognized:</strong> এটি হওয়ার প্রধান কারণ হলো গিট PATH-এ যুক্ত নেই। ওপরের ৫ নম্বর ধাপটি অনুসরণ করলে এটি ঠিক হয়ে যাবে।</li>
+                <li><strong>Permission Denied:</strong> অনেক সময় সি-ড্রাইভে কাজ করার সময় পারমিশন চায়। সেক্ষেত্রে আপনার টার্মিনালটি <strong>"Run as Administrator"</strong> দিয়ে ওপেন করুন।</li>
+                <li><strong>Installation stuck:</strong> যদি ইন্সটলেশন আটকে যায়, তবে এন্টিভাইরাস বা ফায়ারওয়াল সাময়িকভাবে বন্ধ করে আবার চেষ্টা করুন।</li>
+            </ul>
+        </div>
+    </div>
+
+
+<!--? Class-04 Comments পেজ এর জন্য -->
+<!--! Class-04 Comments পেজ এর জন্য -->
+<div class="page" id="page-comments">
+        <div class="breadcrumb">
+        <a href="#">Home</a> >
+        <a href="#">Git & Github</a> > Git Config
+    </div>
+        <div>Lecture 4</div>
+
+    <!--? Chepter 00 -->
+    <h1>Git Config</h1>
+    <p>Git-এ কাজ শুরু করার আগে Git Config সেটআপ করা অনেকটা আপনার ডিজিটাল আইডি কার্ড বা পরিচয়পত্র তৈরি করার মতো। আপনি যখনই কোনো প্রজেক্টে কাজ করবেন, গিট আপনার এই কনফিগারেশন থেকেই জানতে পারবে কে কোডটি লিখেছে।</p>
+    <div class="bg">
+        <p>নিচে আপনার প্রতিটি পয়েন্ট বিস্তারিতভাবে বুঝিয়ে বলা হলো:</p>
+    </div>
+
+    <!--? Chepter 01 -->
+    <div class="bg">
+        <h2>১. Git Config কী ও কেন এটি করবেন? (Why Configure Git?)</h2>
+        <p>গিট একটি Version Control System। এর কাজ হলো কে, কখন, কী পরিবর্তন করেছে তার হিসাব রাখা। আপনি যখন একটি 'Commit' করেন, গিট সেই কমিটের সাথে আপনার নাম এবং ইমেইল জুড়ে দেয়।</p>
+
+        <ul>
+            <li><strong>কেন জরুরি:</strong> আপনি যদি এটি কনফিগার না করেন, গিট আপনাকে কমিট করতে দেবে না। এটি টিম ওয়ার্কের জন্য অপরিহার্য যাতে বোঝা যায় কোন ডেভেলপার কোন কাজটি করেছে।</li>
+        </ul>
+    </div>
+
+    <!--? Chepter 02 -->
+    <div class="bg">
+        <h2>২. কনফিগারেশনের তিনটি লেভেল (Configuration Levels)</h2>
+        <p>গিট তিনটি স্তরে সেটিংস জমা রাখে। আপনার প্রয়োজন অনুযায়ী আপনি এগুলো ব্যবহার করতে পারেন:</p>
+
+        <ul>
+            <li><strong>Local (--local):</strong> এটি শুধুমাত্র একটি নির্দিষ্ট প্রজেক্ট বা ফোল্ডারের জন্য কাজ করে।</li>
+            <li><strong>Global (--global):</strong> এই পিসিতে আপনার (বর্তমান ইউজার) সব প্রজেক্টের জন্য কাজ করবে। এটিই সবথেকে বেশি ব্যবহৃত হয়।</li>
+            <li><strong>System (--system):</strong>এই কম্পিউটারের সব ইউজার এবং সব প্রজেক্টের জন্য কাজ করবে।</li>
+        </ul>
+    </div>
+
+    <!--? Chepter 03 -->
+    <div class="bg">
+        <h2>৩. User Name ও Email Address সেট করা</h2>
+        <p>গিট ইনস্টল করার পর প্রথম কাজ হলো আপনার নাম এবং ইমেইল সেট করা। টার্মিনালে (CMD/Bash) নিচের কমান্ডগুলো লিখুন:</p>
+<pre>
+<span class="com">নাম সেট করা:</span>
+<span class="sel">git config --global user.name</span><span class="com"> "আপনার নাম"</span>
+
+<span class="com">ইমেইল সেট করা:</span>
+<span class="sel">git config --global user.email</span><span class="com">"yourname@example.com"</span>
+</pre>
+    </div>
+
+    <!--? Chepter 04 -->
+    <div class="bg">
+        <h2>৪. ডিফল্ট ব্রাঞ্চের নাম পরিবর্তন (Default Branch Name)</h2>
+        <p>আগে গিটে প্রথম ব্রাঞ্চের নাম ডিফল্টভাবে <span>master</span> থাকতো। এখন আধুনিক প্রজেক্টে সবাই <span>main</span> ব্যবহার করতে পছন্দ করে। আপনি এটি আগে থেকেই সেট করে রাখতে পারেন:</p>
+
+<pre>
+<span class="com">Bash</span>
+<span class="sel">git config --global init.defaultBranch main</span>
+</pre>
+    </div>
+
+    <!--? Chepter 05 -->
+    <div class="bg">
+        <h2>৫. আপনার কনফিগারেশন দেখা (Viewing Your Configuration)</h2>
+        <p>বর্তমানে কী কী সেটিংস আপনার গিটে আছে তা দেখার জন্য নিচের কমান্ডটি দিন:</p>
+
+<pre>
+<span class="com">Bash</span>
+<span class="sel">git config --list</span>
+</pre>
+    <p>এটি আপনার নাম, ইমেইল এবং অন্যান্য সব সেটিংস একটি তালিকায় দেখাবে।</p>
+    </div>
+
+    <!--? Chepter 06 -->
+    <div class="bg">
+        <h2>৬. সেটিংস পরিবর্তন বা মুছে ফেলা (Changing or Unsetting)</h2>
+        <p>কখনো যদি ভুল তথ্য দিয়ে থাকেন বা সেটিংস বদলাতে চান, তবে নিচের পদ্ধতিগুলো অনুসরণ করুন:</p>
+
+        <ul>
+            <li><strong>পরিবর্তন করা (Changing):</strong> শুধু আগের কমান্ডটি আবার নতুন তথ্য দিয়ে লিখলেই পুরনোটি মুছে নতুনটি সেট হয়ে যাবে। (যেমন: <span class="sel">git config --global user.name</span> <span class="com">"নতুন নাম"</span> )</li>
+            <li><strong>মুছে ফেলা (Unsetting):</strong> কোনো নির্দিষ্ট সেটিং পুরোপুরি মুছে ফেলতে চাইলে লিখুন:</li>
+        </ul>
+
+<pre>
+<span class="com">Bash</span>
+<span class="sel">git config --global --unset user.name</span>
+</pre>
+    </div>
+
+    <!--? Chepter 07 -->
+    <div class="bg">
+        <h2>৭. Troubleshooting (উইন্ডোজ ইউজারদের জন্য টিপস)</h2>
+        <p>আপনি যেহেতু উইন্ডোজ ব্যবহার করছেন, কনফিগারেশন করার সময় কিছু বিষয়ে সতর্ক থাকবেন:</p>
+
+        <ul>
+            <li><strong>কোটেশন মার্ক:</strong> নাম দেওয়ার সময় সব সময় <strong>" " (Double Quotation)</strong>  ব্যবহার করবেন, যেমন: <strong>"Kamrul Islam"</strong> । না দিলে গিট শুধু প্রথম অংশটুকু নিতে পারে।</li>
+            <li><strong>কেস সেন্সিটিভিটি:</strong>ইমেইল সব সময় ছোট হাতের অক্ষরে দেওয়ার চেষ্টা করবেন।</li>
+            <li><strong>এডিটর সমস্যা:</strong>যদি ভুল করে <span class="sel">git config --global --edit </span> লিখে ফেলেন এবং একটি কালো স্ক্রিন আসে যা থেকে বের হতে পারছেন না, তবে কিবোর্ডে <strong>:q!</strong> লিখে এন্টার দিন।</li>
+        </ul>
+    </div>
+
+    <!--? Chepter 07 -->
+    <div class="bg">
+        <strong>সারসংক্ষেপ:</strong>
+        <ul>
+            <li>১. git config --global user.name "Name" <span class="com">(নাম সেট)</span></li>
+            <li>২. git config --global user.email "Email" <span class="com">(ইমেইল সেট)</span></li>
+            <li> git config --list <span class="com">(সব চেক করা)</span></li>
+        </ul>
+
+        <p>এভাবে একবার কনফিগার করে নিলে আপনার পিসির সব গিট প্রজেক্টে আপনার নাম ও ইমেইল অটোমেটিক চলে আসবে।</p>
+    </div>
+</div>
+
+
+<!--? Class-05 Variables পেজ এর জন্য -->
+<!--! Class-05 Variables পেজ এর জন্য -->
+<div class="page" id="page-variables">
+            <div class="breadcrumb">
+            <a href="#">Home</a> >
+            <a href="#">Git & Github</a> > Git Get Started
+        </div>
+            <div>Lecture 5</div>
+
+        <h1>Git Getting Started</h1>
+        <p>Git-এ কাজ শুরু করার প্রসেসটি মূলত আপনার সাধারণ একটি ফোল্ডারকে গিটের "মস্তিষ্ক" বা নিয়ন্ত্রণে নিয়ে আসার প্রক্রিয়া।</p>
+        <p>নিচে প্রতিটি অংশ বিস্তারিতভাবে বুঝিয়ে বলা হলো:</p>
+    <!--? Chepter 01 -->
+    <div class="bg">
+        <h2>১. Get Started with Git (শুরু করার প্রস্তুতি)</h2>
+        <p>গিটে কাজ শুরু করার আগে নিশ্চিত করুন আপনার পিসিতে গিট ইন্সটল করা আছে। টার্মিনালে git --version লিখে এটি চেক করে নিন। এরপর প্রথম কাজ হলো গিটকে জানানো যে আপনি কে (Identity):</p>
+
+<pre>
+<span class="com">Bash</span>
+<span class="sel">git config --global user.name</span> <span class="com">"Your Name"</span>
+<span class="sel">git config --global user.email </span><span class="com">"youremail@example.com"</span>
+</pre>
+    </div>
+
+    <!--? Chepter 02 -->
+    <div class="bg">
+        <h2>২. Creating Git Folder (প্রজেক্ট ফোল্ডার তৈরি)</h2>
+        <p>যেকোনো প্রজেক্ট শুরু করার জন্য প্রথমে একটি খালি জায়গা বা ফোল্ডার লাগে।</p>
+        
+        <ul>
+            <li><strong>ম্যানুয়ালি:</strong> উইন্ডোজের সাধারণ ফোল্ডার যেভাবে তৈরি করেন।</li>
+            <li><strong>টার্মিনালে:</strong> <span class="sel">mkdir my-new-project</span> লিখে এন্টার দিন। এরপর <span class="sel">cd my-new-project </span> লিখে ফোল্ডারের ভেতর প্রবেশ করুন।
+</li>
+        </ul>
+    </div>
+
+    <!--? Chepter 03 -->
+    <div class="bg">
+        <h2>৩. Initialize Git (গিট চালু করা)</h2>
+        <p>ফোল্ডার তৈরি করলেই সেটি গিট প্রজেক্ট হয় না। গিটকে ওই ফোল্ডারের দায়িত্ব দেওয়ার জন্য আপনাকে এই ম্যাজিক কমান্ডটি দিতে হয়:</p>
+
+<pre>
+<span class="com">Bash</span>
+<span class="sel">git init</span>
+</pre>
+
+    <p>এই কমান্ডটি দেওয়ার সাথে সাথে আপনার সাধারণ ফোল্ডারটি একটি Git Repository-তে রূপান্তরিত হয়।
+</p>
+    </div>
+
+    <!--? Chepter 04 -->
+    <div class="bg">
+        <h2>৪. আপনার করা প্রশ্নগুলোর উত্তর</h2>
+        <h3>What is a Repository? (রিপোজিটরি কী?)</h3>
+        <p>সহজ কথায়, রিপোজিটরি (বা সংক্ষেপে Repo) হলো আপনার প্রজেক্টের একটি ডিজিটাল স্টোরেজ বা ভান্ডার।</p>
+        <p>এটি সাধারণ ফোল্ডারের চেয়ে আলাদা। একটি সাধারণ ফোল্ডারে শুধু ফাইল থাকে, কিন্তু একটি রিপোজিটরিতে ফাইলের পাশাপাশি শুরু থেকে এ পর্যন্ত আপনি যতবার কোড পরিবর্তন করেছেন বা সেভ করেছেন, সেই সবগুলোর ইতিহাস (History) সংরক্ষিত থাকে।</p>
+
+        <h3>What Happens When You Run git init?</h3>
+        <p>যখন আপনি git init কমান্ডটি রান করেন, তখন পর্দার আড়ালে ৩টি প্রধান ঘটনা ঘটে:</p>
+
+        <ul>
+            <li><strong>.git ফোল্ডার তৈরি:</strong> আপনার প্রজেক্ট ফোল্ডারে একটি অদৃশ্য (hidden) ফোল্ডার তৈরি হয় যার নাম .git। আপনার সব হিস্ট্রি এবং ভার্সন এই ফোল্ডারের ভেতরেই জমা থাকে।</li> <br>
+            <li><strong>Tracking শুরু হওয়া:</strong> গিট ওই ফোল্ডারের সব ফাইলকে পর্যবেক্ষণ করা শুরু করে। আপনি এখন কোনো ফাইল তৈরি করলে গিট সেটি সাথে সাথে চিনতে পারবে।</li> <br>
+            <li><strong>Default Branch তৈরি: </strong> গিট স্বয়ংক্রিয়ভাবে একটি প্রাথমিক শাখা বা Branch তৈরি করে ফেলে (উইন্ডোজে সাধারণত যার নাম master দেখাবে)।
+</li>
+        </ul>
+    </div>
+
+    <!--? Chepter 05 -->
+    <div class="bg">
+        <h2>৫. Key Steps to Get Started (সফলভাবে শুরু করার মূল ধাপসমূহ)</h2>
+        <p>একটি নতুন প্রজেক্ট গিটে শুরু করার সঠিক ক্রম হলো এটি:</p>
+        <ul>
+            <li><strong>git init:</strong> গিট চালু করুন।</li>
+            <li><strong>ফাইল তৈরি:</strong> আপনার কোড বা ফাইল তৈরি করুন (যেমন: index.html)।</li>
+            <li><strong>git add . : </strong>ফাইলগুলোকে স্টেজ বা লাইনে দাঁড় করান।</li>
+            <li><strong>git commit -m "Initial commit" </strong> : ফাইলগুলো স্থায়ীভাবে সেভ করুন।</li>
+        </ul>
+    </div>
+
+    <!--? Chepter 06 -->
+    <div class="bg">
+        <h2>৬. Troubleshooting (সাধারণ সমস্যা ও সমাধান)</h2>
+        <p>আপনি শুরু করার সময় নিচের সমস্যাগুলোতে পড়তে পারেন:</p>
+
+        <span><strong>সমস্যা:</strong> .git ফোল্ডার খুঁজে পাচ্ছি না।</span>
+        <ul><li><strong>সমাধান:</strong> এটি ডিফল্টভাবে 'Hidden' থাকে। উইন্ডোজ ফাইল এক্সপ্লোরার থেকে View > Hidden items চেক করে দিলেই এটি দেখতে পাবেন।</li></ul> <br>
+
+        <span>><strong>সমস্যা:</strong> git init দিয়েছি কিন্তু পরে মনে হলো দরকার নেই।</span>
+        <ul><li><strong>সমাধান:</strong> স্রেফ .git ফোল্ডারটি ডিলিট করে দিন। আপনার সাধারণ ফোল্ডারটি গিটের নিয়ন্ত্রণ থেকে মুক্ত হয়ে যাবে।</li></ul><br>
+
+        <span><strong>সমস্যা:</strong> ভুল ফোল্ডারে git init দিয়ে ফেলেছি।</span>
+        <ul><li><strong>সমাধান:</strong> ভয় নেই! আপনার ডেস্কটপ বা অন্য কোনো ভুল ফোল্ডারে যদি এটি দিয়ে ফেলেন, তবে ওই ফোল্ডারের ভেতর থাকা লুকানো .git ফোল্ডারটি ডিলিট করে দিলেই সব ঠিক হয়ে যাবে।</li></ul><br>
+
+        <span><strong>সমস্যা:</strong> কমান্ড প্রম্পটে (CMD) অদ্ভুত এরর দিচ্ছে।</span>
+        <ul><li> অনেক সময় স্পেস বা টাইপিং মিস্টেক হয়। যেমন: gitinit না লিখে মাঝখানে একটি স্পেস দিয়ে git init লিখতে হবে।</li></ul>
+    </div>
+
+    <!--? Chepter 07 -->
+    <div class="bg">
+        <h2>একটি সহজ টিপ:</h2>
+        <p>আপনি যেহেতু ইতোমধ্যে git reset নিয়ে কাজ করতে গিয়ে More? এররটি পেয়েছিলেন, তাই মনে রাখবেন—উইন্ডোজে গিট ব্যবহারের সময় কোনো স্পেশাল ক্যারেক্টার (যেমন: ^ বা ~) ব্যবহার করলে সেটিকে ডাবল কোটেশনের (" ") মধ্যে রাখা সবথেকে নিরাপদ।</p>
+    </div>
+</div>
+
+
+<!--? Class-06 Types পেজ এর জন্য -->
+<!--! Class-06 Types পেজ এর জন্য -->
+<div class="page" id="page-types">
+           <div class="breadcrumb">
+            <a href="#">Home</a> >
+            <a href="#">Git & Github</a> > Git New Files
+        </div>
+            <div>Lecture 6</div>
+    
+
+    <!--? Chepter 01 -->
+    <h1>Git New Files</h1>
+    <p>Git-এ কাজ করার সময় নতুন ফাইল তৈরি করা এবং সেগুলোকে গিটের নিয়ন্ত্রণে নিয়ে আসা খুবই গুরুত্বপূর্ণ। আপনি যখন একটি প্রজেক্টে নতুন কিছু যোগ করেন, গিট সেটাকে কীভাবে দেখে—সেই পুরো বিষয়টি নিচে বিস্তারিত আলোচনা করা হলো।</p>
+    <div class="bg">
+        <h2>১. New Files সম্পর্কিত প্রশ্নের উত্তর</h2>
+        <h3>What is a New File? (নতুন ফাইল কী?)</h3>
+        <p>একটি প্রজেক্ট ফোল্ডারে আপনি যখনই নতুন কোনো ফাইল তৈরি করেন (যেমন: about.html বা style.css), যা আগে সেখানে ছিল না, সেটিকেই গিট 'New File' হিসেবে গণ্য করে। তবে মনে রাখবেন, ফাইলটি ফোল্ডারে থাকলেই গিট সেটাকে সেভ করে না, আপনাকে গিটকে বলে দিতে হয় যে এটি গুরুত্বপূর্ণ।</p>
+        <h3>Create a New File (নতুন ফাইল তৈরি)</h3>
+        <p>আপনি উইন্ডোজ ফোল্ডারে রাইট ক্লিক করে ফাইল তৈরি করতে পারেন, অথবা সরাসরি টার্মিনাল (CMD/Bash) থেকে কমান্ড দিয়ে তৈরি করতে পারেন:</p>
+
+<pre>
+<span class="com">Bash</span>
+<span class="sel">echo > index.html</span>
+</pre>
+    <p>(এটি index.html নামে একটি খালি ফাইল তৈরি করবে)</p>
+
+    <h3>List Files in the Directory (ফাইল তালিকা দেখা)</h3>
+    <p>আপনার বর্তমান ফোল্ডারে কী কী ফাইল আছে তা টার্মিনালে দেখতে নিচের কমান্ডটি ব্যবহার করুন:</p>
+
+<pre>
+<span class="com">Bash</span>
+<span class="sel">dir</span>
+</pre>
+    <p>(Git Bash ব্যবহার করলে ls লিখতে পারেন)</p>
+
+    <h3>Check File Status with git status</h3>
+    <p>এটি গিটের সবথেকে প্রয়োজনীয় কমান্ড। ফাইলটি কোন অবস্থায় আছে (সেভ হয়েছে কি না, বা গিট চিনতে পারছে কি না) তা দেখার জন্য এটি ব্যবহার করা হয়:</p>
+
+<pre>
+<span class="com">Bash</span>
+<span class="sel">git status</span>
+</pre>
+    </div>
+
+
+    <!--? Chepter 02 -->
+    <div class="bg">
+        <h2>২. Tracked vs Untracked Files (সবথেকে গুরুত্বপূর্ণ অংশ)</h2>
+        <p>গিট মূলত ফাইলগুলোকে দুটি প্রধান ভাগে ভাগ করে দেখে:</p>
+
+        <h3>What is an Untracked File? (আনট্র্যাকড ফাইল কী?)</h3>
+        <p>যখন আপনি একটি নতুন ফাইল তৈরি করেন, গিট সেটি দেখতে পায় কিন্তু সেটির দায়িত্ব নেয় না। গিট মনে করে এটি আপনার ব্যক্তিগত ফাইল হতে পারে যা প্রজেক্টের অংশ নাও হতে পারে।</p>
+
+        <ul>
+            <li><span class="sel">git status</span> দিলে এই ফাইলগুলো লাল রঙে দেখাবে।</li>
+            <li>গিট এই ফাইলের কোনো ব্যাকআপ বা হিস্ট্রি রাখে না যতক্ষণ না আপনি একে <span class="sel">git add</span> করছেন।</li>
+        </ul>
+
+        <h3>What is a Tracked File? (ট্র্যাকড ফাইল কী?)</h3>
+        <p>যেসব ফাইল সম্পর্কে গিট আগে থেকেই জানে এবং যেগুলোর হিস্ট্রি সে রাখছে, সেগুলোই Tracked File।</p>
+
+        <ul>
+            <li>আপনি যখন <span class="sel">git add filename</span>  কমান্ডটি দেন, তখন একটি 'Untracked' ফাইল 'Tracked' ফাইলে পরিণত হয়।</li>
+            <li>এগুলো সাধারণত <span class="sel">git status</span> -এ সবুজ রঙে (Staged) দেখায়।</li>
+        </ul>
+    </div>
+
+    <!--? Chepter 03 -->
+    <div class="bg">
+        <h2>৩. কাজের ধাপ (Workflow)</h2>
+        <p>নতুন ফাইল নিয়ে কাজ করার সময় আপনাকে এই চক্রটি অনুসরণ করতে হবে:</p>
+        <ul>
+            <li><strong>ফাইল তৈরি করুন: </strong>( ফাইলটি এখন Untracked )।</li>
+            <li><span class="sel">git status</span> <strong>দিন:</strong> গিট আপনাকে লাল রঙে ফাইলটি দেখাবে।</li>
+            <li><span class="sel">git add .</span> <strong>দিন:</strong> এটি ফাইলটিকে Tracked করবে এবং Staging Area-তে নিয়ে যাবে।</li>
+            <li><span class="sel">git status</span> <strong>দিন:</strong> এখন ফাইলটি সবুজ দেখাবে।</li>
+            <li><span class="sel">git commit -m "মেসেজ":</span> এখন ফাইলটি স্থায়ীভাবে গিটের ইতিহাসে জমা হলো।</li>
+        </ul>
+    </div>
+
+    <!--? Chepter 03 -->
+    <div class="bg">
+        <h2>৪. Troubleshooting (সাধারণ সমস্যা ও সমাধান)</h2>
+        <p>আপনি যখন নতুন ফাইল নিয়ে কাজ করবেন, কিছু সমস্যায় পড়তে পারেন:</p>
+        <strong>সমস্যা: ফাইল তৈরি করেছি কিন্তু <span class="sel">git status</span> -এ আসছে না।</strong>
+        <ul>
+            <li><strong>সমাধান:</strong> নিশ্চিত হয়ে নিন আপনি সঠিক ফোল্ডারে আছেন এবং ওই ফোল্ডারে <span class="sel">git init</span>  করা আছে কি না।</li>
+        </ul><br>
+        <strong>সমস্যা: ফাইল ভুল করে <span class="sel">add</span>  করে ফেলেছি, এখন আনট্র্যাকড করতে চাই।</strong>
+        <ul>
+            <li><strong>সমাধান:</strong> লিখুন <span class="sel">git rm --cached filename</span>  এতে ফাইলটি কম্পিউটার থেকে মুছবে না, শুধু গিটের লিস্ট থেকে বাদ যাবে।</li>
+        </ul><br>
+        <strong>সমস্যা: নতুন ফাইল তৈরি করার পর <span class="sel">git commit -a</span> দিয়েও কাজ হচ্ছে না।</strong>
+        <ul>
+            <li><strong>সমাধান:</strong> মনে রাখবেন, নতুন বা Untracked ফাইলের ক্ষেত্রে <span class="sel">-a</span>  কাজ করে না। আপনাকে অবশ্যই প্রথমবার <span class="sel">git add</span> হাতে করতে হবে।</li>
+        </ul>
+    </div>
+
+    <!--? Chepter 03 -->
+    <div class="bg">
+        <p><strong>সহজ কথা:</strong> নতুন ফাইল মানেই সেটি গিটের কাছে অপরিচিত (Untracked)। তাকে পরিচিত করতে <span class="sel">git add</span>  করতে হয়, আর সেভ করতে <span class="sel">git commit</span> করতে হয়।</p>
+    </div>
+</div>
+
+
+<!--? Class-07 Operators পেজ এর জন্য -->
+<!--! Class-07 Operators পেজ এর জন্য -->
+<div class="page" id="page-operators">
+                <div class="breadcrumb">
+        <a href="#">Home</a> >
+        <a href="#">Git & Github</a> > Git Staging
+    </div>
+        <div>Lecture 7</div>
+
+    <h1>Git Staging Environment</h1>
+    <p>Git-এ কাজ করার সময় Staging Environment বা Staging Area-কে বলা হয় "কমিট করার আগের শেষ প্রস্তুতি"। আপনি যেহেতু উইন্ডোজ টার্মিনালে কাজ করছেন, তাই এই ধাপটি বোঝা আপনার জন্য খুবই জরুরি, কারণ এটি ছাড়া আপনি কোড সেভ বা কমিট করতে পারবেন না।</p>
+    <p>নিচে আপনার প্রশ্নগুলোর বিস্তারিত উত্তর দেওয়া হলো:</p>
+    <!--? Chepter 01 -->    
+
+    <div class="bg">
+        <h2>Here are some key commands for staging:</h2>
+        <ul>
+            <li><span class="sel">git add [file]</span> - Stage a file</li>
+            <li><span class="sel">git add --all</span> or <span class="sel">git add -A</span> - Stage all changes</li>
+            <li><span class="sel">git status</span> - See what is staged</li>
+            <li><span class="sel">git restore --staged [file]</span> - Unstage a file</li>
+        </ul>
+    </div>
+
+    <div class="bg">
+        <h2>১. Git Staging Environment কী?</h2>
+        <p>সহজ কথায়, Staging Environment হলো একটি মাঝখানের জায়গা (Waiting Room)। আপনি আপনার ফাইলে অনেক কাজ করতে পারেন, কিন্তু তার সবটুকু হয়তো আপনি এখনই সেভ করতে চান না।</p>
+        <p>গিট আপনাকে সুযোগ দেয়—আপনার করা শত শত পরিবর্তনের মধ্য থেকে বেছে বেছে কিছু অংশ আলাদা করে রাখতে, যা আপনি পরের কমিটে যোগ করবেন। এই "বেছে রাখার জায়গাটিই" হলো স্টেজ।</p>
+    </div>
+
+    <!--? Chepter 02 -->    
+    <div class="bg">
+        <h2>২. ফাইল স্টেজ করা <span class="sel">(git add)</span></h2>
+        <p>আপনি যখন কোনো ফাইল তৈরি বা এডিট করেন, সেটি সরাসরি গিটের মেমোরিতে যায় না। তাকে স্টেজে পাঠানোর জন্য নিচের কমান্ডটি ব্যবহার করতে হয়:</p>
+
+<pre>
+<span class="com">Bash</span>
+<span class="sel">git add filename.html</span>
+</pre>
+    <p>এটি দিলে নির্দিষ্ট ওই ফাইলটি স্টেজড (Staged) হয়ে যায়।</p>
+    </div>
+
+    <!--? Chepter 03 -->    
+    <div class="bg">
+        <h2>৩. একসাথে অনেক ফাইল স্টেজ করা</h2>
+        <p>যদি আপনার প্রজেক্টে অনেকগুলো ফাইল থাকে এবং আপনি সবগুলোকে একসাথে স্টেজে পাঠাতে চান, তবে নিচের কমান্ডগুলো ব্যবহার করা হয়:</p>
+
+    <ul>
+        <li><span class="sel">git add --all</span> অথবা <span class="sel"> git add -A</span> : এটি আপনার প্রজেক্টের সব নতুন ফাইল, এডিট করা ফাইল এবং ডিলিট করা ফাইল—সবকিছুকে একসাথে স্টেজ করে ফেলে।</li>
+        <li><span>git add .</span>এটিও বর্তমান ফোল্ডারের সব ফাইল স্টেজ করে। এটিই সবথেকে বেশি ব্যবহৃত হয়।</li>
+    </ul>
+    </div>
+
+    
+    <!--? Chepter 04 -->    
+    <div class="bg">
+        <h2>৪. স্টেজড ফাইল চেক করা <span class="sel">(git status)</span></h2>
+        <p>আপনার ফাইলগুলো সফলভাবে স্টেজে গেছে কি না, তা চেক করার জন্য <span class="sel"> git status</span> দিতে হয়।</p>
+    <ul>
+        <li><strong>ফাইলটি যদি লাল (Red) রঙে থাকে:</strong> এর মানে ফাইলটি এখনো Unstaged (স্টেজে যায়নি)।</li>
+        <li><strong>ফাইলটি যদি সবুজ (Green) রঙে থাকে:</strong> এর মানে ফাইলটি Staged হয়ে গেছে এবং কমিট করার জন্য প্রস্তুত।
+</li>
+    </ul>
+    </div>
+
+    
+    <!--? Chepter 05 -->    
+    <div class="bg">
+        <h2>৫. ফাইল আনস্টেজ (Unstage) করা</h2>
+        <p>কখনো কখনো ভুল করে কোনো ফাইল আপনি git add করে ফেলতে পারেন যা আপনি এই মুহূর্তে কমিট করতে চান না। ফাইলটি কম্পিউটার থেকে মুছবে না, শুধু স্টেজ থেকে সরিয়ে আগের অবস্থায় নিতে নিচের কমান্ডটি দিন:</p>
+
+<pre>
+<span class="com">Bash</span>
+<span class="sel">git reset HEAD filename.html</span>
+</pre>
+
+    <p>( অথবা আধুনিক গিটে ব্যবহার করতে পারেন: <span class="sel">git restore --staged filename.html</span>  )</p>
+    </div>
+
+    <!--? Chepter 06 -->    
+    <div class="bg">
+        <h2>৬. Troubleshooting (সাধারণ সমস্যা ও সমাধান)</h2>
+        <p>আপনি স্টেজ করার সময় কিছু সমস্যায় পড়তে পারেন:</p>
+
+    <strong>সমস্যা: git add . দিয়েছি কিন্তু কাজ হচ্ছে না।</strong>
+    <ul>
+        <li>সমাধান: নিশ্চিত হয়ে নিন আপনি সঠিক ফোল্ডারে আছেন এবং git init করা আছে।</li>
+    </ul>
+    <strong>সমস্যা: ফাইল এডিট করার পর আবার git status-এ লাল দেখাচ্ছে কেন?</strong>
+    <ul>
+        <li>সমাধান: আপনি একবার add করার পর যদি ফাইলে আবার নতুন কোনো কোড লিখেন, তবে গিট সেটি আবার লাল দেখাবে। আপনাকে আবারও git add করতে হবে নতুন পরিবর্তনটুকু যোগ করার জন্য।</li>
+    </ul>
+    <strong>সমস্যা: .gitignore ফাইল কাজ করছে না।</strong>
+    <ul>
+        <li>সমাধান: কোনো ফাইল যদি আগে থেকেই স্টেজড বা কমিটেড থাকে, তবে সেটি ইগনোর লিস্টে দিলেও লাভ হয় না। আগে তাকে git rm --cached দিয়ে স্টেজ থেকে সরাতে হয়।</li>
+    </ul>
+    </div>
+
+    
+    <!--? Chepter 07 -->    
+    <div class="bg">
+        <h2>একটি সহজ উদাহরণ দিয়ে পুরো বিষয়টি বুঝুন:</h2>
+        <p>মনে করুন, আপনি অনেকগুলো ছবি তুলেছেন। সব ছবি ভালো হয়নি।</p>
+    <ul>
+        <li><strong>১. ফোল্ডার: </strong>যেখানে সব ছবি আছে।</li>
+        <li><strong>২. Staging Area: </strong> আপনি বেছে বেছে সেরা ৫টি ছবি একটি আলাদা অ্যালবামে রাখার জন্য টেবিলে সাজালেন।</li>
+        <li><strong>৩. Commit: </strong> এবার আপনি নিশ্চিত হলেন এবং ছবিগুলো অ্যালবামে আঠা দিয়ে লাগিয়ে দিলেন।</li>
+        <li><strong>মনে রাখবেন:</strong> কমিট করার আগে সব সময় git status দিয়ে দেখে নেবেন আপনার দরকারি সব ফাইল সবুজ রঙে (Staged) আছে কি না।</li>
+    </ul>
+    </div>
+
+</div>
+
+
+<!--? Class-08 Arithmetic পেজ এর জন্য -->
+<!--! Class-08 Arithmetic পেজ এর জন্য -->
+<div class="page" id="page-arithmetic">
+                <div class="breadcrumb">
+        <a href="#">Home</a> >
+        <a href="#">Git & Github</a> > Git Commit
+    </div>
+        <div>Lecture 8</div>
+
+
+        <h1>Git Commit</h1>
+        <p>গিট-এর হৃদপিণ্ড হলো এই Commit। আপনি যখন কোড লেখেন, তখন এক একটি নির্দিষ্ট কাজ শেষ করার পর সেটিকে স্থায়ীভাবে সেভ করে রাখাই হলো কমিট।</p>
+    <div class="bg">
+        <h2>Here are some key commands for commits</h2>
+        <ul>
+            <li><span class="sel">git commit -m "message"</span> - Commit staged changes with a message</li>
+            <li><span class="sel">git commit -a -m "message"</span> - Commit all tracked changes (skip staging)</li>
+            <li><span class="sel">git log</span> - See commit history</li>
+        </ul>
+    </div>
+
+    <!--? Chepter 01 -->
+    <div class="bg">
+    <h2>১. What is a Commit? (কমিট কী?)</h2>
+    <p>সহজ কথায়, কমিট হলো আপনার প্রজেক্টের একটি স্ন্যাপশট (Snapshot) বা সেভ পয়েন্ট।</p>
+
+    <ul>
+        <li>এটি আপনার ফাইলের বর্তমান অবস্থা গিটের ডাটাবেসে স্থায়ীভাবে জমা রাখে।</li>
+        <li>প্রতিটি কমিটের একটি ইউনিক আইডি (যেমন: e9997b2) থাকে, যা দিয়ে আপনি ভবিষ্যতে ওই অবস্থায় ফিরে যেতে পারেন।</li>
+    </ul>
+    </div>
+
+    <!--? Chepter 02 -->
+    <div class="bg">
+    <h2>২. How to Commit with a Message (-m)</h2>
+    <p>সবথেকে বেশি ব্যবহৃত কমান্ড এটি। আপনি যখন কোনো ফাইল git add করে স্টেজিং এরিয়াতে আনেন, তখন সেটি সেভ করার জন্য মেসেজসহ কমান্ড দিতে হয়:</p>
+
+<pre>
+<span class="com">Bash</span>
+<span class="sel">git commit -m </span> <span class="com">"Add login functionality"</span> 
+</pre>
+
+    <ul>
+        <li><strong>কেন মেসেজ দরকার?</strong> মেসেজ দেখে আপনি বা অন্য ডেভেলপাররা বুঝতে পারেন ওই সময়ে কী পরিবর্তন করা হয়েছিল।</li>
+    </ul>
+    </div>
+
+    <!--? Chepter 03 -->
+    <div class="bg">
+    <h2>৩. Commit All Changes Without Staging (-a)</h2>
+    <p>আপনি যদি ফাইলগুলো বারবার git add করতে না চান, তবে সরাসরি এই কমান্ডটি দিতে পারেন:</p>
+
+<pre>
+<span class="com">Bash</span>
+<span class="sel">git commit -a -m </span> <span class="com">"Update all tracked files"</span> 
+</pre>
+
+    <ul>
+        <li><span class="sel">-a</span> দিয়ে বোঝায় এটি একটি Annotated ট্যাগ।</li>
+        <li><span class="sel">-m</span> দিয়ে সেই ভার্সন সম্পর্কে একটি ছোট মেসেজ যুক্ত করা হয়।</li>
+    </ul>
+        <p><strong>কাজ:</strong> এটি আপনার প্রজেক্টের যতগুলো ফাইল গিট আগে থেকেই চেনে (Tracked Files), সেগুলোর সব পরিবর্তন একসাথে স্টেজ করবে এবং কমিট করে দেবে।</p>
+    </div>
+
+    <!--? Chepter 04 -->
+    <div class="bg">
+    <h2>৪. What happens if you try to commit a new file with -a?</h2>
+    <p>এটি একটি কমন ভুল। আপনি যদি একদম নতুন একটি ফাইল তৈরি করেন (যা গিট এখনো চেনে না বা Untracked), তবে git commit -a কমান্ডটি কাজ করবে না।</p>
+
+    <ul>
+        <li><strong>কেন?</strong> গিট -a ফ্ল্যাগ ব্যবহার করলে শুধুমাত্র সেই ফাইলগুলোকেই দেখে যেগুলোকে সে আগে থেকেই ট্র্যাক করছে। নতুন ফাইলের ক্ষেত্রে আপনাকে প্রথমবার অবশ্যই git add ব্যবহার করতে হবে।</li>
+    </ul>
+    </div>
+
+    <!--? Chepter 05 -->
+    <div class="bg">
+        <h2>৫. Write Multi-line Commit Messages</h2>
+        <p>কখনো কখনো আপনার কাজের বর্ণনা অনেক বড় হতে পারে। তখন শুধু একটি লাইনে মেসেজ না লিখে বিস্তারিত লিখতে পারেন:</p>
+    <ul>
+        <li>টার্মিনালে শুধু git commit লিখে এন্টার দিন।</li>
+        <li>এটি আপনার পিসির ডিফল্ট এডিটর (যেমন: Notepad বা Vim) ওপেন করবে।</li>
+        <li>সেখানে প্রথম লাইনে হেডার লিখুন, এক লাইন গ্যাপ দিয়ে নিচে বিস্তারিত লিখে ফাইলটি সেভ করে ক্লোজ করে দিন।</li>
+    </ul>
+    </div>
+
+    <!--? Chepter 06 -->
+    <div class="bg">
+        <h2>৬. Commit Message Best Practices (সঠিক নিয়ম)</h2>
+        <p>একটি প্রফেশনাল কমিট মেসেজ লেখার কিছু নিয়ম আছে:</p>
+    <ul>
+        <li><strong>সংক্ষিপ্ত রাখা:</strong> প্রথম লাইনটি ৫০ অক্ষরের মধ্যে রাখুন।</li> 
+        <li><strong>Present Tense ব্যবহার করা: </strong> "Fixed bug" না লিখে "Fix bug" লিখুন।</li>
+        <li><strong>পরিষ্কার তথ্য:</strong> "Update" না লিখে "Change background color to blue" লিখুন।</li>
+    </ul>
+    </div>
+
+    <!--? Chepter 07 -->
+    <div class="bg">
+        <h2>৭. Other Useful Commit Options</h2>
+        <p><span class="sel">--amend:</span> সবশেষ কমিটটি সংশোধন করতে। (মেসেজ ভুল হলে বা কোনো ফাইল যোগ করতে ভুলে গেলে)।</p>
+
+<pre>
+<span class="com">Bash</span>
+<span class="sel">git commit --amend -m</span> <span class="com"> "Corrected message"</span>
+</pre>
+    <p><span class="sel">--allow-empty:</span> কোনো ফাইল পরিবর্তন না করেই একটি কমিট করতে (টেস্টিং এর জন্য)।</p>
+    </div>
+
+    <!--? Chepter 08 -->
+    <div class="bg">
+        <h2>৮. Troubleshooting Common Commit Mistakes</h2>
+    <ul>
+        <li><strong>ভুল ফাইল কমিট করা:</strong> যদি ভুল ফাইল সেভ করে ফেলেন, তবে git reset --soft "HEAD^" দিয়ে কমিটটি মুছে ফাইলগুলো ফিরিয়ে আনতে পারেন।</li>
+        <li><strong>কমিট করতে ভুলে যাওয়া:</strong> অনেক কাজ একসাথে না জমিয়ে ছোট ছোট অংশে কমিট করার অভ্যাস করুন।</li>
+        <li><strong>এডিটর থেকে বের হতে না পারা:</strong> যদি ভুলে শুধু git commit দিয়ে ভিম (Vim) এডিটরে ঢুকে যান, তবে কিবোর্ড থেকে :q! লিখে এন্টার দিয়ে বের হয়ে আসতে পারেন।</li>
+    </ul>
+    </div>
+
+    <!--? Chepter 09 -->
+    <div class="bg">
+        <h2>৯. View Commit History (git log)</h2>
+        <p>আপনার করা সব কমিটের তালিকা দেখতে এটি ব্যবহার করা হয়:</p>
+    <ul>
+        <li><strong>বিস্তারিত দেখতে:</strong><span class="sel"> git log</span></li>
+        <li><strong>সংক্ষেপে এক লাইনে দেখতে:</strong> <span class="sel">git log --oneline</span></li>
+        <li><strong>কতগুলো ফাইল পরিবর্তন হয়েছে তা দেখতে:</strong> <span class="sel">git log --stat</span></li>
+    </ul>
+    </div>
+</div>
+
+
+<!--? Class-09 Assignment পেজ এর জন্য -->
+<!--! Class-09 Assignment পেজ এর জন্য -->
+<div class="page" id="page-assignment">
+            <div class="breadcrumb">
+            <a href="#">Home</a> >
+            <a href="#">Git & Github</a> > Git Tagging
+        </div>
+            <div>Lecture 9</div>
+   
+
+  <h1>Git Tagging</h1>
+    <!--? Chepter 01 -->
+    <div class="bg">
+        <h2>Key Commands for Tagging</h2>
+        <ul>
+            <li><span class="sel">git tag [tagname]</span> - Create a lightweight tag</li>
+            <li><span class="sel">git tag -a [tagname]  -m "message"</span>  - Create an annotated tag</li>
+            <li><span class="sel">git tag [tagname] [commit-hash]</span> - Tag a specific commit</li>
+            <li><span class="sel">git tag</span> - List tags</li>
+            <li><span class="sel">git show [tagname]</span> - Show tag details</li>
+        </ul>
+    
+    </div>
+
+    <!--? Chepter 00 -->
+    <div class="bg">
+        <p>গিট-এ কাজ করতে করতে যখন আপনার প্রজেক্ট একটি বিশেষ মাইলফলক বা গুরুত্বপূর্ণ পর্যায়ে পৌঁছায় (যেমন একটি নতুন ভার্সন রিলিজ), তখন সেই নির্দিষ্ট সময়টিকে একটি নাম দিয়ে চিহ্নিত করে রাখাই হলো Tagging। এটি অনেকটা বইয়ের পাতায় বুকমার্ক করে রাখার মতো।</p>
+        <p>নিচে প্রতিটি অংশ বিস্তারিতভাবে বুঝিয়ে দেওয়া হলো:</p>
+    </div>
+
+    <!--? Chepter 01 -->
+    <div class="bg">
+        <h2>১. What is a Tag? (ট্যাগ কী?)</h2>
+        <p>ট্যাগ হলো গিটের ইতিহাসের একটি নির্দিষ্ট পয়েন্টের জন্য একটি স্থায়ী লেবেল বা চিহ্ন। সাধারণত কোনো সফটওয়্যারের ভার্সন (যেমন: v1.0, v2.1) চিহ্নিত করতে এটি ব্যবহার করা হয়। এটি ব্রাঞ্চের (Branch) মতো পরিবর্তনশীল নয়; একবার ট্যাগ দিলে সেটি ওই নির্দিষ্ট কমিটেই (Commit) স্থির থাকে।</p>
+
+        <h3>Some common tag types include:</h3>
+        <ul>
+            <li><strong>Release Tags:</strong> সফটওয়্যারের ভার্সন (v1.0, v2.0) বোঝাতে।</li>
+            <li><strong>Milestone Tags:</strong> প্রজেক্টের বড় কোনো ধাপ শেষ হলে।</li>
+            <li><strong>Milestone Tags:</strong> কোডটি ব্যবহারের জন্য কতটা তৈরি তা বোঝাতে।</li>
+        </ul>
+    </div>
+
+    <!--? Chepter 02 -->
+    <div class="bg">
+        <h2>২. Annotated vs Lightweight Tags</h2>
+        <p>গিট মূলত দুই ধরণের ট্যাগ ব্যবহার করে:</p>
+        <ul>
+            <li><strong>Lightweight Tag:</strong> এটি খুব সাধারণ। শুধুমাত্র একটি নির্দিষ্ট কমিটের নাম বা পয়েন্টার। এতে বাড়তি কোনো তথ্য (কে করেছে, কবে করেছে) থাকে না।</li> <br>
+            <li><strong>Annotated Tag:</strong> এটি গিটের ডাটাবেসে একটি পূর্ণাঙ্গ অবজেক্ট হিসেবে সেভ হয়। এতে ট্যাগের নাম ছাড়াও—কে ট্যাগ করেছে, কবে করেছে এবং একটি বর্ণনা (Message) থাকে। প্রফেশনাল কাজের জন্য এটিই সেরা।</li>
+        </ul>
+    </div>
+
+    <!--? Chepter 03 -->
+    <div class="bg">
+        <h2>৩. Key Commands for Tagging</h2>
+        <h3>ক. Create a Lightweight Tag</h3>
+        <p>সহজ একটি ট্যাগ তৈরি করতে শুধু ট্যাগের নাম লিখুন:</p>
+<pre>
+<span class="com">Bash</span>
+<span class="sel">git tag v1.0.0-lw</span>
+</pre> <br>
+
+    <h3>খ. Create an Annotated Tag (-a -m)</h3>
+    <p>বিস্তারিত তথ্যসহ ট্যাগ তৈরি করতে এই কমান্ডটি ব্যবহার করুন:</p>
+<pre>
+<span class="com">Bash</span>
+<span class="sel">git tag -a v1.0.0 -m "প্রথম অফিসিয়াল রিলিজ"</span>
+</pre>
+
+<ul>
+    <li><span class="sel">-a</span> মানে Annotated এবং</li>
+    <li><span class="sel">-m</span> দিয়ে মেসেজ যুক্ত করা হয়।</li>
+</ul>   <br>
+
+    <h3>গ. Tag a Specific Commit</h3>
+    <p>আপনি যদি আগে কোনো কমিট করে থাকেন যা তখন ট্যাগ করতে ভুলে গেছেন, তবে সেই কমিট আইডির (Checksum) মাধ্যমে ট্যাগ বসাতে পারেন:</p>
+<pre>
+<span class="com">Bash</span>
+<span class="sel">git tag -a v1.2 9fceb02 -m "পুরনো কমিটের জন্য ট্যাগ"</span>
+</pre>  <br>
+
+    <h3>ঘ. List Tags (ট্যাগের তালিকা দেখা)</h3>
+    <p>আপনার প্রজেক্টে এ পর্যন্ত কতগুলো ট্যাগ আছে তা দেখতে:</p>
+<pre>
+<span class="com">Bash</span>
+<span class="sel">git tag</span>
+</pre>  <br>
+
+
+    <h3>ঙ. Show Tag Details (git show)</h3>
+    <p>একটি নির্দিষ্ট ট্যাগের বিস্তারিত তথ্য (কে করেছে, কী মেসেজ) দেখতে:</p>
+<pre>
+<span class="com">Bash</span>
+<span class="sel">git show v1.0.0</span>
+</pre>
+
+    </div>
+
+    <!--? Chepter 04 -->
+    <div class="bg">
+        <h2>৪. Remote Operations (অনলাইনে ট্যাগ পাঠানো ও ডিলিট করা)</h2>
+        <strong>Push Tags to Remote</strong>
+        <p>সাধারণ <span class="sel">git push</span> দিলে ট্যাগগুলো অনলাইনে (GitHub) যায় না। ট্যাগ পাঠাতে আলাদাভাবে কমান্ড দিতে হয়:</p>
+    <ul>
+        <li>একটি নির্দিষ্ট ট্যাগ পাঠাতে: <span class="sel">git push origin v1.0.0</span></li>
+        <li>সব ট্যাগ একসাথে পাঠাতে: <span class="sel">git push origin --tags</span></li>
+    </ul>   <br>
+
+    <h3>Delete Tags</h3>
+    <ul>
+        <li><strong>Local ডিলিট:</strong> <span class="sel">git tag -d v1.0.0</span></li>
+        <li><strong>Remote (GitHub) থেকে ডিলিট:</strong> <span class="sel">git push origin --delete v1.0.0</span></li>
+    </ul><br>
+
+    <h3>Update or Replace a Tag (Force Push)</h3>
+    <p>যদি ভুল কমিটে ট্যাগ দিয়ে ফেলেন এবং সেটি পরিবর্তন করতে চান, তবে আগের ট্যাগটি রিপ্লেস করতে হয়:</p>
+<pre>
+<span class="com">Bash</span>
+<span class="sel">git tag -f v1.0.0 [new-commit-id]</span>
+<span class="sel">git push origin --force --tags</span>
+</pre>
+    </div>
+
+    <!--? Chepter 05 -->
+    <div class="bg">
+        <h2>৫. Tagging Best Practices</h2>
+        <ul>
+            <li>সব সময় Annotated Tag ব্যবহার করার চেষ্টা করুন কারণ এতে বিস্তারিত তথ্য থাকে।</li>
+            <li>ভার্সন কন্ট্রোলের জন্য Semantic Versioning (যেমন: v1.0.1) ফরম্যাট অনুসরণ করুন।</li>
+            <li>প্রতিটি বড় রিলিজের সময় একটি করে ট্যাগ দিয়ে রাখা ভালো।</li>
+        </ul>
+    </div>
+
+    <!--? Chepter 06 -->
+    <div class="bg">
+        <h2>৬. Troubleshooting (সাধারণ সমস্যা ও সমাধান)</h2>
+        <span><strong>সমস্যা:</strong> <span class="sel">git tag</span> দিচ্ছি কিন্তু কিছু দেখাচ্ছে না।</span>
+        <ul>
+            <li><strong>সমাধান:</strong> আপনার প্রজেক্টে এখনো কোনো ট্যাগ তৈরি করা হয়নি অথবা আপনি ভুল ফোল্ডারে আছেন।</li>
+        </ul><br>
+        <span><strong>সমস্যা:</strong> উইন্ডোজ সিএমডিতে <span class="sel">More?</span> বা এরর দিচ্ছে।</span>
+        <ul>
+            <li><strong>সমাধান:</strong> মেসেজ দেওয়ার সময় সব সময় ডাবল কোটেশন (<span class="sel">" "</span>) ব্যবহার করুন। যেমন:<span class="sel">-m "My Message"</span> ।</li>
+        </ul><br>
+        <span><strong>সমস্যা:</strong> গিটহাবে ট্যাগ দেখা যাচ্ছে না।</span>
+        <ul>
+            <li><strong>সমাধান:</strong> আপনি শুধু <span class="sel">git push</span> দিয়েছেন,<span class="sel"> git push origin --tags</span> দেননি।</li>
+        </ul>
+    </div>
+
+    <!--? Chepter 03 -->
+    <div class="bg">
+        <p><strong>সহজ সারসংক্ষেপ:</strong> ট্যাগ হলো আপনার প্রজেক্টের ইতিহাসের একটি 'মাইলস্টোন'। কাজ শেষে ভার্সন দেওয়ার জন্য এটি সবথেকে কার্যকর টুল।</p>
+    </div>
+
+</div>
+
+
+<!--? Class-10 Compasirons পেজ এর জন্য -->
+<!--! Class-10 Compasirons পেজ এর জন্য -->
+<div class="page" id="page-compasirons">
+    <h1>JS Compasirons</h1>
+    <p>Compasirons সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-11 Conditional পেজ এর জন্য -->
+<!--! Class-11 Conditional পেজ এর জন্য -->
+<div class="page" id="page-conditional">
+    <h1>JS Conditional</h1>
+    <p>Conditional সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-12 If পেজ এর জন্য -->
+<!--! Class-12 If পেজ এর জন্য -->
+  <div class="page" id="page-if">
+    <div class="breadcrumb">
+      <a href="#">Home</a> >
+      <a href="#">JavaScript</a> > JS If Conditional
+    </div>
+
+    <div>Lecture 12</div>
+    <!-- End On Page: CSS পরিচিতি -->
+
+    <!--? Start On CSS Background Class -->
+    <h1>Conditional / Condition কী?</h1>
+    <h2>Definition</h2>
+    <p>Condition মানে হলো শর্ত</p>
+    <p class="p_bd">JavaScript-এ condition ব্যবহার করে সিদ্ধান্ত নেওয়া হয়</p>
+
+    <strong>📌 বাস্তব উদাহরণ:</strong>
+    <ul>
+      <li>যদি বৃষ্টি হয় → ছাতা নিব</li>
+      <li>না হলে → ছাতা নিব না</li>
+    </ul>
+
+    <p>এই “যদি–নাহলে” লজিকটাই Conditional</p>
+
+
+    <!--! Cepter_01 -->
+    <!-- Cepter_01 Start -->
+    <div class="bg">
+      <h3>01-Comparison Operators (Condition বানাতে লাগে)</h3>
+
+          <pre>
+  <strong>Operators</strong>          <strong>Meaning</strong>
+      <span>&gt;</span>  --------  <span>Greater then</span>
+      <span>&lt;</span>  --------  <span>Less then</span>
+      <span>&lt;=</span>  --------  <span>Greater than or equal to</span>
+      <span>=&lt;</span>  --------  <span>Less than  or equal to</span>
+      <span>==</span>  --------  <span>Equal to</span>
+      <span>===</span>  -------- <span>Equal value and equal type</span>
+      <span>!=</span>  --------  <span>Not equal</span>
+      <span>!==</span>  -------- <span>Not equal Value or not equal type</span>
+</pre>
+
+          <strong>Example:</strong><br>
+          <span>10 == "10"</span> <span class="com">//true</span><br>
+          <span>10 === "10"</span> <span class="com">//false</span>
+
+          <p>⚠️ <strong>মনে রাখো:</strong> সব সময় Equal value and equal type === ব্যবহার করো, Equal to == নয়।</p>
+        </div>
+        <!-- Cepter_01 Complite -->
+
+
+        <!--! Cepter_02 -->
+        <!-- Cepter_01 Start -->
+        <div class="bg">
+          <h3>2. JS if Statement - যদি</h3>
+          <p>If statement দিয়ে condition check করে code execute করা হয়।</p>
+
+          <ul>
+            <li>Condition Check</li>
+            <li>True হলে Execute</li>
+            <li>False হলে Skip</li>
+          </ul>
+
+          <pre>
+<span class="com">Syntax</span>
+<span class="sel">if</span> (<span class="com">condition</span>) {
+  <span class="com">//true হলে</span>
+   }
+</pre>
+
+<pre>
+<span class="com">If-statements.js</span>
+<span class="sel">let</span> <span class="prop">age</span> = <span class="val">20</span>;     <span class="com">// যদি বয়স 18 বা বেশি হয়</span>
+<span class="sel">if</span> (<span class="prop">age</span> &gt;= <span class="val">18</span>) {
+  <span class="num">console.log</span> (<span class="prop">"তুমি ভোট দিতে পারবে"</span>);
+  }
+</pre>
+
+          <pre>
+<span class="com">একাধিক Conditions</span>
+<span class="sel">let</span> <span class="prop">marks</span> = <span class="val">85</span>;
+<span class="sel">if</span> (<span class="prop">marks</span> &gt;= <span class="val">80</span>) {
+  <span class="num">console.log</span> (<span class="prop">"A+ গ্রেড পেয়েছ!"</span>);
+  <span class="num">console.log</span> (<span class="prop">"অভিনন্দন!"</span>);
+  }
+</pre>
+
+</div>
+<!-- Cepter_02 JS IF Complite -->
+  </div>
+
+
+<!--? Class-13 If-else পেজ এর জন্য -->
+<!--! Class-13 If-else পেজ এর জন্য -->
+<div class="page" id="page-if-else">
+  <div class="bg">
+    <h3>03-JS if else - যদি - না হলে</h3>
+
+<pre>
+<span class="com">Syntax</span>
+<span class="sel">if</span> (<span class="prop">condition</span>) {
+      <span class="com">// true হলে</span>
+  } <span class="sel">else </span>{
+      <span class="com">// false হলে</span>
+  }
+</pre>
+
+    <p>Condition true না হলে else block execute হয়।</p>
+
+<pre>
+<span class="com">If-else.js</span>
+<span class="sel">let</span> <span class="prop">temperature</span> = <span class="val">35</span>;
+<span class="sel">let</span> (<span class="prop">temperature</span> > <span class="val">30</span>) {
+     <span class="num">console.log</span> (<span class="prop">"গরম পড়েছে! ☀️"</span>);
+} <span class="sel">else</span> {
+      <span class="num">console.log</span> (<span class="prop">"আবহাওয়া ভালো আছে 🌤️"</span>)
+}
+</pre>
+
+    <p>একটা ব্লক চলবে, দুটো ব্লক একসাথে কখনই চলবে না।</p>
+  </div>
+<!-- Cepter_03 Complite -->
+
+
+<!--! Cepter_02- JS If Else -->
+<!-- Cepter_04 Start -->
+  <div class="bg">
+    <h3>02-Else-If - একাধিক শর্ত</h3>
+    <p>একাধিক conditions check করার জন্য else-if ব্যবহার হয়।</p>
+
+<pre>
+<div class="com">syntax</div>
+<span class="sel">if</span> (<span class="com">condition1</span>){
+} <span class="sel">else if</span> (<span class="com">condition2</span>) {
+} <span class="sel">else </span>{
+}
+</pre>
+
+<p>যখন একাধিক শর্ত থাকে, তখন যদি শর্ত সত্য না হয়, তাহলে else এর কোড চলবে।</p>
+
+<pre>
+<span class="com">else-if.js</span>
+
+<span class="sel">let</span> <span class="prop">marks </span>= <span class="val">72</span>;
+<span class="sel">let</span> (<span class="prop">marks </span>>= <span class="val">80</span>) {
+    <span class="num">console.log</span> (<span>"গ্রেড: A+ 🌟"</span>);
+
+} <span class="sel">else if</span> (<span class="prop">marks </span>>= <span class="val">70</span>) {
+    <span class="num">console.log</span> (<span>"গ্রেড: A+ 🌟"</span>);
+
+} <span class="sel">else if</span> (<span class="prop">marks </span>>= <span class="val">60</span>) {
+    <span class="num">console.log</span> (<span>"গ্রেড: B ✨"</span>);
+
+} <span class="sel">else if</span> (<span class="prop">marks </span>>= <span class="val">50</span>) {
+    <span class="num">console.log</span> (<span>"গ্রেড: C 💫"</span>);
+
+} <span class="sel">else</span> { <span class="num">console.log</span> (<span>"গ্রেড: F (ফেল) 😔"</span>);
+}
+</pre>
+
+    <ul>
+      <li>উপর থেকে নিচে চেক করে</li>
+      <li>প্রথম true পেলেই থেমে যায়</li>
+    </ul>
+
+  <h3>4.Nested if (ভেতরে আরেকটা if)</h3>
+<pre>
+<span class="com">javascript</span>
+<span class="sel">let</span> <span class="prop">age</span> = <span>20</span>;
+<span class="sel">let</span> <span class="prop">hasLicense </span> = <span>true</span>;
+}
+</pre>
+
+<pre>
+<span class="sel">if</span> (<span class="prop">age </span>>= <span class="val">18</span>) { 
+  <span class="sel">if</span> (<span class="prop">hasLicense</span>) {
+    <span class="num">console.log</span> (<span>"তুমি গাড়ি চালাতে পারবে"</span>);
+} <span class="sel">else</span> {
+    <span class="num">console.log</span> (<span>"লাইসেন্স লাগবে"</span>);
+  }
+} <span class="sel">else</span> {
+    <span class="num">console.log</span> (<span>"বয়স কম"</span>);
+}
+</pre>
+
+  </div>
+<!-- Cepter_04 Complite -->
+</div>
+
+
+<!--? Class-14 Ternary পেজ এর জন্য -->
+<!--! Class-14 Ternary পেজ এর জন্য -->
+    <div class="page" id="page-ternary">
+        <div class="breadcrumb">
+            <a href="#">Home</a> >
+            <a href="#">JavaScript</a> > JS Ternary
+    </div>
+    <div class="lecture">Lecture 14</div>
+    <!-- End On Page: CSS পরিচিতি -->
+    
+    <h1>JS Ternary Operator (Shortcut if else)</h1>
+    <p>Ternary operator হলো if-else এর সংক্ষিপ্ত রূপ। একটা লাইনে লেখা যায়।</p>
+<pre>
+<span class="com">Normal If-else Syntax</span>
+<span class="sel">if</span> (<span class="com">condition</span>) {
+  <span class="com">// true হলে</span>
+} <span class="sel">else</span> {
+  <span class="com">// false হলে</span>
+}
+</pre>
+
+<pre>
+<span class="sel">if</span> (<span class="prop">age</span> >= <span class="val">18</span>) {
+  <span class="com">/status = "প্রাপ্তবয়স্ক";</span>
+} <span class="sel">else</span> {
+  <span class="com">status = "অপ্রাপ্তবয়স্ক";</span>
+}
+</pre>
+
+<h3>Ternary Syntax</h3>
+<p><span class="sel">condition</span> ? <span class="prop">trueValue</span> : <span class="val">falseValue</span></p>
+
+<pre>
+<span class="com">// Ternary দিয়ে একই কাজ (একটা লাইনে!)</span>
+<span class="sel">let</span> <span class="prop">age</span> = <span class="val">20</span>;
+<span class="sel">if</span> <span class="prop">status </span> >= <span class="val">18</span> ? <span class="num">"প্রাপ্তবয়স্ক"</span> : <span class="num">"অপ্রাপ্তবয়স্ক";</span>
+    <span class="sel">console.log</span> (<span class="prop">status</span>);
+</pre>
+
+<pre>
+<span class="com">Price discount example</span>
+<span class="sel">let</span> <span class="prop">price </span> = <span class="val">500</span>;
+<span class="sel">let </span><span class="prop">discount </span> = <span class="prop">price</span> > <span class="num">1000</span> ? <span class="num">100</span> : <span class="num">50</span>;
+<span class="sel">console.log</span> ( <span>"Discount: "</span> + <span class="prop">discount</span> ) <span class="com">//"Discount: 50"</span>
+</pre>
+
+<h3>বাস্তব উদাহরণ:</h3>
+<pre>
+<span class="com">JavaScript লগইন চেক</span>
+<span class="sel">let</span> <span class="prop">username  </span> = <span class="val">"আহমেদ"</span>;
+<span class="sel">let</span> <span class="prop">password  </span> = <span class="val">"১২৩৪"</span>;
+
+<span class="sel">let </span>(<span class="prop">username </span> === <span class="prop">"আহমেদ"</span> && <span class="num">password</span> === <span class="num">"১২৩৪"</span>) {
+    <span class="sel">console.log</span> ( <span>"লগইন সফল!"</span>);
+} <span class="sel">else</span> {
+    <span class="sel">console.log</span> ( <span>"ভুল তথ্য"</span>);
+}
+</pre>
+    
+    </div>
+
+
+<!--? Class-15 Switch পেজ এর জন্য -->
+<!--! Class-15 Switch পেজ এর জন্য -->
+  <div class="page" id="page-switch">
+      <div class="breadcrumb">
+          <a href="#">Home</a> >
+          <a href="#">JavaScript</a> > JS Switch
+      </div>
+        <div class="lecture">Lecture 15</div>
+    <!-- End On Page: JS Switch -->
+    
+    <h1>Switch Statement - একাধিক Case</h1>
+    <p>যখন একই variable এর অনেক values check করতে হয়, তখন switch ব্যবহার করা ভালো।</p>
+
+<pre>
+<span class="com">switch.js</span>
+<span class="sel">let</span> <span class="prop">day</span> = <span class="val">4</span>;
+<span class="sel">let</span> <span class="prop">dayName</span>;
+<span class="sel">switch </span> (<span class="prop">day</span>) {    
+    <span class="sel">case</span> <span class="val">1</span>: <span class="prop">dayName </span>= <span class="val">"শনিবার"</span>; <span class="num">break</span>;
+    <span class="sel">case</span> <span class="val">2</span>: <span class="prop">dayName </span>= <span class="val">"রবিবার"</span>; <span class="num">break</span>;
+    <span class="sel">case</span> <span class="val">3</span>: <span class="prop">dayName </span>= <span class="val">"সোমবার"</span>; <span class="num">break</span>;
+    <span class="sel">case</span> <span class="val">4</span>: <span class="prop">dayName </span>= <span class="val">"মঙ্গলবার"</span>; <span class="num">break</span>;
+    <span class="sel">case</span> <span class="val">5</span>: <span class="prop">dayName </span>= <span class="val">"বুধবার"</span>; <span class="num">break</span>;
+    <span class="sel">case</span> <span class="val">6</span>: <span class="prop">dayName </span>= <span class="val">"বৃহস্পতিবার"</span>; <span class="num">break</span>;
+    <span class="sel">case</span> <span class="val">7</span>: <span class="prop">dayName </span>= <span class="val">"শুক্রবার"</span>; <span class="num">break</span>;
+    <span class="sel">default</span> : <span class="prop">dayName </span>= <span class="val">"ভুল দিন!"</span>;
+}
+        <span class="num">console.log</span> (<span class="val">dayName</span>); <span class="com">// "বুধবার"</span>
+</pre>
+
+
+    <ul>
+        <strong>✅ Switch এর গুরুত্বপূর্ণ অংশ:</strong>
+        <li>case - প্রতিটা option</li>
+        <li>break - Switch থেকে বের হওয়া (না থাকলে পরের case ও চলবে!)</li>
+        <li>efault - কোনো case match না করলে (else এর মতো)</li>
+    </ul>
+
+
+<pre>
+<span class="com">switch-multiple.js</span>
+<span class="sel">let</span> <span class="prop">fruit</span> = <span class="val">"আম"</span>;
+<span class="sel">let</span> <span class="prop">color</span>;
+<span class="sel">switch </span> (<span class="prop">fruit</span>) {
+    <span class="sel">case</span> <span class="prop">"কলা"</span> : <span class="sel">case</span> <span class="prop">"আম"</span> : <span class="val">color</span> = <span class="prop">"হলুদ"</span>; <span class="num">break</span>;
+    <span class="sel">case</span> <span class="prop">"আপেল"</span> : <span class="sel">case</span> <span class="prop">"স্ট্রবেরি"</span> : <span class="val">color</span> = <span class="prop">"লাল"</span>; <span class="num">break</span>;
+    <span class="sel">case</span> <span class="prop">"কমলা"</span> : <span class="val">color</span> = <span class="prop">"কমলা"</span>; <span class="num">break</span>;
+    <span class="sel">default</span> : <span class="val">color</span> = <span class="prop">"জানি না"</span>;
+}
+        <span class="num">console.log</span> (<span>"রঙ:"</span>) + <span class="prop">color</span>); <span class="com">// "রঙ: হলুদ"</span>
+</pre>
+
+<pre>
+<strong class="sel">বিষয়</strong>                  <strong class="prop">If-Else</strong>                        <strong class="val">Switch</strong>
+<span class="sel">ব্যবহার </span>           <span  class="prop">যেকোনো condition</span>           <span class="val">একই variable এর বিভিন্ন values</span>
+<span class="sel">Comparison </span>      <span class="prop">Range check করা যায় (>, <)</span>   <span class="val">শুধু equality (===)</span>
+<span class="sel">Readability </span>     <span class="prop">অনেক conditions হলে জটিল</span>   <span class="val">অনেক cases হলে সুন্দর</span>
+<span class="sel">Performance </span>     <span class="prop">কম cases এ ভালো</span>             <span class="val">বেশি cases এ faster</span>
+<span class="sel">Multiple Conditions </span> <span class="prop">&&, || ব্যবহার করা যায়</span>      <span class="val">Multiple cases একসাথে</span>
+</pre>
+
+    <ul>
+        <strong>🔑 Beginner Tips (খুব গুরুত্বপূর্ণ)</strong>
+        <li>✔️ Always use ===</li>
+        <li>✔️ Code readable রাখো</li>
+        <li>✔️ Nested if কম ব্যবহার করো</li>
+        <li>✔️ Logic আগে ভাবো, পরে কোড লেখো</li>
+    </ul>
+
+</div>
+
+
+<!--? Class-16 Booleans পেজ এর জন্য -->
+<!--! Class-16 Booleans পেজ এর জন্য -->
+<div class="page" id="page-booleans">
+    
+    <div class="breadcrumb">
+          <a href="#">Home</a> >
+          <a href="#">JavaScript</a> > JS Booleans
+      </div>
+        <div class="lecture">Lecture 16</div>
+    <!-- End On Page: JS Switch -->
+
+    <h1>Boolean (true / false)</h1>
+    <p>JavaScript-এর সব condition আসলে Boolean এর উপর কাজ করে।</p>
+    
+    <ul>
+      <li>true      <span class="com">// সত্য</span></li>
+      <li>false     <span class="com">// সত্য</span></li>
+    </ul>
+    
+    <h2>Boolean Example</h2>
+      <ul>
+        <li><span class="sel">10</span> > <span class="prop">5</span>     <span class="com">// true</span></li>
+        <li><span class="sel">5</span> > <span class="prop">10</span>     <span class="com">// false</span></li>
+      </ul>
+
+      <p>👉 Condition সবসময় <span class="sel">true</span> বা <span class="sel">false</span> রিটার্ন করে</p>
+
+      <p>Boolean হলো একটা data type যার মান শুধু দুইটা - true (সত্য) অথবা false (মিথ্যা)।</p>
+</div>
+
+
+<!--? Class-17 Logical পেজ এর জন্য -->
+<!--! Class-17 Logical পেজ এর জন্য -->
+  <div class="page" id="page-logical">
+
+    <div class="breadcrumb">
+      <a href="#">Home</a> >
+      <a href="#">JavaScript</a> > JS Logical
+    </div>
+        <div class="lecture">Lecture 17</div>
+    <!-- End On Page: JS Switch -->
+
+    <h1> Logical Operators যুক্তি</h1>
+    <p>একাধিক conditions একসাথে check করার জন্য logical operators ব্যবহার হয়।</p>
+
+    <h2>তিনটা Logical Operators:</h2>
+    <ul>
+      <li>AND (&&)</li>
+      <li>OR (||)</li>
+      <li>NOT (!)</li>
+    </ul>
+
+<pre>
+<span class="com">AND (&&)</span>
+<span>সব condition true হতে হবে</span>
+<span class="sel">if</span> (<span class="prop">age</span> >= <span class="val">18</span> <span class="num">&&</span> <span class="sel">age</span> <= <span class=val>30</span>) 
+</pre>
+
+
+<pre>
+<span class="com">OR (||)</span>
+<span>যেকোনো একটা true হলেই চলবে</span>
+<span class="sel">if</span> (<span class="prop">age</span> >= <span class="val">18</span> <span class="num">||</span> <span class="sel">age</span> > <span class=val>60</span>) 
+</pre>
+
+
+
+<pre>
+<span class="com">NOT (!)</span>
+<span>উল্টো করে দেয়- True হলে false রেজাল্ট দিবে আর false হলে true রেজাল্ট দিবে।</span>
+<span class="sel">if</span> (<span class="prop">!isLoggedIn</span>) 
+</pre>
+
+
+
+<pre>
+<span class="com">// AND (&&) - দুইটাই সত্য হতে হবে</span>
+<span class="sel">if</span> (<span class="prop">age</span> >= <span class="val">18</span> <span class="num">&&</span> <span class=val>hasTicket</span>) {
+    <span class="sel">console.log</span> (<span class="prop">"সিনেমা দেখতে পারবে"</span>);
+}
+
+<span class="com">// OR (||) - যেকোনো একটা সত্য হলেই হবে</span>
+<span class="sel">if</span> (<span class="prop">age</span> < <span class="val">12</span> <span class="num">||</span> <span class="prop">age</span> > <span class=val>60</span>) {
+    <span class="sel">console.log</span> (<span class="prop">"ছাড় পাবে"</span>);
+}
+
+<span class="com">// NOT (!) - উল্টা করে</span>
+<span class="sel">if</span> (<span class="num">!</span><span class="prop">hasTicket</span>) {
+    <span class="sel">console.log</span> (<span class="prop">"টিকেট কিনতে হবে"</span>);
+}
+</pre>
+
+
+</div>
+
+
+<!--? Class-18 Loops পেজ এর জন্য -->
+<!--! Class-18 Loops পেজ এর জন্য -->
+<div class="page" id="page-loops">
+    <h1>JS Loops</h1>
+    <p>Loops সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-19 Loops-for পেজ এর জন্য -->
+<!--! Class-19 loops-for পেজ এর জন্য -->
+<div class="page" id="page-loops-for">
+    <h1>JS Loops-for</h1>
+    <p>Loops-for সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+
+<!--? Class-20 Loops-while পেজ এর জন্য -->
+<!--! Class-20 Loops-while পেজ এর জন্য -->
+<div class="page" id="page-loops-while">
+    <h1>JS Loops-while</h1>
+    <p>Loops-while সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-21 Break পেজ এর জন্য -->
+<!--! Class-21 Break পেজ এর জন্য -->
+<div class="page" id="page-break">
+    <h1>JS Break</h1>
+    <p>Break সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-22 Cntinue পেজ এর জন্য -->
+<!--! Class-22 Continue পেজ এর জন্য -->
+<div class="page" id="page-continue">
+    <h1>JS Cntinue</h1>
+    <p>Cntinue সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-23 Control-flow পেজ এর জন্য -->
+<!--! Class-23 Control-flow পেজ এর জন্য -->
+<div class="page" id="page-control-flow">
+    <h1>JS Control-flow</h1>
+    <p>Control-flow সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-24 Strings পেজ এর জন্য -->
+<!--! Class-24 Strings পেজ এর জন্য -->
+<div class="page" id="page-strings">
+    <h1>JS Strings</h1>
+    <p>Strings সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-25 String-templates পেজ এর জন্য -->
+<!--! Class-25 String-templates পেজ এর জন্য -->
+<div class="page" id="page-string-templates">
+    <h1>JS String-templates</h1>
+    <p>String-templates সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-26 String-methods পেজ এর জন্য -->
+<!--! Class-26 String-methods পেজ এর জন্য -->
+<div class="page" id="page-string-methods">
+    <h1>JS String-methods</h1>
+    <p>String-methods সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-27 String-search পেজ এর জন্য -->
+<!--! Class-27 String-search পেজ এর জন্য -->
+<div class="page" id="page-string-search">
+    <h1>JS String-search</h1>
+    <p>String-search সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-28 String-reference পেজ এর জন্য -->
+<!--! Class-28 String-reference পেজ এর জন্য -->
+<div class="page" id="page-string-reference">
+    <h1>JS String-reference</h1>
+    <p>String-reference সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-29 Numbers পেজ এর জন্য -->
+<!--! Class-29 Numbers পেজ এর জন্য -->
+<div class="page" id="page-numbers">
+    <h1>JS Numbers</h1>
+    <p>Numbers সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-30 Numbers-methods পেজ এর জন্য -->
+<!--! Class-30 Numbers-methods পেজ এর জন্য -->
+<div class="page" id="page-numbers-methods">
+    <h1>JS Numbers-methods</h1>
+    <p>Numbers-methods সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-31 Numbers-properties পেজ এর জন্য -->
+<!--! Class-31 Numbers-properties পেজ এর জন্য -->
+<div class="page" id="page-numbers-properties">
+    <h1>JS Numbers-properties</h1>
+    <p>Numbers-properties সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-32 Numbers-reference পেজ এর জন্য -->
+<!--! Class-32 Numbers-reference পেজ এর জন্য -->
+<div class="page" id="page-numbers-reference">
+    <h1>JS Numbers-reference</h1>
+    <p>Numbers-reference সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-33 Numbers-bitwise পেজ এর জন্য -->
+<!--! Class-33 Numbers-bitwise পেজ এর জন্য -->
+<div class="page" id="page-numbers-bitwise">
+    <h1>JS Numbers-bitwise</h1>
+    <p>Numbers-bitwise সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-34 Numbers-bitwise পেজ এর জন্য -->
+<!--! Class-34 Numbers-bitwise পেজ এর জন্য -->
+<div class="page" id="page-numbers-bitwise">
+    <h1>JS Numbers-bitwise</h1>
+    <p>Numbers-bitwise সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-35 Numbers-bitwise পেজ এর জন্য -->
+<!--! Class-35 Numbers-bitwise পেজ এর জন্য -->
+<div class="page" id="page-number-biglnt">
+    <h1>JS Numbers-bitwise</h1>
+    <p>Numbers-bitwise সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-36 Function-path পেজ এর জন্য -->
+<!--! Class-36 Function-path পেজ এর জন্য -->
+<div class="page" id="page-function-path">
+    <h1>JS Function-path</h1>
+    <p>Function-path সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-37 Function-intro পেজ এর জন্য -->
+<!--! Class-37 Function-intro পেজ এর জন্য -->
+<div class="page" id="page-function-intro">
+    <h1>JS Function-intro</h1>
+    <p>Function-intro সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-38 Function-invocation পেজ এর জন্য -->
+<!--! Class-38 Function-invocation পেজ এর জন্য -->
+<div class="page" id="page-function-invocation">
+    <h1>JS Function-invocation</h1>
+    <p>Function-invocation সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-39 Function-parameters পেজ এর জন্য -->
+<!--! Class-39 Function-parameters পেজ এর জন্য -->
+<div class="page" id="page-function-parameters">
+    <h1>JS Function-parameters</h1>
+    <p>Function-parameters সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-40 Function-returns পেজ এর জন্য -->
+<!--! Class-40 Function-returns পেজ এর জন্য -->
+<div class="page" id="page-function-returns">
+    <h1>JS Function-returns</h1>
+    <p>Function-returns সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-41 Function-returns পেজ এর জন্য -->
+<!--! Class-41 Function-returns পেজ এর জন্য -->
+<div class="page" id="page-function-returns">
+    <h1>JS Function-returns</h1>
+    <p>Function-returns সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-42 Function-arguments পেজ এর জন্য -->
+<!--! Class-42 Function-arguments পেজ এর জন্য -->
+<div class="page" id="page-function-arguments">
+    <h1>JS Function-arguments</h1>
+    <p>Function-arguments সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-43 Function-expressions পেজ এর জন্য -->
+<!--! Class-43 Function-expressions পেজ এর জন্য -->
+<div class="page" id="page-function-expressions">
+    <h1>JS Function-expressions</h1>
+    <p>Function-expressions সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-44 Function-arrow পেজ এর জন্য -->
+<!--! Class-44 Function-arrow পেজ এর জন্য -->
+<div class="page" id="page-function-arrow">
+    <h1>JS Function-arrow</h1>
+    <p>Function-arrow সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-45 Function-quize পেজ এর জন্য -->
+<!--! Class-45 Function-quize পেজ এর জন্য -->
+<div class="page" id="page-function-quize">
+    <h1>JS Function-quize</h1>
+    <p>Function-quize সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-46 Object-path পেজ এর জন্য -->
+<!--! Class-46 Object-path পেজ এর জন্য -->
+<div class="page" id="page-object-path">
+    <h1>JS Object-path</h1>
+    <p>Object-path সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-47 Object-intro পেজ এর জন্য -->
+<!--! Class-47 Object-intro পেজ এর জন্য -->
+<div class="page" id="page-object-intro">
+    <h1>JS Object-intro</h1>
+    <p>Object-intro সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-48 Object-properties পেজ এর জন্য -->
+<!--! Class-48 Pbject-properties পেজ এর জন্য -->
+<div class="page" id="page-object-properties">
+    <h1>JS Object-properties</h1>
+    <p>Object-properties সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-48 Object-methods পেজ এর জন্য -->
+<!--! Class-48 Object-methods পেজ এর জন্য -->
+<div class="page" id="page-object-methods">
+    <h1>JS Object-methods</h1>
+    <p>Object-methods সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-49 Object-this পেজ এর জন্য -->
+<!--! Class-49 Pbject-this পেজ এর জন্য -->
+<div class="page" id="page-object-this">
+    <h1>JS Object-this</h1>
+    <p>Object-this সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-50 Object-display পেজ এর জন্য -->
+<!--! Class-50 Object-display পেজ এর জন্য -->
+<div class="page" id="page-object-display">
+    <h1>JS Object-display</h1>
+    <p>Object-display সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-51 Object-constructors পেজ এর জন্য -->
+<!--! Class-51 Object-constructors পেজ এর জন্য -->
+<div class="page" id="page-object-constructors">
+    <h1>JS Object-constructors</h1>
+    <p>Object-constructors সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-52 Scope পেজ এর জন্য -->
+<!--! Class-52 Scope পেজ এর জন্য -->
+<div class="page" id="page-scope">
+    <h1>JS Scope</h1>
+    <p>Scope সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-53 Code-blocks পেজ এর জন্য -->
+<!--! Class-53 Code-blocks পেজ এর জন্য -->
+<div class="page" id="page-code-blocks">
+    <h1>JS Code-blocks </h1>
+    <p>Code-blocks  সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-54 Code-hoisting পেজ এর জন্য -->
+<!--! Class-54 Code-hoisting পেজ এর জন্য -->
+<div class="page" id="page-code-hoisting">
+    <h1>JS Code-hoisting</h1>
+    <p>Code-hoisting সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-55 Code-strict-mode পেজ এর জন্য -->
+<!--! Class-55 Code-strict-mode পেজ এর জন্য -->
+<div class="page" id="page-code-strict-mode">
+    <h1>JS Code-strict-mode</h1>
+    <p>Code-strict-mode সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-56 Dates পেজ এর জন্য -->
+<!--! Class-56 Dates পেজ এর জন্য -->
+<div class="page" id="page-dates">
+    <h1>JS Dates</h1>
+    <p>Dates সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-57 Date-formats পেজ এর জন্য -->
+<!--! Class-57 Date-formats পেজ এর জন্য -->
+<div class="page" id="page-date-formats">
+    <h1>JS Date-formats</h1>
+    <p>Date-formats সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-58 Date-get পেজ এর জন্য -->
+<!--! Class-58 Date-get পেজ এর জন্য -->
+<div class="page" id="page-date-get">
+    <h1>JS Date-get</h1>
+    <p>Date-get সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-59 Date-set পেজ এর জন্য -->
+<!--! Class-59 Date-set পেজ এর জন্য -->
+<div class="page" id="page-date-set">
+    <h1>JS Date-set</h1>
+    <p>Date-set সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-60 Date-methods পেজ এর জন্য -->
+<!--! Class-60 Date-methods পেজ এর জন্য -->
+<div class="page" id="page-date-methods">
+    <h1>JS Date-methods</h1>
+    <p>Date-methods সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+
+<!--? Class-61 Arrays পেজ এর জন্য -->
+<!--! Class-61 Arrays পেজ এর জন্য -->
+<div class="page" id="page-arrays">
+    <h1>JS Arrays পেজ</h1>
+    <p>Arrays পেজ সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-62 Array-methods পেজ এর জন্য -->
+<!--! Class-62 Array-methods পেজ এর জন্য -->
+<div class="page" id="page-array-methods">
+    <h1>JS Array-methods</h1>
+    <p>Array-methods সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-63 Array-search পেজ এর জন্য -->
+<!--! Class-63 Array-search পেজ এর জন্য -->
+<div class="page" id="page-array-search">
+    <h1>JS Array-search</h1>
+    <p>Array-search সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-64 Array-sort পেজ এর জন্য -->
+<!--! Class-64 Array-sort পেজ এর জন্য -->
+<div class="page" id="page-array-sort">
+    <h1>JS Array-sort</h1>
+    <p>Array-sort সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-65 Array-iterations পেজ এর জন্য -->
+<!--! Class-65 Array-iterations পেজ এর জন্য -->
+<div class="page" id="page-array-iterations">
+    <h1>JS Array-iterations</h1>
+    <p>Array-iterations সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-66 array-reference পেজ এর জন্য -->
+<!--! Class-66 array-reference পেজ এর জন্য -->
+<div class="page" id="page-array-reference">
+    <h1>JS array-reference</h1>
+    <p>array-reference সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-67 Array-const পেজ এর জন্য -->
+<!--! Class-67 Array-const পেজ এর জন্য -->
+<div class="page" id="page-array-const">
+    <h1>JS Array-const</h1>
+    <p>Array-const সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+
+
+
+
+
+
+  </div>
+<!-- End MAIN CONTENT -->
+
+  </div>
+<!-- End Layout -->
+
+
+  <script src="04-Git-Github.js"></script>
+</body>
+</html>
