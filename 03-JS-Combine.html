@@ -1,0 +1,1084 @@
+<!Doctype html>
+<html lang="bn">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="03-JS-Combine.css" />
+</head>
+
+<body>
+
+  <!--? TOP NAV -->
+  <!-- Start Navbar -->
+  <nav class="top-nav">
+    <div class="brand"><span>Code</span>Bangla</div>
+    <a href="#">HTML</a>
+    <a href="#">CSS</a>
+    <a href="#" class="active">JavaScript</a>
+    <a href="#">Python</a>
+    <a href="#">বাংলা</a>
+      <button class="exercise-btn">Exercise</button>
+  </nav>
+<!-- End of Top Navbar -->
+
+
+<!-- Start Layout -->
+  <div class="layout">
+
+
+<!--? SIDEBAR -->
+<!-- Start Sidbar -->
+  <div class="sidebar">
+    <div class="sidebar-header">📚 JavaScript</div>
+
+    <div class="sidebar-section">শুরু করুন</div>
+      <a onclick="showPage('class-writing')" class="active" id="nav-class-writing">Class-Writing</a>
+
+      <a onclick="showPage('introduction')" id="nav-introduction">JS Introduction</a>
+      <a onclick="showPage('syntax')" id="nav-syntax">Syntax</a>
+      <a onclick="showPage('statements')" id="nav-statements">Statements</a>
+      <a onclick="showPage('comments')" id="nav-comments">Comments</a>
+      <a onclick="showPage('variables')" id="nav-variables">Variables</a>
+      <a onclick="showPage('types')" id="nav-types">Types</a>
+
+    <div class="sidebar-section">JS Operetors</div>
+      <a onclick="showPage('operators')" id="nav-operators">Operators</a>
+      <a onclick="showPage('arithmetic')" id="nav-arithmetic">Arithmetic</a>
+      <a onclick="showPage('assignment')" id="nav-assignment">Assignment</a>
+      <a onclick="showPage('compasirons')" id="nav-compasirons">Compasirons</a>
+      <a onclick="showPage('conditional')" id="nav-conditional">Conditional</a>
+
+    <div class="sidebar-section">JS If Else</div>
+      <a onclick="showPage('if')" id="nav-if">If</a>
+      <a onclick="showPage('if-else')" id="nav-if-else">If Else</a>
+      <a onclick="showPage('ternary')" id="nav-ternary">Ternary</a>
+      <a onclick="showPage('switch')" id="nav-switch">Switch</a>
+      <a onclick="showPage('booleans')" id="nav-booleans">Booleans</a>
+      <a onclick="showPage('logical')" id="nav-logical">Logical</a>
+
+    <div class="sidebar-section">JS Loops</div>
+      <a onclick="showPage('loops')" id="nav-loops">Loops</a>
+      <a onclick="showPage('loops-for')" id="nav-loops-for">Loops for</a>
+      <a onclick="showPage('loops-while')" id="nav-loops-while">Loops while</a>
+      <a onclick="showPage('break')" id="nav-break">Break</a>
+      <a onclick="showPage('continue')" id="nav-continue">Continue</a>
+      <a onclick="showPage('control-flow')" id="nav-control-flow">Control Flow</a>
+
+    <div class="sidebar-section">JS Strings</div>
+      <a onclick="showPage('strings')" id="nav-strings">Strings</a>
+      <a onclick="showPage('string-templates')" id="nav-string-templates">StringTemplates</a>
+      <a onclick="showPage('string-methods')" id="nav-string-methods">String Methods</a>
+      <a onclick="showPage('string-search')" id="nav-string-search">String Search</a>
+      <a onclick="showPage('string-reference')" id="nav-string-reference">String Reference</a>
+
+    <div class="sidebar-section">JS Numbers</div>
+      <a onclick="showPage('numbers')" id="nav-numbers">Numbers</a>
+      <a onclick="showPage('numbers-methods')" id="nav-numbers-methods">Numbers Methods</a>
+      <a onclick="showPage('numbers-properties')" id="nav-numbers-properties">Numbers Properties</a>
+      <a onclick="showPage('numbers-reference')" id="nav-numbers-reference">Numbers Reference</a>
+      <a onclick="showPage('numbers-bitwise')" id="nav-numbers-bitwise">Numbers Bitwise</a>
+      <a onclick="showPage('number-biglnt')" id="nav-number-biglnt">Numbers Biglnt</a>
+
+    <div class="sidebar-section">JS Functions</div>
+      <a onclick="showPage('function-path')" id="nav-function-path">Function Path</a>
+      <a onclick="showPage('function-intro')" id="nav-function-intro">Function Intro</a>
+      <a onclick="showPage('function-invocation')" id="nav-function-invocation">Function Invocation</a>
+      <a onclick="showPage('function-parameters')" id="nav-function-parameters">Function Parameters</a>
+      <a onclick="showPage('function-returns')" id="nav-function-returns">Function Returns</a>
+      <a onclick="showPage('function-arguments')" id="nav-function-arguments">Function Arguments</a>
+      <a onclick="showPage('function-expressions')" id="nav-function-expressions">Function Expressions</a>
+      <a onclick="showPage('function-arrow')" id="nav-function-arrow">Function Arrow</a>
+      <a onclick="showPage('function-quize')" id="nav-function-quize">Function Quiz</a>
+
+    <div class="sidebar-section">JS Objects</div>
+      <a onclick="showPage('object-path')" id="nav-object-path">Object- Path</a>
+      <a onclick="showPage('object-intro')" id="nav-object-intro">Object Intro</a>
+      <a onclick="showPage('object-properties')" id="nav-object-properties">Object Properties</a>
+      <a onclick="showPage('object-methods')" id="nav-object-methods">Object Methods</a>
+      <a onclick="showPage('object-this')" id="nav-object-this">Object This</a>
+      <a onclick="showPage('object-display')" id="nav-object-display">Object Display</a>
+      <a onclick="showPage('object-constructors')" id="nav-object-constructors">Object Constructors</a>
+
+    <div class="sidebar-section">JS Scope</div>
+      <a onclick="showPage('scope')" id="nav-scope">Scope</a>
+      <a onclick="showPage('code-blocks')" id="nav-code-blocks">Code Blocks</a>
+      <a onclick="showPage('code-hoisting')" id="nav-code-hoisting">Code Hoisting</a>
+      <a onclick="showPage('code-strict-mode')" id="nav-code-strict-mode">Code Strict Mode</a>
+
+    <div class="sidebar-section">JS Dates</div>
+      <a onclick="showPage('dates')" id="nav-dates">Dates</a>
+      <a onclick="showPage('date-formats')" id="nav-date-formats">Date Formats</a>
+      <a onclick="showPage('date-get')" id="nav-date-get">Date Get</a>
+      <a onclick="showPage('date-set')" id="nav-date-set">Date Set</a>
+      <a onclick="showPage('date-methods')" id="nav-date-methods">Date Methods</a>
+      <a onclick="showPage('date-blocks')" id="nav-date-blocks">Code Blocks</a>
+
+    <div class="sidebar-section">JS Arrays</div>
+      <a onclick="showPage('arrays')" id="nav-arrays">Arrays</a>
+      <a onclick="showPage('array-methods')" id="nav-array-methods">Array Methods</a>
+      <a onclick="showPage('array-search')" id="nav-array-search">Array Search</a>
+      <a onclick="showPage('array-sort')" id="nav-array-sort">Array Sort</a>
+      <a onclick="showPage('array-iterations')" id="nav-array-iterations">Array Iterations</a>
+      <a onclick="showPage('array-reference')" id="nav-array-reference">Array Reference</a>
+      <a onclick="showPage('array-const')" id="nav-array-const">Array Const</a>
+  </div>
+<!-- End Sidbar -->
+
+
+<!--? MAIN CONTENT -->
+<!-- Start Main Content -->
+  <div class="main">
+
+
+
+
+
+<!--? Class-00 Class-writing পেজ এর জন্য -->
+<!--! Class-00 Class-writing পেজ এর জন্য -->
+    <div class="page" id="page-class-writing">
+      <h1>My Name is Kamrl islam</h1>
+      
+    </div>
+<!-- Class-Writing End -->
+
+
+
+
+
+<!--? Class-01 Introduction পেজ এর জন্য -->
+<!--! Class-01 Introduction পেজ এর জন্য -->
+<div class="page" id="page-introduction">
+    <h1>JS introduction</h1>
+    <p>introduction সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-02 Syntax পেজ এর জন্য -->
+<!--! Class-02 syntax পেজ এর জন্য -->
+<div class="page" id="page-syntax">
+    <h1>JS Syntax</h1>
+    <p>Syntax সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-03 Statements পেজ এর জন্য -->
+<!--! Class-03 Statements পেজ এর জন্য -->
+<div class="page" id="page-statements">
+    <h1>JS Statements</h1>
+    <p>Statements সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-04 Comments পেজ এর জন্য -->
+<!--! Class-04 Comments পেজ এর জন্য -->
+<div class="page" id="page-comments">
+    <h1>JS Comments</h1>
+    <p>Comments সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-05 Variables পেজ এর জন্য -->
+<!--! Class-05 Variables পেজ এর জন্য -->
+<div class="page" id="page-variables">
+    <h1>JS Variables</h1>
+    <p>Variables সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-06 Types পেজ এর জন্য -->
+<!--! Class-06 Types পেজ এর জন্য -->
+<div class="page" id="page-types">
+    <h1>JS Types</h1>
+    <p>Types সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-07 Operators পেজ এর জন্য -->
+<!--! Class-07 Operators পেজ এর জন্য -->
+<div class="page" id="page-operators">
+    <h1>JS Operators</h1>
+    <p>Operators সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-08 Arithmetic পেজ এর জন্য -->
+<!--! Class-08 Arithmetic পেজ এর জন্য -->
+<div class="page" id="page-arithmetic">
+    <h1>JS Arithmetic</h1>
+    <p>Arithmetic সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-09 Assignment পেজ এর জন্য -->
+<!--! Class-09 Assignment পেজ এর জন্য -->
+<div class="page" id="page-assignment">
+    <h1>JS Assignment</h1>
+    <p>Assignment সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-10 Compasirons পেজ এর জন্য -->
+<!--! Class-10 Compasirons পেজ এর জন্য -->
+<div class="page" id="page-compasirons">
+    <h1>JS Compasirons</h1>
+    <p>Compasirons সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-11 Conditional পেজ এর জন্য -->
+<!--! Class-11 Conditional পেজ এর জন্য -->
+<div class="page" id="page-conditional">
+    <h1>JS Conditional</h1>
+    <p>Conditional সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-12 If পেজ এর জন্য -->
+<!--! Class-12 If পেজ এর জন্য -->
+  <div class="page" id="page-if">
+    <div class="breadcrumb">
+      <a href="#">Home</a> >
+      <a href="#">JavaScript</a> > JS If Conditional
+    </div>
+
+    <div>Lecture 12</div>
+    <!-- End On Page: CSS পরিচিতি -->
+
+    <!--? Start On CSS Background Class -->
+    <h1>Conditional / Condition কী?</h1>
+    <h2>Definition</h2>
+    <p>Condition মানে হলো শর্ত</p>
+    <p class="p_bd">JavaScript-এ condition ব্যবহার করে সিদ্ধান্ত নেওয়া হয়</p>
+
+    <strong>📌 বাস্তব উদাহরণ:</strong>
+    <ul>
+      <li>যদি বৃষ্টি হয় → ছাতা নিব</li>
+      <li>না হলে → ছাতা নিব না</li>
+    </ul>
+
+    <p>এই “যদি–নাহলে” লজিকটাই Conditional</p>
+
+
+    <!--! Cepter_01 -->
+    <!-- Cepter_01 Start -->
+    <div class="bg">
+      <h3>01-Comparison Operators (Condition বানাতে লাগে)</h3>
+
+          <pre>
+  <strong>Operators</strong>          <strong>Meaning</strong>
+      <span>&gt;</span>  --------  <span>Greater then</span>
+      <span>&lt;</span>  --------  <span>Less then</span>
+      <span>&lt;=</span>  --------  <span>Greater than or equal to</span>
+      <span>=&lt;</span>  --------  <span>Less than  or equal to</span>
+      <span>==</span>  --------  <span>Equal to</span>
+      <span>===</span>  -------- <span>Equal value and equal type</span>
+      <span>!=</span>  --------  <span>Not equal</span>
+      <span>!==</span>  -------- <span>Not equal Value or not equal type</span>
+</pre>
+
+          <strong>Example:</strong><br>
+          <span>10 == "10"</span> <span class="com">//true</span><br>
+          <span>10 === "10"</span> <span class="com">//false</span>
+
+          <p>⚠️ <strong>মনে রাখো:</strong> সব সময় Equal value and equal type === ব্যবহার করো, Equal to == নয়।</p>
+        </div>
+        <!-- Cepter_01 Complite -->
+
+
+        <!--! Cepter_02 -->
+        <!-- Cepter_01 Start -->
+        <div class="bg">
+          <h3>2. JS if Statement - যদি</h3>
+          <p>If statement দিয়ে condition check করে code execute করা হয়।</p>
+
+          <ul>
+            <li>Condition Check</li>
+            <li>True হলে Execute</li>
+            <li>False হলে Skip</li>
+          </ul>
+
+          <pre>
+<span class="com">Syntax</span>
+<span class="sel">if</span> (<span class="com">condition</span>) {
+  <span class="com">//true হলে</span>
+   }
+</pre>
+
+<pre>
+<span class="com">If-statements.js</span>
+<span class="sel">let</span> <span class="prop">age</span> = <span class="val">20</span>;     <span class="com">// যদি বয়স 18 বা বেশি হয়</span>
+<span class="sel">if</span> (<span class="prop">age</span> &gt;= <span class="val">18</span>) {
+  <span class="num">console.log</span> (<span class="prop">"তুমি ভোট দিতে পারবে"</span>);
+  }
+</pre>
+
+          <pre>
+<span class="com">একাধিক Conditions</span>
+<span class="sel">let</span> <span class="prop">marks</span> = <span class="val">85</span>;
+<span class="sel">if</span> (<span class="prop">marks</span> &gt;= <span class="val">80</span>) {
+  <span class="num">console.log</span> (<span class="prop">"A+ গ্রেড পেয়েছ!"</span>);
+  <span class="num">console.log</span> (<span class="prop">"অভিনন্দন!"</span>);
+  }
+</pre>
+
+</div>
+<!-- Cepter_02 JS IF Complite -->
+  </div>
+
+
+<!--? Class-13 If-else পেজ এর জন্য -->
+<!--! Class-13 If-else পেজ এর জন্য -->
+<div class="page" id="page-if-else">
+  <div class="bg">
+    <h3>03-JS if else - যদি - না হলে</h3>
+
+<pre>
+<span class="com">Syntax</span>
+<span class="sel">if</span> (<span class="prop">condition</span>) {
+      <span class="com">// true হলে</span>
+  } <span class="sel">else </span>{
+      <span class="com">// false হলে</span>
+  }
+</pre>
+
+    <p>Condition true না হলে else block execute হয়।</p>
+
+<pre>
+<span class="com">If-else.js</span>
+<span class="sel">let</span> <span class="prop">temperature</span> = <span class="val">35</span>;
+<span class="sel">let</span> (<span class="prop">temperature</span> > <span class="val">30</span>) {
+     <span class="num">console.log</span> (<span class="prop">"গরম পড়েছে! ☀️"</span>);
+} <span class="sel">else</span> {
+      <span class="num">console.log</span> (<span class="prop">"আবহাওয়া ভালো আছে 🌤️"</span>)
+}
+</pre>
+
+    <p>একটা ব্লক চলবে, দুটো ব্লক একসাথে কখনই চলবে না।</p>
+  </div>
+<!-- Cepter_03 Complite -->
+
+
+<!--! Cepter_02- JS If Else -->
+<!-- Cepter_04 Start -->
+  <div class="bg">
+    <h3>02-Else-If - একাধিক শর্ত</h3>
+    <p>একাধিক conditions check করার জন্য else-if ব্যবহার হয়।</p>
+
+<pre>
+<div class="com">syntax</div>
+<span class="sel">if</span> (<span class="com">condition1</span>){
+} <span class="sel">else if</span> (<span class="com">condition2</span>) {
+} <span class="sel">else </span>{
+}
+</pre>
+
+<p>যখন একাধিক শর্ত থাকে, তখন যদি শর্ত সত্য না হয়, তাহলে else এর কোড চলবে।</p>
+
+<pre>
+<span class="com">else-if.js</span>
+
+<span class="sel">let</span> <span class="prop">marks </span>= <span class="val">72</span>;
+<span class="sel">let</span> (<span class="prop">marks </span>>= <span class="val">80</span>) {
+    <span class="num">console.log</span> (<span>"গ্রেড: A+ 🌟"</span>);
+
+} <span class="sel">else if</span> (<span class="prop">marks </span>>= <span class="val">70</span>) {
+    <span class="num">console.log</span> (<span>"গ্রেড: A+ 🌟"</span>);
+
+} <span class="sel">else if</span> (<span class="prop">marks </span>>= <span class="val">60</span>) {
+    <span class="num">console.log</span> (<span>"গ্রেড: B ✨"</span>);
+
+} <span class="sel">else if</span> (<span class="prop">marks </span>>= <span class="val">50</span>) {
+    <span class="num">console.log</span> (<span>"গ্রেড: C 💫"</span>);
+
+} <span class="sel">else</span> { <span class="num">console.log</span> (<span>"গ্রেড: F (ফেল) 😔"</span>);
+}
+</pre>
+
+    <ul>
+      <li>উপর থেকে নিচে চেক করে</li>
+      <li>প্রথম true পেলেই থেমে যায়</li>
+    </ul>
+
+  <h3>4.Nested if (ভেতরে আরেকটা if)</h3>
+<pre>
+<span class="com">javascript</span>
+<span class="sel">let</span> <span class="prop">age</span> = <span>20</span>;
+<span class="sel">let</span> <span class="prop">hasLicense </span> = <span>true</span>;
+}
+</pre>
+
+<pre>
+<span class="sel">if</span> (<span class="prop">age </span>>= <span class="val">18</span>) { 
+  <span class="sel">if</span> (<span class="prop">hasLicense</span>) {
+    <span class="num">console.log</span> (<span>"তুমি গাড়ি চালাতে পারবে"</span>);
+} <span class="sel">else</span> {
+    <span class="num">console.log</span> (<span>"লাইসেন্স লাগবে"</span>);
+  }
+} <span class="sel">else</span> {
+    <span class="num">console.log</span> (<span>"বয়স কম"</span>);
+}
+</pre>
+
+  </div>
+<!-- Cepter_04 Complite -->
+</div>
+
+
+<!--? Class-14 Ternary পেজ এর জন্য -->
+<!--! Class-14 Ternary পেজ এর জন্য -->
+    <div class="page" id="page-ternary">
+        <div class="breadcrumb">
+            <a href="#">Home</a> >
+            <a href="#">JavaScript</a> > JS Ternary
+    </div>
+    <div class="lecture">Lecture 14</div>
+    <!-- End On Page: CSS পরিচিতি -->
+    
+    <h1>JS Ternary Operator (Shortcut if else)</h1>
+    <p>Ternary operator হলো if-else এর সংক্ষিপ্ত রূপ। একটা লাইনে লেখা যায়।</p>
+<pre>
+<span class="com">Normal If-else Syntax</span>
+<span class="sel">if</span> (<span class="com">condition</span>) {
+  <span class="com">// true হলে</span>
+} <span class="sel">else</span> {
+  <span class="com">// false হলে</span>
+}
+</pre>
+
+<pre>
+<span class="sel">if</span> (<span class="prop">age</span> >= <span class="val">18</span>) {
+  <span class="com">/status = "প্রাপ্তবয়স্ক";</span>
+} <span class="sel">else</span> {
+  <span class="com">status = "অপ্রাপ্তবয়স্ক";</span>
+}
+</pre>
+
+<h3>Ternary Syntax</h3>
+<p><span class="sel">condition</span> ? <span class="prop">trueValue</span> : <span class="val">falseValue</span></p>
+
+<pre>
+<span class="com">// Ternary দিয়ে একই কাজ (একটা লাইনে!)</span>
+<span class="sel">let</span> <span class="prop">age</span> = <span class="val">20</span>;
+<span class="sel">if</span> <span class="prop">status </span> >= <span class="val">18</span> ? <span class="num">"প্রাপ্তবয়স্ক"</span> : <span class="num">"অপ্রাপ্তবয়স্ক";</span>
+    <span class="sel">console.log</span> (<span class="prop">status</span>);
+</pre>
+
+<pre>
+<span class="com">Price discount example</span>
+<span class="sel">let</span> <span class="prop">price </span> = <span class="val">500</span>;
+<span class="sel">let </span><span class="prop">discount </span> = <span class="prop">price</span> > <span class="num">1000</span> ? <span class="num">100</span> : <span class="num">50</span>;
+<span class="sel">console.log</span> ( <span>"Discount: "</span> + <span class="prop">discount</span> ) <span class="com">//"Discount: 50"</span>
+</pre>
+
+<h3>বাস্তব উদাহরণ:</h3>
+<pre>
+<span class="com">JavaScript লগইন চেক</span>
+<span class="sel">let</span> <span class="prop">username  </span> = <span class="val">"আহমেদ"</span>;
+<span class="sel">let</span> <span class="prop">password  </span> = <span class="val">"১২৩৪"</span>;
+
+<span class="sel">let </span>(<span class="prop">username </span> === <span class="prop">"আহমেদ"</span> && <span class="num">password</span> === <span class="num">"১২৩৪"</span>) {
+    <span class="sel">console.log</span> ( <span>"লগইন সফল!"</span>);
+} <span class="sel">else</span> {
+    <span class="sel">console.log</span> ( <span>"ভুল তথ্য"</span>);
+}
+</pre>
+    
+    </div>
+
+
+<!--? Class-15 Switch পেজ এর জন্য -->
+<!--! Class-15 Switch পেজ এর জন্য -->
+  <div class="page" id="page-switch">
+      <div class="breadcrumb">
+          <a href="#">Home</a> >
+          <a href="#">JavaScript</a> > JS Switch
+      </div>
+        <div class="lecture">Lecture 15</div>
+    <!-- End On Page: JS Switch -->
+    
+    <h1>Switch Statement - একাধিক Case</h1>
+    <p>যখন একই variable এর অনেক values check করতে হয়, তখন switch ব্যবহার করা ভালো।</p>
+
+<pre>
+<span class="com">switch.js</span>
+<span class="sel">let</span> <span class="prop">day</span> = <span class="val">4</span>;
+<span class="sel">let</span> <span class="prop">dayName</span>;
+<span class="sel">switch </span> (<span class="prop">day</span>) {    
+    <span class="sel">case</span> <span class="val">1</span>: <span class="prop">dayName </span>= <span class="val">"শনিবার"</span>; <span class="num">break</span>;
+    <span class="sel">case</span> <span class="val">2</span>: <span class="prop">dayName </span>= <span class="val">"রবিবার"</span>; <span class="num">break</span>;
+    <span class="sel">case</span> <span class="val">3</span>: <span class="prop">dayName </span>= <span class="val">"সোমবার"</span>; <span class="num">break</span>;
+    <span class="sel">case</span> <span class="val">4</span>: <span class="prop">dayName </span>= <span class="val">"মঙ্গলবার"</span>; <span class="num">break</span>;
+    <span class="sel">case</span> <span class="val">5</span>: <span class="prop">dayName </span>= <span class="val">"বুধবার"</span>; <span class="num">break</span>;
+    <span class="sel">case</span> <span class="val">6</span>: <span class="prop">dayName </span>= <span class="val">"বৃহস্পতিবার"</span>; <span class="num">break</span>;
+    <span class="sel">case</span> <span class="val">7</span>: <span class="prop">dayName </span>= <span class="val">"শুক্রবার"</span>; <span class="num">break</span>;
+    <span class="sel">default</span> : <span class="prop">dayName </span>= <span class="val">"ভুল দিন!"</span>;
+}
+        <span class="num">console.log</span> (<span class="val">dayName</span>); <span class="com">// "বুধবার"</span>
+</pre>
+
+
+    <ul>
+        <strong>✅ Switch এর গুরুত্বপূর্ণ অংশ:</strong>
+        <li>case - প্রতিটা option</li>
+        <li>break - Switch থেকে বের হওয়া (না থাকলে পরের case ও চলবে!)</li>
+        <li>efault - কোনো case match না করলে (else এর মতো)</li>
+    </ul>
+
+
+<pre>
+<span class="com">switch-multiple.js</span>
+<span class="sel">let</span> <span class="prop">fruit</span> = <span class="val">"আম"</span>;
+<span class="sel">let</span> <span class="prop">color</span>;
+<span class="sel">switch </span> (<span class="prop">fruit</span>) {
+    <span class="sel">case</span> <span class="prop">"কলা"</span> : <span class="sel">case</span> <span class="prop">"আম"</span> : <span class="val">color</span> = <span class="prop">"হলুদ"</span>; <span class="num">break</span>;
+    <span class="sel">case</span> <span class="prop">"আপেল"</span> : <span class="sel">case</span> <span class="prop">"স্ট্রবেরি"</span> : <span class="val">color</span> = <span class="prop">"লাল"</span>; <span class="num">break</span>;
+    <span class="sel">case</span> <span class="prop">"কমলা"</span> : <span class="val">color</span> = <span class="prop">"কমলা"</span>; <span class="num">break</span>;
+    <span class="sel">default</span> : <span class="val">color</span> = <span class="prop">"জানি না"</span>;
+}
+        <span class="num">console.log</span> (<span>"রঙ:"</span>) + <span class="prop">color</span>); <span class="com">// "রঙ: হলুদ"</span>
+</pre>
+
+<pre>
+<strong class="sel">বিষয়</strong>                  <strong class="prop">If-Else</strong>                        <strong class="val">Switch</strong>
+<span class="sel">ব্যবহার </span>           <span  class="prop">যেকোনো condition</span>           <span class="val">একই variable এর বিভিন্ন values</span>
+<span class="sel">Comparison </span>      <span class="prop">Range check করা যায় (>, <)</span>   <span class="val">শুধু equality (===)</span>
+<span class="sel">Readability </span>     <span class="prop">অনেক conditions হলে জটিল</span>   <span class="val">অনেক cases হলে সুন্দর</span>
+<span class="sel">Performance </span>     <span class="prop">কম cases এ ভালো</span>             <span class="val">বেশি cases এ faster</span>
+<span class="sel">Multiple Conditions </span> <span class="prop">&&, || ব্যবহার করা যায়</span>      <span class="val">Multiple cases একসাথে</span>
+</pre>
+
+    <ul>
+        <strong>🔑 Beginner Tips (খুব গুরুত্বপূর্ণ)</strong>
+        <li>✔️ Always use ===</li>
+        <li>✔️ Code readable রাখো</li>
+        <li>✔️ Nested if কম ব্যবহার করো</li>
+        <li>✔️ Logic আগে ভাবো, পরে কোড লেখো</li>
+    </ul>
+
+</div>
+
+
+<!--? Class-16 Booleans পেজ এর জন্য -->
+<!--! Class-16 Booleans পেজ এর জন্য -->
+<div class="page" id="page-booleans">
+    
+    <div class="breadcrumb">
+          <a href="#">Home</a> >
+          <a href="#">JavaScript</a> > JS Booleans
+      </div>
+        <div class="lecture">Lecture 16</div>
+    <!-- End On Page: JS Switch -->
+
+    <h1>Boolean (true / false)</h1>
+    <p>JavaScript-এর সব condition আসলে Boolean এর উপর কাজ করে।</p>
+    
+    <ul>
+      <li>true      <span class="com">// সত্য</span></li>
+      <li>false     <span class="com">// সত্য</span></li>
+    </ul>
+    
+    <h2>Boolean Example</h2>
+      <ul>
+        <li><span class="sel">10</span> > <span class="prop">5</span>     <span class="com">// true</span></li>
+        <li><span class="sel">5</span> > <span class="prop">10</span>     <span class="com">// false</span></li>
+      </ul>
+
+      <p>👉 Condition সবসময় <span class="sel">true</span> বা <span class="sel">false</span> রিটার্ন করে</p>
+
+      <p>Boolean হলো একটা data type যার মান শুধু দুইটা - true (সত্য) অথবা false (মিথ্যা)।</p>
+</div>
+
+
+<!--? Class-17 Logical পেজ এর জন্য -->
+<!--! Class-17 Logical পেজ এর জন্য -->
+  <div class="page" id="page-logical">
+
+    <div class="breadcrumb">
+      <a href="#">Home</a> >
+      <a href="#">JavaScript</a> > JS Logical
+    </div>
+        <div class="lecture">Lecture 17</div>
+    <!-- End On Page: JS Switch -->
+
+    <h1> Logical Operators যুক্তি</h1>
+    <p>একাধিক conditions একসাথে check করার জন্য logical operators ব্যবহার হয়।</p>
+
+    <h2>তিনটা Logical Operators:</h2>
+    <ul>
+      <li>AND (&&)</li>
+      <li>OR (||)</li>
+      <li>NOT (!)</li>
+    </ul>
+
+<pre>
+<span class="com">AND (&&)</span>
+<span>সব condition true হতে হবে</span>
+<span class="sel">if</span> (<span class="prop">age</span> >= <span class="val">18</span> <span class="num">&&</span> <span class="sel">age</span> <= <span class=val>30</span>) 
+</pre>
+
+
+<pre>
+<span class="com">OR (||)</span>
+<span>যেকোনো একটা true হলেই চলবে</span>
+<span class="sel">if</span> (<span class="prop">age</span> >= <span class="val">18</span> <span class="num">||</span> <span class="sel">age</span> > <span class=val>60</span>) 
+</pre>
+
+
+
+<pre>
+<span class="com">NOT (!)</span>
+<span>উল্টো করে দেয়- True হলে false রেজাল্ট দিবে আর false হলে true রেজাল্ট দিবে।</span>
+<span class="sel">if</span> (<span class="prop">!isLoggedIn</span>) 
+</pre>
+
+
+
+<pre>
+<span class="com">// AND (&&) - দুইটাই সত্য হতে হবে</span>
+<span class="sel">if</span> (<span class="prop">age</span> >= <span class="val">18</span> <span class="num">&&</span> <span class=val>hasTicket</span>) {
+    <span class="sel">console.log</span> (<span class="prop">"সিনেমা দেখতে পারবে"</span>);
+}
+
+<span class="com">// OR (||) - যেকোনো একটা সত্য হলেই হবে</span>
+<span class="sel">if</span> (<span class="prop">age</span> < <span class="val">12</span> <span class="num">||</span> <span class="prop">age</span> > <span class=val>60</span>) {
+    <span class="sel">console.log</span> (<span class="prop">"ছাড় পাবে"</span>);
+}
+
+<span class="com">// NOT (!) - উল্টা করে</span>
+<span class="sel">if</span> (<span class="num">!</span><span class="prop">hasTicket</span>) {
+    <span class="sel">console.log</span> (<span class="prop">"টিকেট কিনতে হবে"</span>);
+}
+</pre>
+
+
+</div>
+
+
+<!--? Class-18 Loops পেজ এর জন্য -->
+<!--! Class-18 Loops পেজ এর জন্য -->
+<div class="page" id="page-loops">
+    <h1>JS Loops</h1>
+    <p>Loops সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-19 Loops-for পেজ এর জন্য -->
+<!--! Class-19 loops-for পেজ এর জন্য -->
+<div class="page" id="page-loops-for">
+    <h1>JS Loops-for</h1>
+    <p>Loops-for সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+
+<!--? Class-20 Loops-while পেজ এর জন্য -->
+<!--! Class-20 Loops-while পেজ এর জন্য -->
+<div class="page" id="page-loops-while">
+    <h1>JS Loops-while</h1>
+    <p>Loops-while সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-21 Break পেজ এর জন্য -->
+<!--! Class-21 Break পেজ এর জন্য -->
+<div class="page" id="page-break">
+    <h1>JS Break</h1>
+    <p>Break সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-22 Cntinue পেজ এর জন্য -->
+<!--! Class-22 Continue পেজ এর জন্য -->
+<div class="page" id="page-continue">
+    <h1>JS Cntinue</h1>
+    <p>Cntinue সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-23 Control-flow পেজ এর জন্য -->
+<!--! Class-23 Control-flow পেজ এর জন্য -->
+<div class="page" id="page-control-flow">
+    <h1>JS Control-flow</h1>
+    <p>Control-flow সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-24 Strings পেজ এর জন্য -->
+<!--! Class-24 Strings পেজ এর জন্য -->
+<div class="page" id="page-strings">
+    <h1>JS Strings</h1>
+    <p>Strings সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-25 String-templates পেজ এর জন্য -->
+<!--! Class-25 String-templates পেজ এর জন্য -->
+<div class="page" id="page-string-templates">
+    <h1>JS String-templates</h1>
+    <p>String-templates সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-26 String-methods পেজ এর জন্য -->
+<!--! Class-26 String-methods পেজ এর জন্য -->
+<div class="page" id="page-string-methods">
+    <h1>JS String-methods</h1>
+    <p>String-methods সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-27 String-search পেজ এর জন্য -->
+<!--! Class-27 String-search পেজ এর জন্য -->
+<div class="page" id="page-string-search">
+    <h1>JS String-search</h1>
+    <p>String-search সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-28 String-reference পেজ এর জন্য -->
+<!--! Class-28 String-reference পেজ এর জন্য -->
+<div class="page" id="page-string-reference">
+    <h1>JS String-reference</h1>
+    <p>String-reference সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-29 Numbers পেজ এর জন্য -->
+<!--! Class-29 Numbers পেজ এর জন্য -->
+<div class="page" id="page-numbers">
+    <h1>JS Numbers</h1>
+    <p>Numbers সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-30 Numbers-methods পেজ এর জন্য -->
+<!--! Class-30 Numbers-methods পেজ এর জন্য -->
+<div class="page" id="page-numbers-methods">
+    <h1>JS Numbers-methods</h1>
+    <p>Numbers-methods সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-31 Numbers-properties পেজ এর জন্য -->
+<!--! Class-31 Numbers-properties পেজ এর জন্য -->
+<div class="page" id="page-numbers-properties">
+    <h1>JS Numbers-properties</h1>
+    <p>Numbers-properties সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-32 Numbers-reference পেজ এর জন্য -->
+<!--! Class-32 Numbers-reference পেজ এর জন্য -->
+<div class="page" id="page-numbers-reference">
+    <h1>JS Numbers-reference</h1>
+    <p>Numbers-reference সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-33 Numbers-bitwise পেজ এর জন্য -->
+<!--! Class-33 Numbers-bitwise পেজ এর জন্য -->
+<div class="page" id="page-numbers-bitwise">
+    <h1>JS Numbers-bitwise</h1>
+    <p>Numbers-bitwise সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-34 Numbers-bitwise পেজ এর জন্য -->
+<!--! Class-34 Numbers-bitwise পেজ এর জন্য -->
+<div class="page" id="page-numbers-bitwise">
+    <h1>JS Numbers-bitwise</h1>
+    <p>Numbers-bitwise সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-35 Numbers-bitwise পেজ এর জন্য -->
+<!--! Class-35 Numbers-bitwise পেজ এর জন্য -->
+<div class="page" id="page-number-biglnt">
+    <h1>JS Numbers-bitwise</h1>
+    <p>Numbers-bitwise সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-36 Function-path পেজ এর জন্য -->
+<!--! Class-36 Function-path পেজ এর জন্য -->
+<div class="page" id="page-function-path">
+    <h1>JS Function-path</h1>
+    <p>Function-path সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-37 Function-intro পেজ এর জন্য -->
+<!--! Class-37 Function-intro পেজ এর জন্য -->
+<div class="page" id="page-function-intro">
+    <h1>JS Function-intro</h1>
+    <p>Function-intro সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-38 Function-invocation পেজ এর জন্য -->
+<!--! Class-38 Function-invocation পেজ এর জন্য -->
+<div class="page" id="page-function-invocation">
+    <h1>JS Function-invocation</h1>
+    <p>Function-invocation সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-39 Function-parameters পেজ এর জন্য -->
+<!--! Class-39 Function-parameters পেজ এর জন্য -->
+<div class="page" id="page-function-parameters">
+    <h1>JS Function-parameters</h1>
+    <p>Function-parameters সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-40 Function-returns পেজ এর জন্য -->
+<!--! Class-40 Function-returns পেজ এর জন্য -->
+<div class="page" id="page-function-returns">
+    <h1>JS Function-returns</h1>
+    <p>Function-returns সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-41 Function-returns পেজ এর জন্য -->
+<!--! Class-41 Function-returns পেজ এর জন্য -->
+<div class="page" id="page-function-returns">
+    <h1>JS Function-returns</h1>
+    <p>Function-returns সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-42 Function-arguments পেজ এর জন্য -->
+<!--! Class-42 Function-arguments পেজ এর জন্য -->
+<div class="page" id="page-function-arguments">
+    <h1>JS Function-arguments</h1>
+    <p>Function-arguments সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-43 Function-expressions পেজ এর জন্য -->
+<!--! Class-43 Function-expressions পেজ এর জন্য -->
+<div class="page" id="page-function-expressions">
+    <h1>JS Function-expressions</h1>
+    <p>Function-expressions সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-44 Function-arrow পেজ এর জন্য -->
+<!--! Class-44 Function-arrow পেজ এর জন্য -->
+<div class="page" id="page-function-arrow">
+    <h1>JS Function-arrow</h1>
+    <p>Function-arrow সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-45 Function-quize পেজ এর জন্য -->
+<!--! Class-45 Function-quize পেজ এর জন্য -->
+<div class="page" id="page-function-quize">
+    <h1>JS Function-quize</h1>
+    <p>Function-quize সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-46 Object-path পেজ এর জন্য -->
+<!--! Class-46 Object-path পেজ এর জন্য -->
+<div class="page" id="page-object-path">
+    <h1>JS Object-path</h1>
+    <p>Object-path সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-47 Object-intro পেজ এর জন্য -->
+<!--! Class-47 Object-intro পেজ এর জন্য -->
+<div class="page" id="page-object-intro">
+    <h1>JS Object-intro</h1>
+    <p>Object-intro সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-48 Object-properties পেজ এর জন্য -->
+<!--! Class-48 Pbject-properties পেজ এর জন্য -->
+<div class="page" id="page-object-properties">
+    <h1>JS Object-properties</h1>
+    <p>Object-properties সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-48 Object-methods পেজ এর জন্য -->
+<!--! Class-48 Object-methods পেজ এর জন্য -->
+<div class="page" id="page-object-methods">
+    <h1>JS Object-methods</h1>
+    <p>Object-methods সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-49 Object-this পেজ এর জন্য -->
+<!--! Class-49 Pbject-this পেজ এর জন্য -->
+<div class="page" id="page-object-this">
+    <h1>JS Object-this</h1>
+    <p>Object-this সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-50 Object-display পেজ এর জন্য -->
+<!--! Class-50 Object-display পেজ এর জন্য -->
+<div class="page" id="page-object-display">
+    <h1>JS Object-display</h1>
+    <p>Object-display সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-51 Object-constructors পেজ এর জন্য -->
+<!--! Class-51 Object-constructors পেজ এর জন্য -->
+<div class="page" id="page-object-constructors">
+    <h1>JS Object-constructors</h1>
+    <p>Object-constructors সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-52 Scope পেজ এর জন্য -->
+<!--! Class-52 Scope পেজ এর জন্য -->
+<div class="page" id="page-scope">
+    <h1>JS Scope</h1>
+    <p>Scope সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-53 Code-blocks পেজ এর জন্য -->
+<!--! Class-53 Code-blocks পেজ এর জন্য -->
+<div class="page" id="page-code-blocks">
+    <h1>JS Code-blocks </h1>
+    <p>Code-blocks  সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-54 Code-hoisting পেজ এর জন্য -->
+<!--! Class-54 Code-hoisting পেজ এর জন্য -->
+<div class="page" id="page-code-hoisting">
+    <h1>JS Code-hoisting</h1>
+    <p>Code-hoisting সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-55 Code-strict-mode পেজ এর জন্য -->
+<!--! Class-55 Code-strict-mode পেজ এর জন্য -->
+<div class="page" id="page-code-strict-mode">
+    <h1>JS Code-strict-mode</h1>
+    <p>Code-strict-mode সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-56 Dates পেজ এর জন্য -->
+<!--! Class-56 Dates পেজ এর জন্য -->
+<div class="page" id="page-dates">
+    <h1>JS Dates</h1>
+    <p>Dates সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-57 Date-formats পেজ এর জন্য -->
+<!--! Class-57 Date-formats পেজ এর জন্য -->
+<div class="page" id="page-date-formats">
+    <h1>JS Date-formats</h1>
+    <p>Date-formats সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-58 Date-get পেজ এর জন্য -->
+<!--! Class-58 Date-get পেজ এর জন্য -->
+<div class="page" id="page-date-get">
+    <h1>JS Date-get</h1>
+    <p>Date-get সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-59 Date-set পেজ এর জন্য -->
+<!--! Class-59 Date-set পেজ এর জন্য -->
+<div class="page" id="page-date-set">
+    <h1>JS Date-set</h1>
+    <p>Date-set সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-60 Date-methods পেজ এর জন্য -->
+<!--! Class-60 Date-methods পেজ এর জন্য -->
+<div class="page" id="page-date-methods">
+    <h1>JS Date-methods</h1>
+    <p>Date-methods সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+
+<!--? Class-61 Arrays পেজ এর জন্য -->
+<!--! Class-61 Arrays পেজ এর জন্য -->
+<div class="page" id="page-arrays">
+    <h1>JS Arrays পেজ</h1>
+    <p>Arrays পেজ সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-62 Array-methods পেজ এর জন্য -->
+<!--! Class-62 Array-methods পেজ এর জন্য -->
+<div class="page" id="page-array-methods">
+    <h1>JS Array-methods</h1>
+    <p>Array-methods সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-63 Array-search পেজ এর জন্য -->
+<!--! Class-63 Array-search পেজ এর জন্য -->
+<div class="page" id="page-array-search">
+    <h1>JS Array-search</h1>
+    <p>Array-search সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-64 Array-sort পেজ এর জন্য -->
+<!--! Class-64 Array-sort পেজ এর জন্য -->
+<div class="page" id="page-array-sort">
+    <h1>JS Array-sort</h1>
+    <p>Array-sort সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-65 Array-iterations পেজ এর জন্য -->
+<!--! Class-65 Array-iterations পেজ এর জন্য -->
+<div class="page" id="page-array-iterations">
+    <h1>JS Array-iterations</h1>
+    <p>Array-iterations সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-66 array-reference পেজ এর জন্য -->
+<!--! Class-66 array-reference পেজ এর জন্য -->
+<div class="page" id="page-array-reference">
+    <h1>JS array-reference</h1>
+    <p>array-reference সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+<!--? Class-67 Array-const পেজ এর জন্য -->
+<!--! Class-67 Array-const পেজ এর জন্য -->
+<div class="page" id="page-array-const">
+    <h1>JS Array-const</h1>
+    <p>Array-const সংক্রান্ত আলোচনা এখানে থাকবে।</p>
+</div>
+
+
+
+
+
+
+
+
+  </div>
+<!-- End MAIN CONTENT -->
+
+  </div>
+<!-- End Layout -->
+
+
+  <script src="03-JS-Combine.js"></script>
+</body>
+</html>

@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeBangla - CSS Tutorial</title>
+  <link rel="stylesheet" href="02-CSS-Combine.css">
+</head>
+
+<body>
+
+<!--? TOP NAV -->
+<!-- Start Navbar -->
+  <nav class="top-nav">
+    <div class="brand"><span>Code</span>Bangla</div>
+      <a href="#">HTML</a>
+      <a href="#" class="active">CSS</a>
+      <a href="#">JavaScript</a>
+      <a href="#">Python</a>
+      <a href="#">বাংলা</a>
+        <button class="exercise-btn">Exercise</button>
+  </nav>
+<!-- End Navbar -->
+
+
+<!-- Start Layout -->
+<div class="layout"> 
+
+<!--? SIDEBAR -->
+<!-- Start Sidbar -->
+    <div class="sidebar">
+        <div class="sidebar-header">🎨 CSS Tutorial</div>
+        <div class="sidebar-section">শুরু করুন</div>
+
+    <a onclick="showPage('all-properties')" class="active" id="nav-all-properties">CSS All-Properties</a>
+    <a onclick="showPage('intro')" id="nav-intro">CSS পরিচিতি</a>
+    <a onclick="showPage('syntax')" id="nav-syntax">CSS Syntax</a>
+    <a onclick="showPage('selectors')" id="nav-selectors">CSS Selectors</a>
+    <a onclick="showPage('colors')" id="nav-colors">CSS Colors</a>
+    <a onclick="showPage('background')" id="nav-background">CSS Backgrounds</a>
+    <a onclick="showPage('table')" id="nav-table">CSS Table</a>
+
+    <div class="sidebar-section">বক্স মডেল</div>
+    <a onclick="showPage('box')" id="nav-box">CSS Box Model</a>
+    <a onclick="showPage('margin')" id="nav-margin">CSS Margin</a>
+    <a onclick="showPage('padding')" id="nav-padding">CSS Padding</a>
+    <a onclick="showPage('border')" id="nav-border">CSS Border</a>
+
+    <div class="sidebar-section">টেক্সট ও ফন্ট</div>
+    <a onclick="showPage('text')" id="nav-text">CSS Text</a>
+    <a onclick="showPage('font')" id="nav-font">CSS Font</a>
+
+    <div class="sidebar-section">লেআউট</div>
+    <a onclick="showPage('display')" id="nav-display">CSS Display</a>
+    <a onclick="showPage('position')" id="nav-position">CSS Position</a>
+    <a onclick="showPage('flexbox')" id="nav-flexbox">CSS Flexbox</a>
+    <a onclick="showPage('grid')" id="nav-grid">CSS Grid</a>
+
+    <div class="sidebar-section">অ্যাডভান্সড</div>
+    <a onclick="showPage('animation')" id="nav-animation">CSS Animation</a>
+    <a onclick="showPage('responsive')" id="nav-responsive">CSS Responsive</a>
+    <a onclick="showPage('variables')" id="nav-variables">CSS Variables</a>
+    </div>
+<!-- End Sidbar -->
+
+
+
+<!--? MAIN CONTENT -->
+<!-- Start Main Content -->
+    <div class="main">  
+
+
+<!--? Class 00_CSS All Properties -->
+  <div class="page active" id="page-all-properties">
+
+  <header>
+    <h1>CSS SHORTHAND PROPERTIES</h1>
+    <p>আপনার কাজের সুবিধার জন্য একটি পূর্ণাঙ্গ তালিকা</p>
+</header>
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">background</div>
+        <div class="card-body">
+            <ul>
+                <li>background-attachment</li>
+                <li>background-clip</li>
+                <li>background-color</li>
+                <li>background-image</li>
+                <li>background-origin</li>
+                <li>background-position</li>
+                <li>background-repeat</li>
+                <li>background-size</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">font</div>
+        <div class="card-body">
+            <ul>
+                <li>font-family</li>
+                <li>font-size</li>
+                <li>font-stretch</li>
+                <li>font-style</li>
+                <li>font-variant</li>
+                <li>font-weight</li>
+                <li>line-height</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">margin</div>
+        <div class="card-body">
+            <ul>
+                <li>margin-top</li>
+                <li>margin-right</li>
+                <li>margin-bottom</li>
+                <li>margin-left</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">padding</div>
+        <div class="card-body">
+            <ul>
+                <li>padding-top</li>
+                <li>padding-right</li>
+                <li>padding-bottom</li>
+                <li>padding-left</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">border</div>
+        <div class="card-body">
+            <ul>
+                <li>border-width</li>
+                <li>border-style</li>
+                <li>border-color</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">animation</div>
+        <div class="card-body">
+            <ul>
+                <li>animation-name</li>
+                <li>animation-duration</li>
+                <li>animation-timing-function</li>
+                <li>animation-delay</li>
+                <li>animation-iteration-count</li>
+                <li>animation-direction</li>
+                <li>animation-fill-mode</li>
+                <li>animation-play-state</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">flex</div>
+        <div class="card-body">
+            <ul>
+                <li>flex-grow</li>
+                <li>flex-shrink</li>
+                <li>flex-basis</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">grid</div>
+        <div class="card-body">
+            <ul>
+                <li>grid-template-lines</li>
+                <li>grid-template-columns</li>
+                <li>grid-template-areas</li>
+                <li>grid-auto-rows</li>
+                <li>grid-auto-columns</li>
+                <li>grid-auto-flow</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">transition</div>
+        <div class="card-body">
+            <ul>
+                <li>transition-property</li>
+                <li>transition-duration</li>
+                <li>transition-timing-function</li>
+                <li>transition-delay</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">list-style</div>
+        <div class="card-body">
+            <ul>
+                <li>list-style-type</li>
+                <li>list-style-position</li>
+                <li>list-style-image</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">outline</div>
+        <div class="card-body">
+            <ul>
+                <li>outline-width</li>
+                <li>outline-style</li>
+                <li>outline-color</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">columns</div>
+        <div class="card-body">
+            <ul>
+                <li>column-width</li>
+                <li>column-count</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 CSS Shorthand Cheatsheet - আপনার শেখার যাত্রাকে সহজ করুন।</p>
+</footer>
+
+
+
+
+
+  </div>
+
+
+
+<!--? Class 01_CSS Introduction -->
+<!-- Start PAGE: CSS পরিচিতি -->
+    <div class="page" id="page-intro">
+      <div class="breadcrumb">🏠 <a href="#">হোম</a> › <a href="#">CSS Tutorial</a> › CSS পরিচিতি</div>
+      <div class="chapter-label">অধ্যায় ১</div>
+      
+      <h1>CSS পরিচিতি</h1>      
+      <div class="info-box">CSS হলো Cascading Style Sheets — এটি HTML পেজকে সুন্দর ও আকর্ষণীয় করে তোলার ভাষা।</div>
+
+      <h2>CSS কী?</h2>
+      <p>CSS (Cascading Style Sheets) একটি স্টাইলশিট ভাষা যা HTML এলিমেন্টের চেহারা নির্ধারণ করে। CSS দিয়ে আপনি রং, ফন্ট, সাইজ, স্পেসিং, লেআউট এবং আরো অনেক কিছু নিয়ন্ত্রণ করতে পারেন।</p>
+      <p>সহজ ভাষায় বলতে গেলে — HTML হলো ওয়েবপেজের কাঠামো, আর CSS হলো সেই কাঠামোর সাজসজ্জা।</p>
+
+      <h2>CSS কেন শিখবেন?</h2>
+      <ul>
+        <li>ওয়েবপেজকে দৃষ্টিনন্দন করা যায়</li>
+        <li>সব ডিভাইসে সুন্দরভাবে দেখানো যায় (Responsive Design)</li>
+        <li>HTML থেকে ডিজাইন আলাদা রাখা যায়</li>
+        <li>একটি CSS ফাইল দিয়ে পুরো ওয়েবসাইট স্টাইল করা যায়</li>
+      </ul>
+
+      <h2>CSS এর একটি সহজ উদাহরণ</h2>
+      <div class="code-box">
+        <div class="code-box-header"><span class="dot"></span> CSS উদাহরণ</div>
+        <pre><span class="sel">h1</span> {
+  <span class="prop">color</span>: <span class="val">blue</span>;
+  <span class="prop">font-size</span>: <span class="val">24px</span>;
+  <span class="prop">text-align</span>: <span class="val">center</span>;
+}</pre>
+      </div>
+
+      <div class="tip-box">💡 <strong>মনে রাখুন:</strong> CSS শেখা HTML এর পরের ধাপ। আগে HTML ভালো করে শিখুন, তারপর CSS।</div>
+
+      <div class="nav-buttons">
+        <span></span>
+        <a class="nav-btn" onclick="showPage('syntax')">CSS Syntax →</a>
+      </div>
+    </div>
+<!-- End PAGE: CSS পরিচিতি -->
+
+
+<!--? Class 03_CSS Background -->
+<!-- Start PAGE:CSS Syntax -->
+    <div class="page" id="page-syntax">
+      <div class="breadcrumb">🏠 <a href="#">হোম</a> › <a href="#">CSS Tutorial</a> › CSS Syntax</div>
+      <div class="chapter-label">অধ্যায় ২</div>
+
+
+      <h1>CSS Syntax</h1>
+      <div class="info-box">CSS-এর নিজস্ব একটি নিয়ম আছে — কীভাবে লিখতে হয় তা জানা জরুরি।</div>
+
+      <h2>CSS Syntax কী?</h2>
+      <p>CSS Syntax হলো CSS লেখার সঠিক নিয়ম। একটি CSS রুল তিনটি অংশে তৈরি — Selector, Property এবং Value।</p>
+
+      <div class="code-box">
+        <div class="code-box-header"><span class="dot"></span> CSS Syntax কাঠামো</div>
+        <pre><span class="sel">selector</span> {
+  <span class="prop">property</span>: <span class="val">value</span>;
+}</pre>
+      </div>
+
+      <h2>উদাহরণ</h2>
+      <div class="code-box">
+        <div class="code-box-header"><span class="dot"></span> উদাহরণ</div>
+        <pre><span class="sel">p</span> {
+  <span class="prop">color</span>: <span class="val">red</span>;
+  <span class="prop">font-size</span>: <span class="val">16px</span>;
+  <span class="prop">line-height</span>: <span class="val">1.6</span>;
+}</pre>
+      </div>
+
+      <h2>CSS কোথায় লেখা যায়?</h2>
+      <ul>
+        <li><strong>Inline CSS:</strong> সরাসরি HTML ট্যাগের ভেতরে <code>style</code> অ্যাট্রিবিউট দিয়ে</li>
+        <li><strong>Internal CSS:</strong> HTML ফাইলের <code>&lt;style&gt;</code> ট্যাগের ভেতরে</li>
+        <li><strong>External CSS:</strong> আলাদা <code>.css</code> ফাইলে লিখে লিঙ্ক করে</li>
+      </ul>
+
+      <div class="code-box">
+        <div class="code-box-header"><span class="dot"></span> তিন ধরনের CSS</div>
+        <pre><span class="com">/* Inline CSS */</span>
+&lt;<span class="kw">p</span> style="<span class="prop">color</span>: <span class="val">blue</span>"&gt;এটি Inline CSS&lt;/<span class="kw">p</span>&gt;
+
+<span class="com">/* Internal CSS */</span>
+&lt;<span class="kw">style</span>&gt;
+  <span class="sel">p</span> { <span class="prop">color</span>: <span class="val">green</span>; }
+&lt;/<span class="kw">style</span>&gt;
+
+<span class="com">/* External CSS */</span>
+&lt;<span class="kw">link</span> rel="stylesheet" href="<span class="val">style.css</span>"&gt;</pre>
+      </div>
+
+      <div class="tip-box">💡 <strong>সুপারিশ:</strong> সবসময় External CSS ব্যবহার করুন। এটি সবচেয়ে সুবিধাজনক এবং পরিষ্কার পদ্ধতি।</div>
+
+      <div class="nav-buttons">
+        <a class="nav-btn" onclick="showPage('intro')">← CSS পরিচিতি</a>
+        <a class="nav-btn" onclick="showPage('selectors')">CSS Selectors →</a>
+      </div>
+    </div>
+<!-- Start PAGE:CSS Syntax -->
+
+
+<!--? Class 04_CSS Background -->
+    <!-- PAGE: CSS Selectors -->
+    <div class="page" id="page-selectors">
+      <div class="breadcrumb">🏠 <a href="#">হোম</a> › <a href="#">CSS Tutorial</a> › CSS Selectors</div>
+      <div class="chapter-label">অধ্যায় ৩</div>
+      <h1>CSS Selectors</h1>
+      <div class="info-box">Selector দিয়ে বলা হয় কোন HTML এলিমেন্টে স্টাইল প্রয়োগ হবে।</div>
+
+      <h2>Selector কী?</h2>
+      <p>CSS Selector হলো এমন একটি প্যাটার্ন যা নির্দিষ্ট HTML এলিমেন্ট(গুলো) বেছে নেয়, যেন সেগুলোতে স্টাইল দেওয়া যায়।</p>
+
+      <h2>সাধারণ Selectors</h2>
+      <ul>
+        <li><strong>Element Selector:</strong> যেমন <code>p</code>, <code>h1</code>, <code>div</code> — সরাসরি ট্যাগ নাম</li>
+        <li><strong>Class Selector:</strong> <code>.classname</code> — ডট দিয়ে শুরু</li>
+        <li><strong>ID Selector:</strong> <code>#idname</code> — হ্যাশ দিয়ে শুরু</li>
+        <li><strong>Universal Selector:</strong> <code>*</code> — সবকিছু সিলেক্ট করে</li>
+      </ul>
+
+      <div class="code-box">
+        <div class="code-box-header"><span class="dot"></span> Selector উদাহরণ</div>
+        <pre><span class="com">/* Element Selector */</span>
+<span class="sel">p</span> { <span class="prop">color</span>: <span class="val">black</span>; }
+
+<span class="com">/* Class Selector */</span>
+<span class="sel">.highlight</span> { <span class="prop">background</span>: <span class="val">yellow</span>; }
+
+<span class="com">/* ID Selector */</span>
+<span class="sel">#header</span> { <span class="prop">font-size</span>: <span class="val">24px</span>; }
+
+<span class="com">/* Universal Selector */</span>
+<span class="sel">*</span> { <span class="prop">margin</span>: <span class="val">0</span>; <span class="prop">padding</span>: <span class="val">0</span>; }</pre>
+      </div>
+
+      <div class="tip-box">💡 <strong>টিপস:</strong> Class Selector সবচেয়ে বেশি ব্যবহৃত হয়। ID সাধারণত JavaScript-এর জন্য রাখা হয়।</div>
+
+      <div class="nav-buttons">
+        <a class="nav-btn" onclick="showPage('syntax')">← CSS Syntax</a>
+        <a class="nav-btn" onclick="showPage('colors')">CSS Colors →</a>
+      </div>
+    </div>
+
+    <!--? Class 05_CSS Background -->
+    <!-- PAGE: CSS Colors -->
+    <div class="page" id="page-colors">
+      <div class="breadcrumb">🏠 <a href="#">হোম</a> › <a href="#">CSS Tutorial</a> › CSS Colors</div>
+      <div class="chapter-label">অধ্যায় ৪</div>
+      <h1>CSS Colors</h1>
+      <div class="info-box">CSS-এ রং নির্ধারণ করার বিভিন্ন পদ্ধতি আছে — নাম, HEX, RGB, HSL।</div>
+
+      <h2>রং লেখার পদ্ধতি</h2>
+      <ul>
+        <li><strong>Color Name:</strong> <code>red</code>, <code>blue</code>, <code>green</code> ইত্যাদি নাম দিয়ে</li>
+        <li><strong>HEX:</strong> <code>#ff0000</code> — হেক্সাডেসিমাল কোড</li>
+        <li><strong>RGB:</strong> <code>rgb(255, 0, 0)</code> — লাল, সবুজ, নীলের মান</li>
+        <li><strong>HSL:</strong> <code>hsl(0, 100%, 50%)</code> — Hue, Saturation, Lightness</li>
+        <li><strong>RGBA:</strong> <code>rgba(255, 0, 0, 0.5)</code> — Alpha/Transparency সহ</li>
+      </ul>
+
+      <div class="code-box">
+        <div class="code-box-header"><span class="dot"></span> রং ব্যবহারের উদাহরণ</div>
+        <pre><span class="sel">h1</span> { <span class="prop">color</span>: <span class="val">red</span>; }
+<span class="sel">h2</span> { <span class="prop">color</span>: <span class="val">#3498db</span>; }
+<span class="sel">p</span>  { <span class="prop">color</span>: <span class="val">rgb(46, 204, 113)</span>; }
+<span class="sel">.box</span> { <span class="prop">background-color</span>: <span class="val">rgba(0,0,0,0.3)</span>; }</pre>
+      </div>
+
+      <div class="tip-box">💡 <strong>টিপস:</strong> ডিজাইনে HEX কোড সবচেয়ে বেশি ব্যবহৃত হয়। Transparency দরকার হলে RGBA ব্যবহার করুন।</div>
+
+      <div class="nav-buttons">
+        <a class="nav-btn" onclick="showPage('selectors')">← CSS Selectors</a>
+        <a class="nav-btn" onclick="showPage('box')">CSS Box Model →</a>
+      </div>
+    </div>
+
+
+
+
+
+<!-- Writing Complite This Two -->
+
+<!--? Class 05_CSS Background -->
+    <div class="page" id="page-background">
+
+        <div class="breadcrumb">
+            <a href="#">Home</a> > 
+            <a href="#">CSS Tutorial</a> > CSS Background
+        </div>
+            <div>Lecture 6</div>
+<!-- End On Page: CSS Background -->
+
+
+<!--? Start On CSS Background Class -->
+    <h1>CSS Background</h1>
+        <h2>Definition</h2>
+            <p>CSS background ব্যবহার করা হয় কোনো element-এর পেছনের color, image, position, size, repeat, scroll
+                    behavior ইত্যাদি control করার জন্য।</p>
+
+    <h2>All Background Properties</h2>
+        <ul class="all_bg_pro">
+            <li>background-color</li>
+            <li>background-image</li>
+            <li>background-repeat</li>
+            <li>background-attachment</li>
+            <li>background-position</li>
+            <li>background-size</li>
+            <li>background- (shorthand property)</li>
+        </ul>
+
+
+<!--! Cepter_01 -->        
+    <div class="bg">
+        <h3>1. background-color</h3>
+            <p>ব্যাকগ্রাউন্ডে রঙ দেয়</p>
+
+<pre>
+<span class="sel">div </span>{
+    <span  class="prop">background-color</span>: <span class="val">red</span>;
+    <span>}</span>
+</pre>
+
+    <strong>📌 Values:</strong>
+        <ul>
+            <li>color name → red, blue</li>
+            <li>HEX → #ff0000</li>
+            <li>RGB → rgb(255,0,0)</li>
+        </ul>
+    </div>
+
+
+<!--! Cepter_02 -->
+    <div class="bg">
+        <h3>🖼️ 2. background-image</h3>
+            <p>👉 ব্যাকগ্রাউন্ডে ছবি বসায়</p>
+
+<pre>
+<span class="sel">div </span>{
+    <span  class="prop">background-image</span>: <span class="val">url("image.jpg")</span>;
+    <span>}</span>
+</pre>
+    </div>
+
+
+
+<!--! Cepter_03 -->
+    <div class="bg">
+        <h3>🔁3. background-repeat</h3>
+            <p>👉 ছবি repeat হবে কিনা সেট করে</p>
+
+<pre>
+<span class="sel">div </span>{
+    <span  class="prop">background-repeat</span>: <span class="val">no-repeat</span>;
+    <span>}</span>
+</pre>
+
+    <strong>📌 Values:</strong>
+        <ul>
+            <li>repeat (default)</li>
+            <li>no-repeat</li>
+            <li>repeat-x</li>
+            <li>repeat-y</li>
+        </ul>
+    </div>
+
+
+<!--! Cepter_04 -->
+    <div class="bg">
+        <h3>📍4. background-position</h3>
+            <p>👉 ছবি কোথায় থাকবে সেট করে</p>
+
+<pre>
+<span class="sel">div </span>{
+    <span  class="prop">background-position</span>: <span class="val">center</span>;
+   <span>}</span>
+</pre>
+
+    <strong>📌 Values:</strong>
+        <ul>
+            <li>top</li>
+                <li>bottom</li>
+                <li>left</li>
+                <li>right</li>
+                <li>center</li>
+                <li>Custom → 50% 50%</li>
+            </ul>
+        </div>
+
+
+<!--! Cepter_05 -->
+    <div class="bg">
+        <h3>📏 5. background-size</h3>
+            <p>👉 ছবির সাইজ নিয়ন্ত্রণ করে</p>
+
+<pre>
+<span class="sel">div </span>{
+    <span  class="prop">background-size</span>: <span class="val">cover</span>;
+   <span>}</span>
+</pre>
+
+    <strong>📌 Values:</strong>
+        <ul>
+            <li>cover → পুরো area cover করে</li>
+            <li>contain → পুরো ছবি দেখায়</li>
+            <li>Custom → 100px 200px</li>
+        </ul>
+    </div>
+
+
+<!--! Cepter_06 -->
+    <div class="bg">
+        <h3>📌 6. background-attachment</h3>
+            <p>👉 scroll behaviour নিয়ন্ত্রণ করে</p>
+
+<pre>
+<span class="sel">div </span>{
+    <span  class="prop">background-posattachmentition</span>: <span class="val">fixed</span>;
+   <span>}</span>
+</pre>
+
+    <strong>📌 Values:</strong>
+        <ul>
+            <li>scroll (default)</li>
+            <li>fixed (parallax effect)</li>
+            <li>local</li>
+        </ul>
+    </div>
+
+
+<!--! Cepter_07 -->
+    <div class="bg">
+        <h3>📦 7. background-clip</h3>
+            <p>👉 background কোথায় পর্যন্ত যাবে</p>
+
+<pre>
+<span class="sel">div </span>{
+    <span  class="prop">background-clip</span>: <span class="val">border-box</span>;
+   <span>}</span>
+</pre>
+    </div>
+
+
+
+<!--! Cepter_08 -->
+    <div class="bg">
+        <h3>🧩 8. background-origin</h3>
+            <p>👉 background কোথা থেকে শুরু হবে</p>
+
+<pre>
+<span class="sel">div </span>{
+    <span  class="prop">background-origin</span>: <span class="val">padding-box</span>;
+   <span>}</span>
+</pre>
+    </div>
+
+
+<!--! Cepter_09 -->
+    <div class="bg">
+        <h3>⚡ 9. Shortcut Property (Most Important)</h3>
+            <p>👉 সব একসাথে লেখার জন্য background</p>
+
+<pre>
+<span class="sel">div</span>{
+    <span  class="prop">background</span>: <span class="val">red url("image.jpg") no-repeat center/cover</span>;
+   <span>}</span>
+</pre>
+
+    <strong>📌 Order:</strong>
+        <ul>
+            <li>color → image → repeat → position / size → attachment</li>
+        </ul>
+    </div>
+
+
+
+<!--! Cepter_10 -->
+    <div class="bg">
+        <h3>🎨 10. Gradient Background</h3>
+        <p>👉 CSS দিয়ে gradient বানানো যায়</p>
+
+<pre>
+<span class="sel">div</span>{
+    <span  class="prop">background</span>: <span class="val">linear-gradient(to right, red, blue)</span>;
+   <span>}</span>
+</pre>
+
+    <strong>📌 Types::</strong>
+        <ul>
+            <li>linear-gradient()</li>
+            <li>radial-gradient()</li>
+        </ul>
+    </div>
+    </div>
+<!-- End Of Class 05_CSS Background -->
+
+
+<!--? Class 17_CSS Table -->
+<!-- PAGE: CSS Table -->
+    <div class="page active" id="page-table">
+
+        <div class="breadcrumb">
+            <a href="#">Home</a> >
+            <a href="#">CSS Tutorial</a> > CSS Table
+        </div>
+            <div>Lecture 17</div>
+<!-- End On Page: CSS Table -->
+
+                
+<!--? Start On CSS Background Class -->
+    <h1>CSS Table</h1>
+        <h2>Definition</h2>
+            <p class="p_bd">HTML <span class="sel">&lt;table&gt;</span> element-এর চেহারা এবং layout CSS দিয়ে সম্পূর্ণ নিয়ন্ত্রণ করা যায়।</p>
+
+
+<!--! Cepter_01 -->
+    <div class="bg">
+        <h3>1. Table-এর মূল HTML গঠন</h3>
+
+
+<pre>
+<span class="sel">&lt;table&gt;</span>
+  <span class="sel">&lt;thead&gt;</span>
+    <span class="sel">&lt;tr&gt;</span>
+      <span class="sel">&lt;th&gt;</span> নাম <span class="sel">&lt;/th&gt;</span>
+      <span class="sel">&lt;th&gt;</span> বয়স <span class="sel">&lt;/th&gt;</span>
+      <span class="sel">&lt;th&gt;</span> শহর <span class="sel">&lt;/th&gt;</span>
+    <span class="sel">&lt;/tr&gt;</span>
+  <span class="sel">&lt;/thead&gt;</span>
+
+  <span class="sel">&lt;tbody&gt;</span>
+    <span class="sel">&lt;tr&gt;</span>
+      <span class="sel">&lt;td&gt;</span> রাহেলা <span class="sel">&lt;/td&gt;</span>
+      <span class="sel">&lt;td&gt;</span> 24 <span class="sel">&lt;/td&gt;</span>
+      <span class="sel">&lt;td&gt;</span> ঢাকা <span class="sel">&lt;/td&gt;</span>
+    <span class="sel">&lt;/tr&gt;</span>
+  <span class="sel">&lt;/tbody&gt;</span>
+
+  <span class="sel">&lt;tfoot&gt;</span>
+    <span class="sel">&lt;tr&gt;</span>
+      <span class="sel">&lt;td colspan</span>=<span  class="prop"> "3"</span>&gt; মোট: ১ জন <span class="sel">&lt;/td&gt;</span>
+    <span class="sel">&lt;tr&gt;</span>
+  <span class="sel">&lt;/tfoot&gt;</span>
+<span class="sel">&lt;/table&gt;</span>
+</pre>
+
+    </div>
+
+
+<!--! Cepter_02 -->
+    <div class="bg">
+        <h3>2. border-collapse — সবচেয়ে গুরুত্বপূর্ণ property</h3>
+
+<pre>
+<span class="sel">table</span> {
+<span  class="prop">border-collapse</span>: <span class="val">url("image.jpg")</span>;<span class="com"> /* default — দুটো আলাদা border */</span> 
+<span  class="prop">border-collapse</span>: <span class="val">url("image.jpg")</span>;<span class="com"> /* একটাই border, সবচেয়ে বেশি ব্যবহৃত */</span> 
+      <span>}</span>
+</pre>
+
+<strong>📌 Note:</strong>
+<p>Collapse ছাড়া <span class="sel">&lt;td&gt;</span> এবং <span class="sel">&lt;th&gt;</span> -এর border আলাদা আলাদা দেখায় — দ্বিগুণ মোটা লাগে।
+</p>
+
+
+    </div>
+
+
+<!--! Cepter_03 -->
+    <div class="bg">
+        <h3>3. Border-spacing</h3>
+            <p><span class="sel">border-collapse</span>: <span class="prop">separate</span> থাকলে cell-গুলোর মধ্যে ফাঁক দেওয়া যায়:</p>
+
+<pre>
+<span class="sel">table </span>{
+        <span  class="prop">border-collapse</span>: <span class="val">separate</span>;
+        <span  class="prop">border-spacing</span>: <span class="val">10px</span>; <span class="com">/* চারদিক সমান */</span>
+        <span  class="prop">border-spacing</span>: <span class="val">10px 5px</span>;<span class="com">/* horizontal vertical */</span>
+        <span>}</span>
+</pre>
+
+                    
+    </div>
+
+
+<!--! Cepter_04 -->
+    <div class="bg">
+        <h3>📍4. Width এবং Height</h3>
+
+<pre>
+<span class="sel">div </span>{ <span class="sel">width</span>: <span class="val">100%</span>;      <span class="com"> /* পুরো container জুড়ে */</span>
+<span class="sel">th, td </span>{ <span class="sel">height</span>: <span class="val">48px</span>; <span class="com">   /* row-এর উচ্চতা */</span>
+<span class="sel">th, td </span>{ <span class="sel">width</span>: <span class="val">200px</span>; <span class="com">  /* column-এর প্রস্থ */</span>
+</pre>
+
+    </div>
+
+
+<!--! Cepter_05 -->
+    <div class="bg">
+        <h3>5. Table Layout</h3>
+
+<pre>
+<span class="sel">table </span>{ <span class="sel">table-layout</span>: <span class="val">auto</span>; <span class="com">  /* default — content অনুযায়ী width ঠিক হয় */
+</span><span class="sel">table </span>{ <span class="sel">table-layout</span>: <span class="val">fixed</span>; <span class="com">  /* width নির্দিষ্ট, content overflow হয় */</span>
+</pre>
+
+                    <strong>📌 Note:</strong>
+                    <p>fixed দিলে table দ্রুত render হয় এবং column width নিয়ন্ত্রণ সহজ হয়।</p>
+
+    </div>
+
+
+<!--! Cepter_06 -->
+    <div class="bg">
+        <h3>6. Text-align এবং vertical-align</h3>
+
+<pre>
+    <span class="sel">th </span>{ <span class="sel">text-align</span>: <span class="val">left</span>;        <span class="com">/* header বাম দিকে */</span>
+    <span class="sel">td </span>{ <span class="sel">text-align</span>: <span class="val">center</span>;     <span class="com">/* data মাঝে */</span>
+
+    <span class="sel">td </span>{ <span class="sel">vertical-align</span>: <span class="val">top</span>;     <span class="com">/* উপরে */</span>
+    <span class="sel">td </span>{  <span class="sel">vertical-align</span>: <span class="val">middle</span>;  <span class="com">/* মাঝে — default */</span>
+    <span class="sel">td </span>{ <span class="sel">vertical-align</span>: <span class="val">bottom</span>;  <span class="com">/* নিচে */</span>
+</pre>
+
+
+    </div>
+
+
+<!--! Cepter_07 -->
+    <div class="bg">
+        <h3>7.  Zebra Striping — alternate row color</h3>
+            <p>👉 background কোথায় পর্যন্ত যাবে</p>
+
+<pre>
+<span class="sel">tbody tr:nth-child(even) </span>{
+    <span class="prop">background-color</span>; <span class="val">#f5f5f5</span>;
+    }
+
+<span class="sel">tbody tr:nth-child(odd) </span>{
+    <span class="prop">background-color</span>; <span class="val">#ffffff</span>;
+    }
+
+</pre>
+
+
+    </div>
+
+
+<!--! Cepter_08 -->
+    <div class="bg">
+        <h3>8. Hover effect</h3>
+
+<pre>
+<span class="sel">tbody tr:hover </span>{
+    <span  class="prop">background-color</span>: <span class="val">#e8f4fd;</span>;
+    <span  class="prop">cursor</span>: <span class="val">pointer</span>;
+    }
+</pre>
+
+    </div>
+
+
+<!--! Cepter_09 -->
+    <div class="bg">
+        <h3>9. Responsive Table</h3>
+            <p>ছোট screen-এ table overflow হয়।</p>
+            <p>সমাধান:</p>
+
+<pre>
+<span class="sel">.table-wrapper </span>{
+    <span  class="prop">overflow-x</span>: <span class="val">auto</span>;     <span class="com">/* horizontal scroll আসবে */</span>
+    <span  class="prop">-webkit-overflow-scrolling</span>: <span class="val">touch</span>;
+    }
+</pre>
+
+<pre>
+<span class="sel">&lt;div <span class="prop">class</span><span class="val">"table-wrapper"</span>&gt;</span>
+  <span class="sel">&lt;table&gt;<span class="prop">.......</span><span>&lt;/table&gt;</span> </span>
+<span class="sel">&lt;/div&gt;</span>
+</pre>
+
+    </div>
+
+
+<!--! Cepter_10 -->
+    <div class="bg">
+                    <h3>10. Caption</h3>
+                    <p>Table-এর শিরোনাম দেওয়া যায়:</p>
+
+<pre>
+<span class="sel">caption</span>{
+   <span class="prop">caption-side</span>: <span class="val">top</span>; <span class="com">/* উপরে — default */</span>
+   <span class="prop">caption-side</span>: <span class="val">bottom</span>; <span class="com"> /* নিচে */</span>
+   <span class="prop">font-weight</span>: <span class="val">bold</span>;
+   <span class="prop">margin-bottom</span>: <span class="val">8px</span>;
+  }
+</pre>
+
+                    
+    </div>
+
+
+<!--! Cepter_11 -->
+    <div class="bg">
+                    <h3>11. একটি সম্পূর্ণ সুন্দর Table-এর উদাহরণ</h3>
+
+<pre>
+<span class="sel">.table-wrapper </span>{
+    <span class="prop">overflow-x</span>: <span class="val">auto</span>;
+    <span class="prop">border-radius</span>: <span class="val">12px</span>;
+    <span class="prop">border</span>: <span class="val">1px solid #e5e7eb</span>;
+    }
+
+<span class="sel">table </span>{
+    <span class="prop">width</span>: <span class="val">100%</span>;
+    <span class="prop">border-collapse</span>: <span class="val">collapse</span>;
+    <span class="prop">font-size</span>: <span class="val">14px</span>;
+    }    
+
+<span class="sel">caption </span>{
+    <span class="prop">caption-side</span>: <span class="val">top</span>;
+    <span class="prop">text-align</span>: <span class="val">left</span>;
+    <span class="prop">padding</span>: <span class="val">12px 16px</span>;
+    <span class="prop">font-weight</span>: <span class="val">600</span>;
+    <span class="prop">color</span>: <span class="val">#374151</span>;
+    }
+
+<span class="sel">thead tr </span>{
+    <span class="prop">background-color</span>: <span class="val">#f9fafb</span>;
+    }
+
+<span class="sel">th </span>{
+    <span class="prop">padding</span>: <span class="val">12px 16px</span>;
+    <span class="prop">text-align</span>: <span class="val">left</span>;
+    <span class="prop">font-size</span>: <span class="val">12px</span>;
+    <span class="prop">font-weight</span>: <span class="val">600</span>;
+    <span class="prop">text-transform</span>: <span class="val">uppercase</span>;
+    <span class="prop">letter-spacing</span>: <span class="val">0.05em</span>;
+    <span class="prop">color</span>: <span class="val">#6b7280</span>;
+    <span class="prop">border-bottom</span>: <span class="val">1px solid #e5e7eb</span>;
+    }
+
+<span class="sel">td </span>{
+    <span class="prop">padding</span>: <span class="val">12px 16px</span>;
+    <span class="prop">border-bottom</span>: <span class="val">1px solid #e5e7eb</span>;
+    <span class="prop">color</span>: <span class="val">#111827</span>;
+    <span class="prop">vertical-align</span>: <span class="val">middle</span>;
+    }
+
+<span class="sel">tbody tr:nth-child(even) </span>{<span class="prop">background-color</span>: <span class="val"> #f9fafb; </span>}
+<span class="sel">tbody tr:hover </span>{<span class="prop">background-color</span>: <span class="val"> #eff6ff; cursor: pointer;</span>}
+<span class="sel">tbody tr:last-child td  </span>{<span class="prop">border-bottom</span>: <span class="val"> none</span>;}
+</pre>
+
+                    
+    </div>
+
+
+    </div>
+<!-- End Of CSS Table -->
+
+<!-- Writing Complite This Two -->
+
+
+
+
+    </div>
+<!-- End Main Content -->
+
+</div>
+<!-- End Layout -->
+
+<script src="02-CSS-Combine.js"></script>
+</body>
+</html>

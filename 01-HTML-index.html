@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CodeBangla – HTML Tutorial</title>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="01-HTML-style.css">
+</head>
+<body>
+
+<!-- TOP NAV -->
+<nav>
+  <div class="logo">Code<span>Bangla</span></div>
+  <div class="nav-tabs">
+    <button class="nav-tab active">HTML</button>
+    <button class="nav-tab">CSS</button>
+    <button class="nav-tab">JavaScript</button>
+    <button class="nav-tab">Python</button>
+    <button class="nav-tab">বাংলা</button>
+  </div>
+  <div class="nav-right">
+    <button class="btn-exercise">Exercise</button>
+  </div>
+</nav>
+
+<!-- LAYOUT -->
+<div class="layout">
+
+<!-- SIDEBAR -->
+<aside>
+  <div class="sidebar-header">🌐 HTML Tutorial</div>
+
+  <div class="sidebar-section">
+    <div class="sidebar-section-title">শুরু করুন</div>
+    <a class="sidebar-link" onclick="showPage('intro')">HTML পরিচিতি</a>
+    <a class="sidebar-link active" onclick="showPage('editors')">HTML Editors</a>
+  </div>
+
+  <div class="sidebar-section">
+    <div class="sidebar-section-title">বেসিক</div>
+    <a class="sidebar-link" onclick="showPage('basic')">HTML Basic</a>
+    <a class="sidebar-link" onclick="showPage('elements')">HTML Elements</a>
+    <a class="sidebar-link" onclick="showPage('attributes')">HTML Attributes</a>
+  </div>
+
+  <div class="sidebar-section">
+    <div class="sidebar-section-title">টেক্সট ও লিংক</div>
+    <a class="sidebar-link" onclick="showPage('headings')">HTML Headings</a>
+    <a class="sidebar-link" onclick="showPage('paragraphs')">HTML Paragraphs</a>
+    <a class="sidebar-link" onclick="showPage('styles')">HTML Styles</a>
+    <a class="sidebar-link" onclick="showPage('formatting')">HTML Formatting</a>
+    <a class="sidebar-link" onclick="showPage('links')">HTML Links</a>
+  </div>
+
+  <div class="sidebar-section">
+    <div class="sidebar-section-title">মিডিয়া</div>
+    <a class="sidebar-link" onclick="showPage('images')">HTML Images</a>
+    <a class="sidebar-link" onclick="showPage('tables')">HTML Tables</a>
+    <a class="sidebar-link" onclick="showPage('lists')">HTML Lists</a>
+    <a class="sidebar-link" onclick="showPage('video')">HTML Video</a>
+  </div>
+
+  <div class="sidebar-section">
+    <div class="sidebar-section-title">ফর্ম</div>
+    <a class="sidebar-link" onclick="showPage('forms')">HTML Forms</a>
+    <a class="sidebar-link" onclick="showPage('input-types')">HTML Input Types</a>
+    <a class="sidebar-link" onclick="showPage('form-elements')">Form Elements</a>
+  </div>
+</aside>
+
+<!-- MAIN -->
+<main>
+
+
+
+
+  
+<!-- ════════════════ PAGE: INTRO ════════════════ -->
+<div class="page" id="page-intro">
+  <div class="breadcrumb"><a>🏠 হোম</a> <span>›</span> <a>HTML Tutorial</a> <span>›</span> HTML পরিচিতি</div>
+  <div class="chapter-badge">অধ্যায় ১</div>
+  <h1>HTML পরিচিতি</h1>
+
+  <div class="info-box">
+    HTML হলো ওয়েব পেজ তৈরির মূল ভিত্তি। প্রতিটি ওয়েবসাইট HTML দিয়ে গঠিত।
+  </div>
+
+  <h2>HTML কী?</h2>
+  <p><strong>HTML</strong> এর পূর্ণরূপ হলো <strong>HyperText Markup Language</strong>। এটি একটি মার্কআপ ল্যাঙ্গুয়েজ, প্রোগ্রামিং ল্যাঙ্গুয়েজ নয়। HTML ব্যবহার করে ওয়েব পেজের কাঠামো (structure) তৈরি করা হয়।</p>
+  <ul>
+    <li><strong>HyperText</strong> — লিংকের মাধ্যমে এক পেজ থেকে অন্য পেজে যাওয়া</li>
+    <li><strong>Markup</strong> — ট্যাগ দিয়ে কন্টেন্টকে চিহ্নিত করা</li>
+    <li><strong>Language</strong> — নির্দিষ্ট নিয়মে লেখার ভাষা</li>
+  </ul>
+
+  <h2>HTML কী কাজ করে?</h2>
+  <p>একটি ওয়েবসাইটে তিনটি প্রধান প্রযুক্তি ব্যবহার হয়:</p>
+  
+  <div class="card-grid">
+    <div class="card"><div class="card-icon">🏗️</div><h4>HTML</h4><p>কাঠামো তৈরি করে — হেডিং, প্যারাগ্রাফ, ছবি, লিংক</p></div>
+
+    <div class="card"><div class="card-icon">🎨</div><h4>CSS</h4><p>সাজসজ্জা করে — রঙ, ফন্ট, লেআউট</p></div>
+
+    <div class="card"><div class="card-icon">⚡</div><h4>JavaScript</h4><p>ইন্টারেক্টিভ করে — বাটন ক্লিক, অ্যানিমেশন</p></div>
+
+    <div class="card"><div class="card-icon">🌐</div><h4>Browser</h4><p>HTML পড়ে ভিজ্যুয়াল পেজ দেখায়</p></div>
+  </div>
+
+  <h2>প্রথম HTML পেজ</h2>
+  <div class="code-block">
+    <div class="code-header"><div class="code-dot dot-red"></div><div class="code-dot dot-yellow"></div><div class="code-dot dot-green"></div><span class="code-title">index.html</span></div>
+    <pre><span class="cmt">&lt;!-- এটি একটি HTML ডকুমেন্ট --&gt;</span>
+<span class="tag">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;html&gt;</span>
+  <span class="tag">&lt;head&gt;</span>
+    <span class="tag">&lt;title&gt;</span><span class="txt">আমার প্রথম ওয়েবসাইট</span><span class="tag">&lt;/title&gt;</span>
+  <span class="tag">&lt;/head&gt;</span>
+  <span class="tag">&lt;body&gt;</span>
+    <span class="tag">&lt;h1&gt;</span><span class="txt">হ্যালো বিশ্ব!</span><span class="tag">&lt;/h1&gt;</span>
+    <span class="tag">&lt;p&gt;</span><span class="txt">এটি আমার প্রথম ওয়েব পেজ।</span><span class="tag">&lt;/p&gt;</span>
+  <span class="tag">&lt;/body&gt;</span>
+<span class="tag">&lt;/html&gt;</span></pre>
+  </div>
+  <div class="output-box">
+    <div class="output-label">আউটপুট</div>
+    <h2 style="margin:0 0 6px;color:#1e293b">হ্যালো বিশ্ব!</h2>
+    <p style="margin:0">এটি আমার প্রথম ওয়েব পেজ।</p>
+  </div>
+
+  <h2>HTML ট্যাগের ব্যাখ্যা</h2>
+  <table>
+    <tr><th>ট্যাগ</th><th>কাজ</th></tr>
+    <tr><td><code>&lt;!DOCTYPE html&gt;</code></td><td>এটি HTML5 ডকুমেন্ট বোঝায়</td></tr>
+    <tr><td><code>&lt;html&gt;</code></td><td>পেজের শুরু ও শেষ নির্দেশ করে</td></tr>
+    <tr><td><code>&lt;head&gt;</code></td><td>পেজের মেটা তথ্য রাখে (দেখা যায় না)</td></tr>
+    <tr><td><code>&lt;title&gt;</code></td><td>ব্রাউজার ট্যাবে যে নাম দেখায়</td></tr>
+    <tr><td><code>&lt;body&gt;</code></td><td>পেজে যা দেখায় সব এখানে থাকে</td></tr>
+  </table>
+
+  <div class="page-nav">
+    <button class="page-nav-btn next" onclick="showPage('editors')">HTML Editors →</button>
+  </div>
+</div>
+
+
+
+
+
+<!-- ════════════════ PAGE: EDITORS ════════════════ -->
+<div class="page active" id="page-editors">
+  <div class="breadcrumb"><a>🏠 হোম</a> <span>›</span> <a>HTML Tutorial</a> <span>›</span> HTML Editors</div>
+  <div class="chapter-badge">অধ্যায় ২</div>
+  <h1>HTML Editors</h1>
+
+  <div class="info-box">
+    HTML লেখার জন্য আপনার একটি Text Editor দরকার। অনেক ধরনের Editor আছে — বিনামূলে এবং পেইড।
+  </div>
+
+  <h2>জনপ্রিয় HTML Editors</h2>
+  <p>HTML লেখার জন্য সবচেয়ে জনপ্রিয় Editors হলো:</p>
+  <ul>
+    <li><strong>VS Code</strong> — Microsoft-এর ফ্রি এডিটর, সবচেয়ে বেশি ব্যবহৃত</li>
+    <li><strong>Notepad++</strong> — হালকা ও দ্রুত, Windows-এর জন্য</li>
+    <li><strong>Sublime Text</strong> — দ্রুত ও স্মার্ট এডিটর</li>
+    <li><strong>Notepad</strong> — Windows-এর সাথে আসা, শুরু করার জন্য যথেষ্ট</li>
+  </ul>
+
+  <div class="tip-box"><span class="tip-icon">💡</span><strong>সুপারিশ:</strong> শুরুতে <strong>VS Code</strong> ব্যবহার করুন। এটি ফ্রি, দ্রুত এবং অনেক সুবিধা আছে।</div>
+
+  <div class="code-block">
+    <div class="code-header"><div class="code-dot dot-red"></div><div class="code-dot dot-yellow"></div><div class="code-dot dot-green"></div><span class="code-title">📄 NOTEPAD দিয়ে HTML লেখা</span></div>
+    <pre><span class="cmt"># ধাপগুলো:</span>
+<span class="num">১.</span> <span class="txt">Notepad খুলুন (Windows → Search → Notepad)</span>
+<span class="num">২.</span> <span class="txt">HTML কোড লিখুন</span>
+<span class="num">৩.</span> <span class="kw">Save করুন:</span> <span class="str">File → Save As → index.html</span>
+<span class="num">৪.</span> <span class="txt">Browser-এ খুলুন: index.html ফাইলে double-click</span></pre>
+  </div>
+
+  <h2>VS Code ইন্সটল করা</h2>
+  <ol>
+    <li><strong>code.visualstudio.com</strong> সাইটে যান</li>
+    <li>আপনার অপারেটিং সিস্টেম অনুযায়ী ডাউনলোড করুন</li>
+    <li>ইন্সটল করুন এবং খুলুন</li>
+    <li>একটি নতুন ফাইল তৈরি করুন: <code>File → New File → index.html</code></li>
+  </ol>
+
+  <h2>VS Code-এর সুবিধাসমূহ</h2>
+  <div class="card-grid">
+    <div class="card"><div class="card-icon">🎨</div><h4>Syntax Highlighting</h4><p>কোড রঙিন করে দেখায়, বুঝতে সহজ</p></div>
+    <div class="card"><div class="card-icon">🔮</div><h4>Auto-complete</h4><p>টাইপ করতে করতে সাজেশন দেয়</p></div>
+    <div class="card"><div class="card-icon">🔌</div><h4>Extensions</h4><p>হাজারো এক্সটেনশন দিয়ে কাস্টমাইজ করা যায়</p></div>
+    <div class="card"><div class="card-icon">🌐</div><h4>Live Server</h4><p>ব্রাউজারে সরাসরি পেজ দেখা যায়</p></div>
+  </div>
+
+  <div class="page-nav">
+    <button class="page-nav-btn prev" onclick="showPage('intro')">← HTML পরিচিতি</button>
+    <button class="page-nav-btn next" onclick="showPage('basic')">HTML Basic →</button>
+  </div>
+</div>
+
+<!-- ════════════════ PAGE: BASIC ════════════════ -->
+<div class="page" id="page-basic">
+  <div class="breadcrumb"><a>🏠 হোম</a> <span>›</span> <a>HTML Tutorial</a> <span>›</span> HTML Basic</div>
+  <div class="chapter-badge">অধ্যায় ৩</div>
+  <h1>HTML Basic</h1>
+
+  <div class="info-box">HTML-এর বেসিক স্ট্রাকচার শিখলে যেকোনো ওয়েবসাইট তৈরি করা সহজ হয়ে যায়।</div>
+
+  <h2>HTML ডকুমেন্ট স্ট্রাকচার</h2>
+  <p>প্রতিটি HTML ডকুমেন্টের একটি নির্দিষ্ট কাঠামো থাকে:</p>
+  <div class="code-block">
+    <div class="code-header"><div class="code-dot dot-red"></div><div class="code-dot dot-yellow"></div><div class="code-dot dot-green"></div><span class="code-title">index.html</span></div>
+    <pre><span class="tag">&lt;!DOCTYPE html&gt;</span>        <span class="cmt">&lt;!-- HTML5 ডকুমেন্ট --&gt;</span>
+<span class="tag">&lt;html <span class="attr">lang</span>=<span class="val">"bn"</span>&gt;</span>          <span class="cmt">&lt;!-- বাংলা ভাষা --&gt;</span>
+  <span class="tag">&lt;head&gt;</span>
+    <span class="tag">&lt;meta <span class="attr">charset</span>=<span class="val">"UTF-8"</span>&gt;</span>     <span class="cmt">&lt;!-- বাংলা সাপোর্ট --&gt;</span>
+    <span class="tag">&lt;meta <span class="attr">name</span>=<span class="val">"viewport"</span> <span class="attr">content</span>=<span class="val">"width=device-width"</span>&gt;</span>
+    <span class="tag">&lt;title&gt;</span><span class="txt">পেজের নাম</span><span class="tag">&lt;/title&gt;</span>
+  <span class="tag">&lt;/head&gt;</span>
+  <span class="tag">&lt;body&gt;</span>
+    <span class="tag">&lt;h1&gt;</span><span class="txt">মূল শিরোনাম</span><span class="tag">&lt;/h1&gt;</span>
+    <span class="tag">&lt;p&gt;</span><span class="txt">প্যারাগ্রাফ লেখা।</span><span class="tag">&lt;/p&gt;</span>
+  <span class="tag">&lt;/body&gt;</span>
+<span class="tag">&lt;/html&gt;</span></pre>
+  </div>
+
+  <h2>HTML ট্যাগ কী?</h2>
+  <p>HTML ট্যাগ হলো ব্র্যাকেটের মধ্যে লেখা কীওয়ার্ড। বেশিরভাগ ট্যাগ জোড়ায় আসে:</p>
+  <div class="code-block">
+    <div class="code-header"><div class="code-dot dot-red"></div><div class="code-dot dot-yellow"></div><div class="code-dot dot-green"></div><span class="code-title">ট্যাগের গঠন</span></div>
+    <pre><span class="tag">&lt;tagname&gt;</span><span class="txt"> কন্টেন্ট এখানে </span><span class="tag">&lt;/tagname&gt;</span>
+
+<span class="cmt">&lt;!-- উদাহরণ --&gt;</span>
+<span class="tag">&lt;p&gt;</span><span class="txt">এটি একটি প্যারাগ্রাফ।</span><span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;h1&gt;</span><span class="txt">বড় শিরোনাম</span><span class="tag">&lt;/h1&gt;</span>
+
+<span class="cmt">&lt;!-- একা ট্যাগ (self-closing) --&gt;</span>
+<span class="tag">&lt;br&gt;</span>      <span class="cmt">&lt;!-- লাইন ব্রেক --&gt;</span>
+<span class="tag">&lt;hr&gt;</span>      <span class="cmt">&lt;!-- অনুভূমিক রেখা --&gt;</span>
+<span class="tag">&lt;img&gt;</span>     <span class="cmt">&lt;!-- ছবি --&gt;</span></pre>
+  </div>
+
+  <h2>কমেন্ট লেখা</h2>
+  <div class="code-block">
+    <div class="code-header"><div class="code-dot dot-red"></div><div class="code-dot dot-yellow"></div><div class="code-dot dot-green"></div><span class="code-title">comment</span></div>
+    <pre><span class="cmt">&lt;!-- এটি একটি কমেন্ট, ব্রাউজারে দেখা যায় না --&gt;</span>
+<span class="tag">&lt;p&gt;</span><span class="txt">এটি প্যারাগ্রাফ।</span><span class="tag">&lt;/p&gt;</span>
+<span class="cmt">&lt;!-- TODO: এখানে ছবি যোগ করতে হবে --&gt;</span></pre>
+  </div>
+
+  <div class="page-nav">
+    <button class="page-nav-btn prev" onclick="showPage('editors')">← HTML Editors</button>
+    <button class="page-nav-btn next" onclick="showPage('elements')">HTML Elements →</button>
+  </div>
+</div>
+
+<!-- ════════════════ PAGE: ELEMENTS ════════════════ -->
+<div class="page" id="page-elements">
+  <div class="breadcrumb"><a>🏠 হোম</a> <span>›</span> <a>HTML Tutorial</a> <span>›</span> HTML Elements</div>
+  <div class="chapter-badge">অধ্যায় ৪</div>
+  <h1>HTML Elements</h1>
+
+  <div class="info-box">HTML Element হলো শুরু ট্যাগ + কন্টেন্ট + শেষ ট্যাগের সমন্বয়।</div>
+
+  <h2>Element কী?</h2>
+  <div class="code-block">
+    <div class="code-header"><div class="code-dot dot-red"></div><div class="code-dot dot-yellow"></div><div class="code-dot dot-green"></div><span class="code-title">element structure</span></div>
+    <pre><span class="tag">&lt;p&gt;</span><span class="txt">আমি একটি প্যারাগ্রাফ।</span><span class="tag">&lt;/p&gt;</span>
+<span class="cmt">  ↑              ↑              ↑</span>
+<span class="cmt">শুরু ট্যাগ    কন্টেন্ট      শেষ ট্যাগ</span></pre>
+  </div>
+
+  <h2>Nested Elements (নেস্টেড)</h2>
+  <p>একটি Element এর ভেতরে আরেকটি Element রাখাকে Nesting বলে:</p>
+  <div class="code-block">
+    <div class="code-header"><div class="code-dot dot-red"></div><div class="code-dot dot-yellow"></div><div class="code-dot dot-green"></div><span class="code-title">nested</span></div>
+    <pre><span class="tag">&lt;body&gt;</span>
+  <span class="tag">&lt;h1&gt;</span><span class="txt">শিরোনাম</span><span class="tag">&lt;/h1&gt;</span>
+  <span class="tag">&lt;p&gt;</span>
+    এটি একটি প্যারাগ্রাফ, এখানে
+    <span class="tag">&lt;strong&gt;</span><span class="txt">বোল্ড টেক্সট</span><span class="tag">&lt;/strong&gt;</span> আছে।
+  <span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;/body&gt;</span></pre>
+  </div>
+
+  <h2>সাধারণ HTML Elements</h2>
+  <table>
+    <tr><th>Element</th><th>বিবরণ</th><th>উদাহরণ</th></tr>
+    <tr><td><code>&lt;h1&gt;–&lt;h6&gt;</code></td><td>শিরোনাম</td><td><code>&lt;h1&gt;শিরোনাম&lt;/h1&gt;</code></td></tr>
+    <tr><td><code>&lt;p&gt;</code></td><td>প্যারাগ্রাফ</td><td><code>&lt;p&gt;লেখা&lt;/p&gt;</code></td></tr>
+    <tr><td><code>&lt;a&gt;</code></td><td>লিংক</td><td><code>&lt;a href="#"&gt;লিংক&lt;/a&gt;</code></td></tr>
+    <tr><td><code>&lt;img&gt;</code></td><td>ছবি</td><td><code>&lt;img src="photo.jpg"&gt;</code></td></tr>
+    <tr><td><code>&lt;div&gt;</code></td><td>বিভাগ/কন্টেইনার</td><td><code>&lt;div&gt;...&lt;/div&gt;</code></td></tr>
+    <tr><td><code>&lt;span&gt;</code></td><td>ইনলাইন কন্টেইনার</td><td><code>&lt;span&gt;টেক্সট&lt;/span&gt;</code></td></tr>
+    <tr><td><code>&lt;br&gt;</code></td><td>লাইন ব্রেক</td><td><code>&lt;br&gt;</code></td></tr>
+    <tr><td><code>&lt;hr&gt;</code></td><td>অনুভূমিক রেখা</td><td><code>&lt;hr&gt;</code></td></tr>
+  </table>
+
+  <div class="tip-box">💡 <strong>মনে রাখুন:</strong> সবসময় ট্যাগ সঠিকভাবে বন্ধ করুন। <code>&lt;p&gt;</code> খুললে <code>&lt;/p&gt;</code> দিয়ে বন্ধ করতে হবে।</div>
+
+  <div class="page-nav">
+    <button class="page-nav-btn prev" onclick="showPage('basic')">← HTML Basic</button>
+    <button class="page-nav-btn next" onclick="showPage('attributes')">HTML Attributes →</button>
+  </div>
+</div>
+
+<!-- ════════════════ PAGE: ATTRIBUTES ════════════════ -->
+<div class="page" id="page-attributes">
+  <div class="breadcrumb"><a>🏠 হোম</a> <span>›</span> <a>HTML Tutorial</a> <span>›</span> HTML Attributes</div>
+  <div class="chapter-badge">অধ্যায় ৫</div>
+  <h1>HTML Attributes</h1>
+  <div class="info-box">Attributes হলো HTML Element-এর অতিরিক্ত তথ্য, যা শুরু ট্যাগে লেখা হয়।</div>
+
+  <h2>Attribute-এর গঠন</h2>
+  <div class="code-block">
+    <div class="code-header"><div class="code-dot dot-red"></div><div class="code-dot dot-yellow"></div><div class="code-dot dot-green"></div><span class="code-title">attribute syntax</span></div>
+    <pre><span class="tag">&lt;tagname <span class="attr">attribute</span>=<span class="val">"value"</span>&gt;</span><span class="txt">কন্টেন্ট</span><span class="tag">&lt;/tagname&gt;</span>
+
+<span class="cmt">&lt;!-- উদাহরণ --&gt;</span>
+<span class="tag">&lt;a <span class="attr">href</span>=<span class="val">"https://google.com"</span>&gt;</span><span class="txt">গুগলে যান</span><span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;img <span class="attr">src</span>=<span class="val">"photo.jpg"</span> <span class="attr">alt</span>=<span class="val">"ছবির বর্ণনা"</span>&gt;</span>
+<span class="tag">&lt;p <span class="attr">style</span>=<span class="val">"color: red;"</span>&gt;</span><span class="txt">লাল লেখা</span><span class="tag">&lt;/p&gt;</span></pre>
+  </div>
+
+  <h2>গুরুত্বপূর্ণ Attributes</h2>
+  <table>
+    <tr><th>Attribute</th><th>কাজ</th><th>উদাহরণ</th></tr>
+    <tr><td><code title="Hyperlink">href</code></td><td>লিংকের ঠিকানা</td><td><code>href="page.html"</code></td></tr>
+    <tr><td><code title="Source">src</code></td><td>ছবি/ভিডিওর সোর্স</td><td><code>src="image.jpg"</code></td></tr>
+    <tr><td><code title="Alternative">alt</code></td><td>ছবির বিকল্প টেক্সট</td><td><code>alt="ছবি নেই"</code></td></tr>
+    <tr><td><code>style</code></td><td>ইনলাইন CSS</td><td><code>style="color:red"</code></td></tr>
+    <tr><td><code title="Unique identity">id</code></td><td>ইউনিক পরিচয়</td><td><code>id="header"</code></td></tr>
+    <tr><td><code title="Group identity">class</code></td><td>গ্রুপ পরিচয়</td><td><code>class="btn"</code></td></tr>
+    <tr><td><code>target</code></td><td>লিংক কোথায় খুলবে</td><td><code>target="_blank"</code></td></tr>
+    <tr><td><code>width/height</code></td><td>প্রস্থ/উচ্চতা</td><td><code>width="200"</code></td></tr>
+  </table>
+
+  <div class="page-nav">
+    <button class="page-nav-btn prev" onclick="showPage('elements')">← HTML Elements</button>
+    <button class="page-nav-btn next" onclick="showPage('headings')">HTML Headings →</button>
+  </div>
+</div>
+
+<!-- ════════════════ PAGE: HEADINGS ════════════════ -->
+<div class="page" id="page-headings">
+  <div class="breadcrumb"><a>🏠 হোম</a> <span>›</span> <a>HTML Tutorial</a> <span>›</span> HTML Headings</div>
+  <div class="chapter-badge">অধ্যায় ৬</div>
+  <h1>HTML Headings</h1>
+  <div class="info-box">HTML-এ ৬টি স্তরের শিরোনাম আছে — h1 থেকে h6 পর্যন্ত।</div>
+
+  <h2>শিরোনামের উদাহরণ</h2>
+  <div class="code-block">
+    <div class="code-header"><div class="code-dot dot-red"></div><div class="code-dot dot-yellow"></div><div class="code-dot dot-green"></div><span class="code-title">headings.html</span></div>
+    <pre><span class="tag">&lt;h1&gt;</span><span class="txt">শিরোনাম ১ — সবচেয়ে বড়</span><span class="tag">&lt;/h1&gt;</span>
+<span class="tag">&lt;h2&gt;</span><span class="txt">শিরোনাম ২</span><span class="tag">&lt;/h2&gt;</span>
+<span class="tag">&lt;h3&gt;</span><span class="txt">শিরোনাম ৩</span><span class="tag">&lt;/h3&gt;</span>
+<span class="tag">&lt;h4&gt;</span><span class="txt">শিরোনাম ৪</span><span class="tag">&lt;/h4&gt;</span>
+<span class="tag">&lt;h5&gt;</span><span class="txt">শিরোনাম ৫</span><span class="tag">&lt;/h5&gt;</span>
+<span class="tag">&lt;h6&gt;</span><span class="txt">শিরোনাম ৬ — সবচেয়ে ছোট</span><span class="tag">&lt;/h6&gt;</span></pre>
+  </div>
+  <div class="output-box">
+    <div class="output-label">আউটপুট</div>
+    <h1 style="margin:4px 0;font-size:2em">শিরোনাম ১ — সবচেয়ে বড়</h1>
+    <h2 style="margin:4px 0;font-size:1.5em;border:none;padding:0">শিরোনাম ২</h2>
+    <h3 style="margin:4px 0;font-size:1.2em">শিরোনাম ৩</h3>
+    <h4 style="margin:4px 0">শিরোনাম ৪</h4>
+    <h5 style="margin:4px 0;font-size:.9em">শিরোনাম ৫</h5>
+    <h6 style="margin:4px 0;font-size:.8em">শিরোনাম ৬ — সবচেয়ে ছোট</h6>
+  </div>
+
+  <div class="tip-box">💡<br>
+    <code>&lt;h1&gt;</code>- Page title.<br>
+    <code>&lt;h2&gt;</code>- Section titles.<br>
+    <code>&lt;h3&gt;</code>- Sub-sections.<br>
+    <code>and so on.</code>
+  </div>
+
+
+  <div class="tip-box">💡 প্রতিটি পেজে শুধু একটি <code>&lt;h1&gt;</code> থাকা উচিত। এটি SEO-র জন্য গুরুত্বপূর্ণ।</div>
+
+  <div class="page-nav">
+    <button class="page-nav-btn prev" onclick="showPage('attributes')">← HTML Attributes</button>
+    <button class="page-nav-btn next" onclick="showPage('paragraphs')">HTML Paragraphs →</button>
+  </div>
+</div>
+
+<!-- ════════════════ PAGE: PARAGRAPHS ════════════════ -->
+<div class="page" id="page-paragraphs">
+  <div class="breadcrumb"><a>🏠 হোম</a> <span>›</span> <a>HTML Tutorial</a> <span>›</span> HTML Paragraphs</div>
+  <div class="chapter-badge">অধ্যায় ৭</div>
+  <h1>HTML Paragraphs</h1>
+  <div class="info-box"><code>&lt;p&gt;</code> এই ট্যাগ দিয়ে Paragraph প্রকাশ করা হয়। <code>&lt;p&gt;</code> যদি কোন ডকুমেন্টকে এক বা একধিক প্যারাগ্রাফে প্রকাশ করতে চাই তখন এই ট্যাগ ব্যবহার করব।</div>
+
+  <div class="code-block">
+    <div class="code-header"><div class="code-dot dot-red"></div><div class="code-dot dot-yellow"></div><div class="code-dot dot-green"></div><span class="code-title">paragraphs.html</span></div>
+    <pre><span class="tag">&lt;html&gt;</span>
+<span class="tag">&lt;body&gt;</span>
+  <span class="tag">&lt;p&gt;</span><span class="txt">এটি প্রথম প্যারাগ্রাফ। HTML স্বয়ংক্রিয়ভাবে ফাঁকা জায়গা সরিয়ে দেয়।</span><span class="tag">&lt;/p&gt;</span>
+
+<span class="tag">&lt;p&gt;</span><span class="txt">এটি দ্বিতীয় প্যারাগ্রাফ। প্যারাগ্রাফ আরো বড়ও হতে পারে।</span><span class="tag">&lt;/p&gt;</span>
+
+<span class="cmt">&lt;!-- লাইন ব্রেক --&gt;</span>
+<span class="tag">&lt;p&gt;</span><span class="txt">প্রথম লাইন।</span><span class="tag">&lt;br&gt;</span><span class="txt">দ্বিতীয় লাইন।</span><span class="tag">&lt;/p&gt;</span>
+
+<span class="cmt">&lt;!-- অনুভূমিক রেখা --&gt;</span>
+<span class="tag">&lt;hr&gt;</span></pre>
+  </div>
+
+  <h2>Pre Tag</h2>
+  <p><code>&lt;pre&gt;</code> ট্যাগে লেখা হুবহু দেখায় (স্পেস, নিউলাইন সহ):</p>
+  <div class="code-block">
+    <div class="code-header"><div class="code-dot dot-red"></div><div class="code-dot dot-yellow"></div><div class="code-dot dot-green"></div><span class="code-title">pre tag</span></div>
+    <pre><span class="tag">&lt;pre&gt;</span>
+<span class="txt">  আমি     স্পেস দিয়ে
+  লিখলাম।</span>
+<span class="tag">&lt;/pre&gt;</span></pre>
+  </div>
+
+  <div class="page-nav">
+    <button class="page-nav-btn prev" onclick="showPage('headings')">← HTML Headings</button>
+    <button class="page-nav-btn next" onclick="showPage('styles')">HTML Styles →</button>
+  </div>
+</div>
+
+<!-- ════════════════ PAGE: STYLES ════════════════ -->
+<div class="page" id="page-styles">
+  <div class="breadcrumb"><a>🏠 হোম</a> <span>›</span> <a>HTML Tutorial</a> <span>›</span> HTML Styles</div>
+  <div class="chapter-badge">অধ্যায় ৮</div>
+  <h1>HTML Styles</h1>
+  <div class="info-box">HTML-এ <code>style</code> attribute দিয়ে সরাসরি CSS যোগ করা যায়।</div>
+
+  <h2>Inline Style</h2>
+  <div class="code-block">
+    <div class="code-header"><div class="code-dot dot-red"></div><div class="code-dot dot-yellow"></div><div class="code-dot dot-green"></div><span class="code-title">inline style</span></div>
+    <pre><span class="tag">&lt;p <span class="attr">style</span>=<span class="val">"color: blue;"</span>&gt;</span><span class="txt">নীল লেখা</span><span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;p <span class="attr">style</span>=<span class="val">"color: red; font-size: 20px;"</span>&gt;</span><span class="txt">লাল বড় লেখা</span><span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;p <span class="attr">style</span>=<span class="val">"background-color: yellow;"</span>&gt;</span><span class="txt">হলুদ ব্যাকগ্রাউন্ড</span><span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;p <span class="attr">style</span>=<span class="val">"font-family: Arial; text-align: center;"</span>&gt;</span><span class="txt">মাঝে</span><span class="tag">&lt;/p&gt;</span></pre>
+  </div>
+
+  <div class="output-box">
+    <div class="output-label">আউটপুট</div>
+    <p style="color:blue;margin:4px 0">নীল লেখা</p>
+    <p style="color:red;font-size:20px;margin:4px 0">লাল বড় লেখা</p>
+    <p style="background-color:yellow;margin:4px 0;padding:2px 6px;display:inline-block">হলুদ ব্যাকগ্রাউন্ড</p>
+    <p style="text-align:center;margin:4px 0">মাঝে</p>
+  </div>
+
+  <h2>Internal Style (head-এ)</h2>
+  <div class="code-block">
+    <div class="code-header"><div class="code-dot dot-red"></div><div class="code-dot dot-yellow"></div><div class="code-dot dot-green"></div><span class="code-title">internal CSS</span></div>
+    <pre><span class="tag">&lt;head&gt;</span>
+  <span class="tag">&lt;style&gt;</span>
+    <span class="kw">body</span> { <span class="attr">background-color</span>: <span class="val">#f0f0f0</span>; }
+    <span class="kw">h1</span>   { <span class="attr">color</span>: <span class="val">green</span>; }
+    <span class="kw">p</span>    { <span class="attr">font-size</span>: <span class="val">16px</span>; }
+  <span class="tag">&lt;/style&gt;</span>
+<span class="tag">&lt;/head&gt;</span></pre>
+  </div>
+
+  <div class="page-nav">
+    <button class="page-nav-btn prev" onclick="showPage('paragraphs')">← HTML Paragraphs</button>
+    <button class="page-nav-btn next" onclick="showPage('formatting')">HTML Formatting →</button>
+  </div>
+</div>
+
+<!-- ════════════════ PAGE: FORMATTING ════════════════ -->
+<div class="page" id="page-formatting">
+  <div class="breadcrumb"><a>🏠 হোম</a> <span>›</span> <a>HTML Tutorial</a> <span>›</span> HTML Formatting</div>
+  <div class="chapter-badge">অধ্যায় ৯</div>
+  <h1>HTML Formatting</h1>
+  <div class="info-box">HTML-এ টেক্সট ফরম্যাটিংয়ের জন্য বিভিন্ন ট্যাগ আছে।</div>
+
+  <div class="code-block">
+    <div class="code-header"><div class="code-dot dot-red"></div><div class="code-dot dot-yellow"></div><div class="code-dot dot-green"></div><span class="code-title">formatting.html</span></div>
+    <pre><span class="tag">&lt;b&gt;</span><span class="txt">বোল্ড</span><span class="tag">&lt;/b&gt;</span>              <span class="cmt">&lt;!-- Bold Text --&gt;</span>
+<span class="tag">&lt;strong&gt;</span><span class="txt">গুরুত্বপূর্ণ</span><span class="tag">&lt;/strong&gt;</span>  <span class="cmt">&lt;!-- Important Text --&gt;</span>
+<span class="tag">&lt;i&gt;</span><span class="txt">ইটালিক</span><span class="tag">&lt;/i&gt;</span>
+<span class="tag">&lt;em&gt;</span><span class="txt">জোর দেওয়া</span><span class="tag">&lt;/em&gt;</span>
+<span class="tag">&lt;u&gt;</span><span class="txt">আন্ডারলাইন</span><span class="tag">&lt;/u&gt;</span>
+<span class="tag">&lt;mark&gt;</span><span class="txt">হাইলাইট</span><span class="tag">&lt;/mark&gt;</span>
+<span class="tag">&lt;del&gt;</span><span class="txt">মুছে ফেলা</span><span class="tag">&lt;/del&gt;</span>
+<span class="tag">&lt;ins&gt;</span><span class="txt">যোগ করা</span><span class="tag">&lt;/ins&gt;</span>
+<span class="tag">&lt;sub&gt;</span><span class="txt">সাব</span><span class="tag">&lt;/sub&gt;</span> এবং <span class="tag">&lt;sup&gt;</span><span class="txt">সুপার</span><span class="tag">&lt;/sup&gt;</span>
+<span class="tag">&lt;small&gt;</span><span class="txt">ছোট লেখা</span><span class="tag">&lt;/small&gt;</span></pre>
+  </div>
+
+  <div class="output-box">
+    <div class="output-label">আউটপুট</div>
+    <p><b>বোল্ড</b> | <strong>গুরুত্বপূর্ণ</strong> | <i>ইটালিক</i> | <em>জোর দেওয়া</em></p>
+    <p><u>আন্ডারলাইন</u> | <mark>হাইলাইট</mark> | <del>মুছে ফেলা</del> | <ins>যোগ করা</ins></p>
+    <p>H<sub>2</sub>O এবং E=mc<sup>2</sup> | <small>ছোট লেখা</small></p>
+  </div>
+
+  <div class="page-nav">
+    <button class="page-nav-btn prev" onclick="showPage('styles')">← HTML Styles</button>
+    <button class="page-nav-btn next" onclick="showPage('links')">HTML Links →</button>
+  </div>
+</div>
+
+<!-- ════════════════ PAGE: LINKS ════════════════ -->
+<div class="page" id="page-links">
+  <div class="breadcrumb"><a>🏠 হোম</a> <span>›</span> <a>HTML Tutorial</a> <span>›</span> HTML Links</div>
+  <div class="chapter-badge">অধ্যায় ১০</div>
+  <h1>HTML Links</h1>
+  <div class="info-box"><code>&lt;a&gt;</code> ট্যাগ দিয়ে লিংক তৈরি হয়। <code>href</code> attribute-এ লিংকের ঠিকানা দিতে হয়।</div>
+
+  <div class="code-block">
+    <div class="code-header"><div class="code-dot dot-red"></div><div class="code-dot dot-yellow"></div><div class="code-dot dot-green"></div><span class="code-title">links.html</span></div>
+    <pre><span class="cmt">&lt;!-- বাইরের সাইটে লিংক --&gt;</span>
+<span class="tag">&lt;a <span class="attr">href</span>=<span class="val">"https://google.com"</span>&gt;</span><span class="txt">গুগল</span><span class="tag">&lt;/a&gt;</span>
+
+<span class="cmt">&lt;!-- নতুন ট্যাবে খুলবে --&gt;</span>
+<span class="tag">&lt;a <span class="attr">href</span>=<span class="val">"https://google.com"</span> <span class="attr">target</span>=<span class="val">"_blank"</span>&gt;</span><span class="txt">নতুন ট্যাবে খুলুন</span><span class="tag">&lt;/a&gt;</span>
+
+<span class="cmt">&lt;!-- একই পেজের ভেতরে --&gt;</span>
+<span class="tag">&lt;a <span class="attr">href</span>=<span class="val">"#section1"</span>&gt;</span><span class="txt">সেকশন ১-এ যান</span><span class="tag">&lt;/a&gt;</span>
+
+<span class="cmt">&lt;!-- ইমেইল লিংক --&gt;</span>
+<span class="tag">&lt;a <span class="attr">href</span>=<span class="val">"mailto:info@example.com"</span>&gt;</span><span class="txt">ইমেইল করুন</span><span class="tag">&lt;/a&gt;</span>
+
+<span class="cmt">&lt;!-- ফোন লিংক --&gt;</span>
+<span class="tag">&lt;a <span class="attr">href</span>=<span class="val">"tel:+8801234567890"</span>&gt;</span><span class="txt">ফোন করুন</span><span class="tag">&lt;/a&gt;</span>
+
+<span class="cmt">&lt;!-- ছবিতে লিংক --&gt;</span>
+<span class="tag">&lt;a <span class="attr">href</span>=<span class="val">"page.html"</span>&gt;</span>
+  <span class="tag">&lt;img <span class="attr">src</span>=<span class="val">"logo.png"</span> <span class="attr">alt</span>=<span class="val">"লোগো"</span>&gt;</span>
+<span class="tag">&lt;/a&gt;</span></pre>
+  </div>
+
+  <h2>Target Attribute</h2>
+  <table>
+    <tr><th>মান</th><th>কাজ</th></tr>
+    <tr><td><code>_blank</code></td><td>নতুন ট্যাব/উইন্ডোতে খুলবে</td></tr>
+    <tr><td><code>_self</code></td><td>একই ট্যাবে খুলবে (ডিফল্ট)</td></tr>
+    <tr><td><code>_parent</code></td><td>প্যারেন্ট ফ্রেমে খুলবে</td></tr>
+    <tr><td><code>_top</code></td><td>সম্পূর্ণ উইন্ডোতে খুলবে</td></tr>
+  </table>
+
+  <div class="page-nav">
+    <button class="page-nav-btn prev" onclick="showPage('formatting')">← HTML Formatting</button>
+    <button class="page-nav-btn next" onclick="showPage('images')">HTML Images →</button>
+  </div>
+</div>
+
+<!-- ════════════════ PAGE: IMAGES ════════════════ -->
+<div class="page" id="page-images">
+  <div class="breadcrumb"><a>🏠 হোম</a> <span>›</span> <a>HTML Tutorial</a> <span>›</span> HTML Images</div>
+  <div class="chapter-badge">অধ্যায় ১১</div>
+  <h1>HTML Images</h1>
+  <div class="info-box"><code>&lt;img&gt;</code> ট্যাগ দিয়ে ছবি যোগ করা হয়। এটি একটি self-closing ট্যাগ।</div>
+
+  <div class="code-block">
+    <div class="code-header"><div class="code-dot dot-red"></div><div class="code-dot dot-yellow"></div><div class="code-dot dot-green"></div><span class="code-title">images.html</span></div>
+    <pre><span class="cmt">&lt;!-- সাধারণ ছবি --&gt;</span>
+<span class="tag">&lt;img <span class="attr">src</span>=<span class="val">"photo.jpg"</span> <span class="attr">alt</span>=<span class="val">"একটি ছবি"</span>&gt;</span>
+
+<span class="cmt">&lt;!-- সাইজ সহ --&gt;</span>
+<span class="tag">&lt;img <span class="attr">src</span>=<span class="val">"photo.jpg"</span> <span class="attr">alt</span>=<span class="val">"ছবি"</span> <span class="attr">width</span>=<span class="val">"300"</span> <span class="attr">height</span>=<span class="val">"200"</span>&gt;</span>
+
+<span class="cmt">&lt;!-- ইন্টারনেট থেকে ছবি --&gt;</span>
+<span class="tag">&lt;img <span class="attr">src</span>=<span class="val">"https://example.com/img.png"</span> <span class="attr">alt</span>=<span class="val">"অনলাইন ছবি"</span>&gt;</span>
+
+<span class="cmt">&lt;!-- CSS দিয়ে স্টাইল --&gt;</span>
+<span class="tag">&lt;img <span class="attr">src</span>=<span class="val">"photo.jpg"</span> <span class="attr">style</span>=<span class="val">"border-radius: 50%; width: 100px;"</span>&gt;</span></pre>
+  </div>
+
+  <h2>গুরুত্বপূর্ণ Attributes</h2>
+  <table>
+    <tr><th>Attribute</th><th>কাজ</th></tr>
+    <tr><td><code>src</code></td><td>ছবির পাথ বা URL (আবশ্যিক)</td></tr>
+    <tr><td><code>alt</code></td><td>ছবি না দেখালে এই টেক্সট দেখায় (আবশ্যিক)</td></tr>
+    <tr><td><code>width</code></td><td>ছবির প্রস্থ (pixel)</td></tr>
+    <tr><td><code>height</code></td><td>ছবির উচ্চতা (pixel)</td></tr>
+    <tr><td><code>title</code></td><td>হোভার করলে টুলটিপ দেখায়</td></tr>
+  </table>
+
+  <div class="warn-box">⚠️ <strong>সতর্কতা:</strong> সবসময় <code>alt</code> attribute দিন। এটি accessibility এবং SEO-র জন্য জরুরি।</div>
+
+  <div class="page-nav">
+    <button class="page-nav-btn prev" onclick="showPage('links')">← HTML Links</button>
+    <button class="page-nav-btn next" onclick="showPage('tables')">HTML Tables →</button>
+  </div>
+</div>
+
+<!-- ════════════════ PAGE: TABLES ════════════════ -->
+<div class="page" id="page-tables">
+  <div class="breadcrumb"><a>🏠 হোম</a> <span>›</span> <a>HTML Tutorial</a> <span>›</span> HTML Tables</div>
+  <div class="chapter-badge">অধ্যায় ১২</div>
+  <h1>HTML Tables</h1>
+  <div class="info-box">টেবিল দিয়ে সারি ও কলামে তথ্য সাজানো যায়।</div>
+
+  <div class="code-block">
+    <div class="code-header"><div class="code-dot dot-red"></div><div class="code-dot dot-yellow"></div><div class="code-dot dot-green"></div><span class="code-title">table.html</span></div>
+    <pre><span class="tag">&lt;table <span class="attr">border</span>=<span class="val">"1"</span>&gt;</span>
+  <span class="tag">&lt;thead&gt;</span>
+    <span class="tag">&lt;tr&gt;</span>
+      <span class="tag">&lt;th&gt;</span><span class="txt">নাম</span><span class="tag">&lt;/th&gt;</span>
+      <span class="tag">&lt;th&gt;</span><span class="txt">বয়স</span><span class="tag">&lt;/th&gt;</span>
+      <span class="tag">&lt;th&gt;</span><span class="txt">শহর</span><span class="tag">&lt;/th&gt;</span>
+    <span class="tag">&lt;/tr&gt;</span>
+  <span class="tag">&lt;/thead&gt;</span>
+  <span class="tag">&lt;tbody&gt;</span>
+    <span class="tag">&lt;tr&gt;</span>
+      <span class="tag">&lt;td&gt;</span><span class="txt">রাহেলা</span><span class="tag">&lt;/td&gt;</span>
+      <span class="tag">&lt;td&gt;</span><span class="txt">২৫</span><span class="tag">&lt;/td&gt;</span>
+      <span class="tag">&lt;td&gt;</span><span class="txt">ঢাকা</span><span class="tag">&lt;/td&gt;</span>
+    <span class="tag">&lt;/tr&gt;</span>
+    <span class="tag">&lt;tr&gt;</span>
+      <span class="tag">&lt;td&gt;</span><span class="txt">করিম</span><span class="tag">&lt;/td&gt;</span>
+      <span class="tag">&lt;td&gt;</span><span class="txt">৩০</span><span class="tag">&lt;/td&gt;</span>
+      <span class="tag">&lt;td&gt;</span><span class="txt">চট্টগ্রাম</span><span class="tag">&lt;/td&gt;</span>
+    <span class="tag">&lt;/tr&gt;</span>
+  <span class="tag">&lt;/tbody&gt;</span>
+<span class="tag">&lt;/table&gt;</span></pre>
+  </div>
+
+  <h2>টেবিল Tags</h2>
+  <table>
+    <tr><th>ট্যাগ</th><th>কাজ</th></tr>
+    <tr><td><code>&lt;table&gt;</code></td><td>টেবিল শুরু করে</td></tr>
+    <tr><td><code>&lt;thead&gt;</code></td><td>টেবিলের হেডার অংশ</td></tr>
+    <tr><td><code>&lt;tbody&gt;</code></td><td>টেবিলের মূল তথ্য অংশ</td></tr>
+    <tr><td><code>&lt;tr&gt;</code></td><td>Table Row — একটি সারি</td></tr>
+    <tr><td><code>&lt;th&gt;</code></td><td>Table Header Cell — বোল্ড ও মাঝে</td></tr>
+    <tr><td><code>&lt;td&gt;</code></td><td>Table Data Cell — সাধারণ ঘর</td></tr>
+    <tr><td><code>colspan</code></td><td>কয়েকটি কলাম জুড়ে</td></tr>
+    <tr><td><code>rowspan</code></td><td>কয়েকটি সারি জুড়ে</td></tr>
+  </table>
+
+  <div class="page-nav">
+    <button class="page-nav-btn prev" onclick="showPage('images')">← HTML Images</button>
+    <button class="page-nav-btn next" onclick="showPage('lists')">HTML Lists →</button>
+  </div>
+</div>
+
+<!-- ════════════════ PAGE: LISTS ════════════════ -->
+<div class="page" id="page-lists">
+  <div class="breadcrumb"><a>🏠 হোম</a> <span>›</span> <a>HTML Tutorial</a> <span>›</span> HTML Lists</div>
+  <div class="chapter-badge">অধ্যায় ১৩</div>
+  <h1>HTML Lists</h1>
+  <div class="info-box">HTML-এ তিন ধরনের লিস্ট আছে: Unordered, Ordered এবং Description List।</div>
+
+  <div class="code-block">
+    <div class="code-header"><div class="code-dot dot-red"></div><div class="code-dot dot-yellow"></div><div class="code-dot dot-green"></div><span class="code-title">lists.html</span></div>
+    <pre><span class="cmt">&lt;!-- বুলেট লিস্ট --&gt;</span>
+<span class="tag">&lt;ul&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="txt">আম</span><span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="txt">কাঁঠাল</span><span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="txt">লিচু</span><span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ul&gt;</span>
+
+<span class="cmt">&lt;!-- নম্বর লিস্ট --&gt;</span>
+<span class="tag">&lt;ol&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="txt">প্রথম ধাপ</span><span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="txt">দ্বিতীয় ধাপ</span><span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="txt">তৃতীয় ধাপ</span><span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ol&gt;</span>
+
+<span class="cmt">&lt;!-- বর্ণনা লিস্ট --&gt;</span>
+<span class="tag">&lt;dl&gt;</span>
+  <span class="tag">&lt;dt&gt;</span><span class="txt">HTML</span><span class="tag">&lt;/dt&gt;</span>
+  <span class="tag">&lt;dd&gt;</span><span class="txt">ওয়েব পেজের কাঠামো তৈরি করে</span><span class="tag">&lt;/dd&gt;</span>
+  <span class="tag">&lt;dt&gt;</span><span class="txt">CSS</span><span class="tag">&lt;/dt&gt;</span>
+  <span class="tag">&lt;dd&gt;</span><span class="txt">ওয়েব পেজ সাজায়</span><span class="tag">&lt;/dd&gt;</span>
+<span class="tag">&lt;/dl&gt;</span></pre>
+  </div>
+
+  <div class="output-box">
+    <div class="output-label">আউটপুট</div>
+    <div style="display:flex;gap:40px;flex-wrap:wrap">
+      <div><strong>Unordered:</strong><ul><li>আম</li><li>কাঁঠাল</li><li>লিচু</li></ul></div>
+      <div><strong>Ordered:</strong><ol><li>প্রথম ধাপ</li><li>দ্বিতীয় ধাপ</li><li>তৃতীয় ধাপ</li></ol></div>
+    </div>
+  </div>
+
+  <div class="page-nav">
+    <button class="page-nav-btn prev" onclick="showPage('tables')">← HTML Tables</button>
+    <button class="page-nav-btn next" onclick="showPage('video')">HTML Video →</button>
+  </div>
+</div>
+
+<!-- ════════════════ PAGE: VIDEO ════════════════ -->
+<div class="page" id="page-video">
+  <div class="breadcrumb"><a>🏠 হোম</a> <span>›</span> <a>HTML Tutorial</a> <span>›</span> HTML Video</div>
+  <div class="chapter-badge">অধ্যায় ১৪</div>
+  <h1>HTML Video</h1>
+  <div class="info-box">HTML5 থেকে <code>&lt;video&gt;</code> ট্যাগ দিয়ে সহজেই ভিডিও যোগ করা যায়।</div>
+
+  <div class="code-block">
+    <div class="code-header"><div class="code-dot dot-red"></div><div class="code-dot dot-yellow"></div><div class="code-dot dot-green"></div><span class="code-title">video.html</span></div>
+    <pre><span class="cmt">&lt;!-- সাধারণ ভিডিও --&gt;</span>
+<span class="tag">&lt;video <span class="attr">width</span>=<span class="val">"400"</span> <span class="attr">controls</span>&gt;</span>
+  <span class="tag">&lt;source <span class="attr">src</span>=<span class="val">"video.mp4"</span> <span class="attr">type</span>=<span class="val">"video/mp4"</span>&gt;</span>
+  <span class="txt">আপনার ব্রাউজার ভিডিও সাপোর্ট করে না।</span>
+<span class="tag">&lt;/video&gt;</span>
+
+<span class="cmt">&lt;!-- অটোপ্লে ও মিউটেড --&gt;</span>
+<span class="tag">&lt;video <span class="attr">autoplay</span> <span class="attr">muted</span> <span class="attr">loop</span> <span class="attr">width</span>=<span class="val">"400"</span>&gt;</span>
+  <span class="tag">&lt;source <span class="attr">src</span>=<span class="val">"video.mp4"</span> <span class="attr">type</span>=<span class="val">"video/mp4"</span>&gt;</span>
+<span class="tag">&lt;/video&gt;</span>
+
+<span class="cmt">&lt;!-- YouTube Embed --&gt;</span>
+<span class="tag">&lt;iframe <span class="attr">width</span>=<span class="val">"560"</span> <span class="attr">height</span>=<span class="val">"315"</span>
+  <span class="attr">src</span>=<span class="val">"https://www.youtube.com/embed/VIDEO_ID"</span>
+  <span class="attr">allowfullscreen</span>&gt;</span>
+<span class="tag">&lt;/iframe&gt;</span></pre>
+  </div>
+
+  <h2>Video Attributes</h2>
+  <table>
+    <tr><th>Attribute</th><th>কাজ</th></tr>
+    <tr><td><code>controls</code></td><td>প্লে, পজ, ভলিউম বাটন দেখায়</td></tr>
+    <tr><td><code>autoplay</code></td><td>পেজ লোড হলে স্বয়ংক্রিয়ভাবে চালু হয়</td></tr>
+    <tr><td><code>muted</code></td><td>শব্দ বন্ধ থাকে</td></tr>
+    <tr><td><code>loop</code></td><td>বারবার চলতে থাকে</td></tr>
+    <tr><td><code>poster</code></td><td>ভিডিও চালুর আগে থাম্বনেইল</td></tr>
+  </table>
+
+  <div class="page-nav">
+    <button class="page-nav-btn prev" onclick="showPage('lists')">← HTML Lists</button>
+    <button class="page-nav-btn next" onclick="showPage('forms')">HTML Forms →</button>
+  </div>
+</div>
+
+<!-- ════════════════ PAGE: FORMS ════════════════ -->
+<div class="page" id="page-forms">
+  <div class="breadcrumb"><a>🏠 হোম</a> <span>›</span> <a>HTML Tutorial</a> <span>›</span> HTML Forms</div>
+  <div class="chapter-badge">অধ্যায় ১৫</div>
+  <h1>HTML Forms</h1>
+  <div class="info-box">Form দিয়ে ব্যবহারকারী থেকে তথ্য নেওয়া হয়। লগইন, রেজিস্ট্রেশন সব ফর্ম দিয়ে তৈরি।</div>
+
+  <div class="code-block">
+    <div class="code-header"><div class="code-dot dot-red"></div><div class="code-dot dot-yellow"></div><div class="code-dot dot-green"></div><span class="code-title">form.html</span></div>
+    <pre><span class="tag">&lt;form <span class="attr">action</span>=<span class="val">"submit.php"</span> <span class="attr">method</span>=<span class="val">"POST"</span>&gt;</span>
+
+  <span class="cmt">&lt;!-- টেক্সট ইনপুট --&gt;</span>
+  <span class="tag">&lt;label <span class="attr">for</span>=<span class="val">"name"</span>&gt;</span><span class="txt">নাম:</span><span class="tag">&lt;/label&gt;</span>
+  <span class="tag">&lt;input <span class="attr">type</span>=<span class="val">"text"</span> <span class="attr">id</span>=<span class="val">"name"</span> <span class="attr">name</span>=<span class="val">"name"</span> <span class="attr">placeholder</span>=<span class="val">"আপনার নাম"</span>&gt;</span>
+
+  <span class="cmt">&lt;!-- ইমেইল --&gt;</span>
+  <span class="tag">&lt;label <span class="attr">for</span>=<span class="val">"email"</span>&gt;</span><span class="txt">ইমেইল:</span><span class="tag">&lt;/label&gt;</span>
+  <span class="tag">&lt;input <span class="attr">type</span>=<span class="val">"email"</span> <span class="attr">id</span>=<span class="val">"email"</span> <span class="attr">name</span>=<span class="val">"email"</span>&gt;</span>
+
+  <span class="cmt">&lt;!-- পাসওয়ার্ড --&gt;</span>
+  <span class="tag">&lt;label&gt;</span><span class="txt">পাসওয়ার্ড:</span><span class="tag">&lt;/label&gt;</span>
+  <span class="tag">&lt;input <span class="attr">type</span>=<span class="val">"password"</span> <span class="attr">name</span>=<span class="val">"pass"</span>&gt;</span>
+
+  <span class="cmt">&lt;!-- টেক্সট এরিয়া --&gt;</span>
+  <span class="tag">&lt;label&gt;</span><span class="txt">বার্তা:</span><span class="tag">&lt;/label&gt;</span>
+  <span class="tag">&lt;textarea <span class="attr">name</span>=<span class="val">"msg"</span> <span class="attr">rows</span>=<span class="val">"4"</span>&gt;</span><span class="tag">&lt;/textarea&gt;</span>
+
+  <span class="cmt">&lt;!-- সাবমিট বাটন --&gt;</span>
+  <span class="tag">&lt;button <span class="attr">type</span>=<span class="val">"submit"</span>&gt;</span><span class="txt">পাঠান</span><span class="tag">&lt;/button&gt;</span>
+
+<span class="tag">&lt;/form&gt;</span></pre>
+  </div>
+
+  <div class="output-box">
+    <div class="output-label">আউটপুট</div>
+    <div style="display:flex;flex-direction:column;gap:10px;max-width:320px">
+      <div><label style="font-weight:600;display:block;margin-bottom:4px">নাম:</label><input style="width:100%;padding:8px;border:1px solid #cbd5e1;border-radius:6px;font-family:inherit" placeholder="আপনার নাম" type="text"></div>
+      <div><label style="font-weight:600;display:block;margin-bottom:4px">ইমেইল:</label><input style="width:100%;padding:8px;border:1px solid #cbd5e1;border-radius:6px;font-family:inherit" type="email" placeholder="email@example.com"></div>
+      <div><label style="font-weight:600;display:block;margin-bottom:4px">বার্তা:</label><textarea style="width:100%;padding:8px;border:1px solid #cbd5e1;border-radius:6px;font-family:inherit" rows="3"></textarea></div>
+      <button style="background:#22c55e;color:#fff;border:none;padding:10px;border-radius:6px;font-size:1rem;font-family:inherit;cursor:pointer">পাঠান</button>
+    </div>
+  </div>
+
+  <div class="page-nav">
+    <button class="page-nav-btn prev" onclick="showPage('video')">← HTML Video</button>
+    <button class="page-nav-btn next" onclick="showPage('input-types')">HTML Input Types →</button>
+  </div>
+</div>
+
+<!-- ════════════════ PAGE: INPUT TYPES ════════════════ -->
+<div class="page" id="page-input-types">
+  <div class="breadcrumb"><a>🏠 হোম</a> <span>›</span> <a>HTML Tutorial</a> <span>›</span> HTML Input Types</div>
+  <div class="chapter-badge">অধ্যায় ১৬</div>
+  <h1>HTML Input Types</h1>
+  <div class="info-box"><code>&lt;input&gt;</code> ট্যাগে <code>type</code> attribute দিয়ে বিভিন্ন ধরনের ইনপুট তৈরি করা যায়।</div>
+
+  <div class="code-block">
+    <div class="code-header"><div class="code-dot dot-red"></div><div class="code-dot dot-yellow"></div><div class="code-dot dot-green"></div><span class="code-title">input-types.html</span></div>
+    <pre><span class="tag">&lt;input <span class="attr">type</span>=<span class="val">"text"</span>&gt;</span>          <span class="cmt">&lt;!-- সাধারণ টেক্সট --&gt;</span>
+<span class="tag">&lt;input <span class="attr">type</span>=<span class="val">"email"</span>&gt;</span>         <span class="cmt">&lt;!-- ইমেইল ভেলিডেশন --&gt;</span>
+<span class="tag">&lt;input <span class="attr">type</span>=<span class="val">"password"</span>&gt;</span>      <span class="cmt">&lt;!-- পাসওয়ার্ড --&gt;</span>
+<span class="tag">&lt;input <span class="attr">type</span>=<span class="val">"number"</span>&gt;</span>        <span class="cmt">&lt;!-- নম্বর --&gt;</span>
+<span class="tag">&lt;input <span class="attr">type</span>=<span class="val">"tel"</span>&gt;</span>           <span class="cmt">&lt;!-- ফোন নম্বর --&gt;</span>
+<span class="tag">&lt;input <span class="attr">type</span>=<span class="val">"date"</span>&gt;</span>          <span class="cmt">&lt;!-- তারিখ নির্বাচন --&gt;</span>
+<span class="tag">&lt;input <span class="attr">type</span>=<span class="val">"checkbox"</span>&gt;</span>      <span class="cmt">&lt;!-- চেকবক্স --&gt;</span>
+<span class="tag">&lt;input <span class="attr">type</span>=<span class="val">"radio"</span>&gt;</span>         <span class="cmt">&lt;!-- রেডিও বাটন --&gt;</span>
+<span class="tag">&lt;input <span class="attr">type</span>=<span class="val">"file"</span>&gt;</span>          <span class="cmt">&lt;!-- ফাইল আপলোড --&gt;</span>
+<span class="tag">&lt;input <span class="attr">type</span>=<span class="val">"range"</span>&gt;</span>         <span class="cmt">&lt;!-- স্লাইডার --&gt;</span>
+<span class="tag">&lt;input <span class="attr">type</span>=<span class="val">"color"</span>&gt;</span>         <span class="cmt">&lt;!-- কালার পিকার --&gt;</span>
+<span class="tag">&lt;input <span class="attr">type</span>=<span class="val">"submit"</span>&gt;</span>        <span class="cmt">&lt;!-- সাবমিট বাটন --&gt;</span>
+<span class="tag">&lt;input <span class="attr">type</span>=<span class="val">"reset"</span>&gt;</span>         <span class="cmt">&lt;!-- রিসেট বাটন --&gt;</span>
+<span class="tag">&lt;input <span class="attr">type</span>=<span class="val">"hidden"</span>&gt;</span>        <span class="cmt">&lt;!-- লুকানো মান --&gt;</span></pre>
+  </div>
+
+  <div class="output-box">
+    <div class="output-label">লাইভ উদাহরণ</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+      <label>তারিখ: <input type="date" style="padding:4px;border:1px solid #cbd5e1;border-radius:4px;width:100%"></label>
+      <label>রঙ: <input type="color" value="#22c55e" style="height:30px;width:100%"></label>
+      <label>স্লাইডার: <input type="range" style="width:100%"></label>
+      <label>ফাইল: <input type="file" style="width:100%"></label>
+    </div>
+    <div style="margin-top:10px">
+      <label><input type="checkbox"> চেকবক্স ১</label>&nbsp;&nbsp;
+      <label><input type="checkbox"> চেকবক্স ২</label>&nbsp;&nbsp;
+      <label><input type="radio" name="r"> রেডিও ১</label>&nbsp;&nbsp;
+      <label><input type="radio" name="r"> রেডিও ২</label>
+    </div>
+  </div>
+
+  <div class="page-nav">
+    <button class="page-nav-btn prev" onclick="showPage('forms')">← HTML Forms</button>
+    <button class="page-nav-btn next" onclick="showPage('form-elements')">Form Elements →</button>
+  </div>
+</div>
+
+<!-- ════════════════ PAGE: FORM ELEMENTS ════════════════ -->
+<div class="page" id="page-form-elements">
+  <div class="breadcrumb"><a>🏠 হোম</a> <span>›</span> <a>HTML Tutorial</a> <span>›</span> Form Elements</div>
+  <div class="chapter-badge">অধ্যায় ১৭</div>
+  <h1>Form Elements</h1>
+  <div class="info-box">ফর্মে input ছাড়াও আরো অনেক উপাদান ব্যবহার করা যায়।</div>
+
+  <div class="code-block">
+    <div class="code-header"><div class="code-dot dot-red"></div><div class="code-dot dot-yellow"></div><div class="code-dot dot-green"></div><span class="code-title">form-elements.html</span></div>
+    <pre><span class="cmt">&lt;!-- Dropdown Select --&gt;</span>
+<span class="tag">&lt;select <span class="attr">name</span>=<span class="val">"city"</span>&gt;</span>
+  <span class="tag">&lt;option <span class="attr">value</span>=<span class="val">"dhaka"</span>&gt;</span><span class="txt">ঢাকা</span><span class="tag">&lt;/option&gt;</span>
+  <span class="tag">&lt;option <span class="attr">value</span>=<span class="val">"ctg"</span>&gt;</span><span class="txt">চট্টগ্রাম</span><span class="tag">&lt;/option&gt;</span>
+  <span class="tag">&lt;option <span class="attr">value</span>=<span class="val">"sylhet"</span>&gt;</span><span class="txt">সিলেট</span><span class="tag">&lt;/option&gt;</span>
+<span class="tag">&lt;/select&gt;</span>
+
+<span class="cmt">&lt;!-- Datalist (সার্চ সাজেশন) --&gt;</span>
+<span class="tag">&lt;input <span class="attr">list</span>=<span class="val">"fruits"</span> <span class="attr">placeholder</span>=<span class="val">"ফল খুঁজুন"</span>&gt;</span>
+<span class="tag">&lt;datalist <span class="attr">id</span>=<span class="val">"fruits"</span>&gt;</span>
+  <span class="tag">&lt;option <span class="attr">value</span>=<span class="val">"আম"</span>&gt;</span>
+  <span class="tag">&lt;option <span class="attr">value</span>=<span class="val">"কলা"</span>&gt;</span>
+  <span class="tag">&lt;option <span class="attr">value</span>=<span class="val">"লিচু"</span>&gt;</span>
+<span class="tag">&lt;/datalist&gt;</span>
+
+<span class="cmt">&lt;!-- Fieldset (গ্রুপ) --&gt;</span>
+<span class="tag">&lt;fieldset&gt;</span>
+  <span class="tag">&lt;legend&gt;</span><span class="txt">ব্যক্তিগত তথ্য</span><span class="tag">&lt;/legend&gt;</span>
+  <span class="tag">&lt;input <span class="attr">type</span>=<span class="val">"text"</span> <span class="attr">placeholder</span>=<span class="val">"নাম"</span>&gt;</span>
+  <span class="tag">&lt;input <span class="attr">type</span>=<span class="val">"email"</span> <span class="attr">placeholder</span>=<span class="val">"ইমেইল"</span>&gt;</span>
+<span class="tag">&lt;/fieldset&gt;</span></pre>
+  </div>
+
+  <div class="output-box">
+    <div class="output-label">লাইভ উদাহরণ</div>
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <div>
+        <label style="font-weight:600">শহর নির্বাচন করুন: </label>
+        <select style="padding:6px;border:1px solid #cbd5e1;border-radius:6px;font-family:inherit">
+          <option>ঢাকা</option><option>চট্টগ্রাম</option><option>সিলেট</option><option>ময়মনসিংহ</option>
+        </select>
+      </div>
+      <fieldset style="border:2px solid #cbd5e1;border-radius:8px;padding:12px">
+        <legend style="font-weight:700;padding:0 6px">ব্যক্তিগত তথ্য</legend>
+        <input style="margin:4px;padding:6px;border:1px solid #cbd5e1;border-radius:6px;font-family:inherit" placeholder="নাম">
+        <input style="margin:4px;padding:6px;border:1px solid #cbd5e1;border-radius:6px;font-family:inherit" placeholder="ইমেইল">
+      </fieldset>
+    </div>
+  </div>
+
+  <div class="tip-box">🎉 <strong>অভিনন্দন!</strong> আপনি HTML Tutorial-এর সব অধ্যায় শেষ করেছেন! এখন CSS শিখতে শুরু করুন।</div>
+
+  <div class="page-nav">
+    <button class="page-nav-btn prev" onclick="showPage('input-types')">← HTML Input Types</button>
+  </div>
+</div>
+
+</main>
+</div>
+
+<script src="01-HTML-script.js"></script>
+</body>
+</html>
